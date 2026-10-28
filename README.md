@@ -112,7 +112,7 @@ flowchart LR
    different ages; looks as the largest weight for both sexes; build helping
    men more; smarts with a ceiling; size as a near-zero joke).
 4. The relationship goal reweights the inputs (`model::goal_weight`): casual
-   doubles down on looks and build and halves status and smarts; long-term
+   multiplies looks and build by 1.5 and halves status and smarts; long-term
    and marriage lift status and smarts by 1.2.
 5. The score is clamped to 0..100 and mapped to a `Tier` by the
    `Tier::THRESHOLDS` table; the tier picks the headline and the meme card.
