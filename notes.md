@@ -424,3 +424,207 @@ Public source of the viral race charts; agrees in direction with the peer-review
 **Hinge figures reported by Quillette (2019)** (D). A third retelling of the Hinge analyst's numbers: Gini 0.542 for likes received by men and 0.324 for women. URL: https://quillette.com/2019/03/12/attraction-inequality-and-the-dating-economy (seen in search results; differs from the Quartz retelling).
 **Grindr removes its ethnicity filter (June 2020)** (D, press). Announced on 1 June 2020 after criticism during the Black Lives Matter protests; other gay apps (e.g. Scruff) were reported to follow. URL: https://www.irishnews.com/magazine/technology/2020/06/02/news/grindr-to-remove-ethnicity-filter-following-criticism-1960939/ (press reports; the release date of the change was not confirmed).
 Relevance: no peer-reviewed estimate of swipe or like inequality was found; all Gini numbers remain grade D.
+
+---
+
+# Extension: Dark Triad and mating (section 11.10 of the review)
+
+Added 2026-10-28. Same format and grades as above. Every DOI was checked against Crossref on 2026-10-28; abstracts were read through OpenAlex, Europe PMC or Semantic Scholar, and two papers (carter2014, jauk2016) and one abstract (rauthmann2013) were read in author copies. All studies below measure **subclinical** traits with questionnaires in ordinary samples (mostly students or online panels). None of them is about clinical psychopathy or personality disorder.
+
+## Definitions and sex differences
+
+**paulhus2002** (A). 245 Canadian students; Machiavellianism, subclinical narcissism and subclinical psychopathy measured side by side.
+The three traits correlate moderately but are not interchangeable; their only shared Big Five correlate is low agreeableness *(secondary: abstract copies)*.
+The source of the "Dark Triad" label and of the subclinical framing.
+
+**buckels2013** (B). Two lab studies (bug-killing task; willingness to hurt an innocent person).
+Everyday sadism predicted cruelty beyond the Dark Triad; the authors propose a "Dark Tetrad" *(abstract)*.
+Defines the fourth trait. We found no study on sadism and attractiveness; one on Tinder motives (lyons2022tinder).
+
+**muris2017** (A). Meta-analysis and critical review of the Dark Triad literature.
+The traits are strongly intercorrelated, "somewhat more prevalent among men than women", mostly a matter of low agreeableness / honesty-humility; most studies are cross-sectional self-reports *(abstract; per-trait d values not read)*.
+Main source for "men score higher on average" and for the measurement caveat.
+
+**grijalva2015** (A). Meta-analysis, 355 studies, N = 470,846.
+Men score higher on narcissism, d = .26, driven by exploitativeness/entitlement (d = .29) and leadership/authority (d = .20); almost no difference on grandiose exhibitionism (d = .04) or vulnerable narcissism (d = -.04); stable 1990 to 2013 *(abstract)*.
+A small average difference with large overlap; the authors warn against over-reading it.
+
+**jonason2020countries** (A). Dark Triad scores from students in 49 countries.
+Sex differences in narcissism were larger in more developed countries *(abstract; sample size garbled in the index copy)*.
+Cross-cultural check: men score higher, more so in richer countries.
+
+## Short-term mating, sociosexuality and partner numbers
+
+**jonason2009** (B). Survey of 224 US students.
+Dark Triad traits correlated with short-term mating (more partners, more casual sex, unrestricted sociosexuality) but not with long-term mating; links were stronger in men and partly explained the sex difference in short-term mating *(abstract; correlations not checked)*.
+The founding "Dark Triad = short-term strategy in men" paper. Self-reports only.
+
+**jonason2011mate** (B). 242 participants, mate-budget task.
+High scorers, especially men, were less choosy about short-term mates; psychopathy went with picking mates for self-interest *(abstract)*.
+Stated preferences, not actual partners.
+
+**jonason2012choices** (B). 210 MTurk adults allocating a budget across relationship types.
+The traits correlated positively with preferring short-term arrangements and negatively with serious relationships; narcissism went with one-night stands and friends-with-benefits, psychopathy with "booty calls" *(secondary: abstract copies)*.
+Online sample; still self-report.
+
+**schmitt2017narc** (A). International Sexuality Description Project-2: 30,470 people, 53 nations, 11 world regions.
+Narcissism (NPI) linked to short-term mating, unrestricted sociosexuality and infidelity in every region, mainly through its exploitative facets *(abstract)*.
+The best cross-cultural evidence that the narcissism and short-term link is not just a US student effect.
+
+**freyth2023** (B). Replication and extension, N = 495.
+Machiavellianism and psychopathy were linked to most sociosexual behaviours and attitudes, beyond agreeableness; in men Machiavellianism, in women psychopathy carried the effect; psychopathic women reported more partners, unprotected sex and one-night stands *(abstract)*.
+Shows the link is not men-only: in women the driver is psychopathy.
+
+**lyons2022tinder** (B). 216 current or former Tinder users; Dark Tetrad including sadism.
+Using Tinder for sex was linked to being male and to psychopathy; Machiavellianism went with many "utilitarian" motives *(abstract)*.
+The only sadism-and-dating source found; sadism had no headline effect.
+
+## Are Dark Triad people rated more attractive?
+
+**carter2014** (B). 128 British female undergraduates (mean age 19.4), between-subjects; each read one male self-description (high Dark Triad or a matched control), no photo.
+The high Dark Triad character was rated more attractive: 4.44 vs 3.34 on a 6-point scale, d = 0.94; he was also rated more extraverted and less neurotic, and part (not all) of the effect ran through those ratings *(full text, author copy)*.
+The paper behind most "women like bad boys" headlines. Only one vignette per condition, rating of the "attractiveness of the personality", no long-term question; the authors themselves ask for community and speed-dating replications.
+
+**qureshi2016** (C, content not read). Vignette study of women's age and attraction to a high vs low Dark Triad male character, Personality and Individual Differences 95, 200-203.
+Reported as: younger women rated the high Dark Triad character more attractive than older women did, and older women preferred the low Dark Triad character *(secondary: search summaries of the highlights; abstract and full text not accessible)*.
+Suggests the carter2014 effect is tied to young student samples. Treat as unverified until read.
+
+**rauthmann2013** (B). Between-subjects, N = 184, opposite-sex narcissist, Machiavellian or psychopath vignettes; ratings of likeability, attractiveness, friend value, short- and long-term mate value.
+None of the three targets was rated favourably; the narcissist was rated more favourably than the other two, which were seen as similar *(abstract, author copy)*.
+"Narcissists are hot, Machiavellians and psychopaths not", but only relative to each other.
+
+**dragostinov2025** (B). Two Prolific studies (N = 475 and 794), nine vignettes (three traits x low / medium / high) paired with faces of matched average attractiveness; data and materials on OSF.
+Study 1 (fixed face-vignette pairs): people attracted to men (mostly women) rated medium levels most attractive for short-term relationships. Study 2 (randomised pairs, larger and older sample): both sexes rated **low** levels most attractive for both short- and long-term relationships *(abstract and full text)*.
+The largest test; when the face is decoupled from the description, the Dark Triad advantage disappears. Earlier studies all had samples under 150.
+
+**jonason2015birds** (B). Dating-profile vignettes rated by men and women (N = 336 per secondary sources).
+Both sexes preferred low Dark Triad partners for long-term relationships; high Dark Triad targets got more interest for one-night stands; women high in psychopathy rated high Dark Triad men more attractive, even as husbands *(secondary: repository abstract summaries)*.
+"Birds of a bad feather": appeal is concentrated among people who are high on the traits themselves.
+
+**watts2019** (B). 270 female undergraduates and 426 community adults built an ideal partner from 70 traits.
+Preference for psychopathic traits was low on average, but higher than for other personality-disorder traits, and higher for the charming interpersonal-affective traits than for impulsive-antisocial ones; people with such traits themselves wanted them more *(abstract)*.
+Same homophily pattern as jonason2015birds; the "charm" part is what is liked.
+
+**holtzman2010** (B). Meta-analysis of small studies (total N > 1000) with observer-rated attractiveness.
+Small but reliable positive correlation between narcissism and physical attractiveness, near the largest known personality and looks correlations *(secondary: abstract summaries; r not read)*.
+Part of narcissists' appeal is that they look better.
+
+**holtzman2013** (B). Photos with and without own clothing/styling, self and peer reports.
+The Dark Triad composite, and psychopathy alone, correlated with *effective adornment* (making oneself look good with clothes and grooming), not with unadorned looks *(abstract)*.
+They look better partly because they invest in looking better.
+
+**back2010** (B). Round-robin of 73 psychology freshmen (2,628 dyads) plus three perceiver studies (video, silent video, photo).
+Narcissism predicted popularity at first sight, with the exploitative facets most attractive at zero acquaintance; flashy clothes, charming face, self-assured body language and humour explained it *(abstract)*.
+First impressions, not dating, but the same mechanism.
+
+**dufner2013** (B). Three studies: ratings by opposite-sex strangers, ratings by friends, and courtship outcomes in naturalistic approaches.
+Narcissism raised short-term mate appeal in all three, mediated by physical attractiveness and social boldness; the effect was larger for mate appeal than friend appeal *(abstract)*.
+The best "revealed" evidence for a narcissist advantage in early courtship.
+
+**jauk2016** (B). Speed dating in Graz, 90 adults (46 women) aged 18 to 32, 691 dates.
+Narcissism predicted mate appeal (short- and long-term) for both sexes; in women it ran through physical attractiveness, in men through extraversion; once looks were controlled, no Dark Triad effect remained significant; psychopathy in women went with short-term appeal *(full text)*.
+Small but realistic; the "dark" part itself adds little beyond looks and outgoingness.
+
+## Does the effect fade with acquaintance?
+
+**paulhus1998** (B). Two longitudinal studies; groups of 4 to 6 strangers met seven times for 20 minutes.
+Self-enhancers (narcissism) made a good first impression but were rated negatively by the seventh meeting *(secondary: abstract copies)*.
+The classic "mixed blessing" result.
+
+**leckelt2015** (B). 311 participants in small groups, weekly sessions for three weeks, videotaped.
+Narcissists' popularity declined over time: the positive "admiration" path (dominant, expressive) weakened, the negative "rivalry" path (arrogant, aggressive, untrustworthy) grew *(abstract)*.
+Replicates paulhus1998 with behaviour coding; groups were not dating.
+
+## Long-term outcomes
+
+**jonason2010poach** (B). Online survey, N = 336.
+Dark Triad traits went with more poaching of others' partners, more being poached, more leaving partners for someone new, and aggressive or narcissistic mate-retention tactics *(secondary: abstract copies)*.
+Short-term success comes with unstable relationships.
+
+**ataman2025** (B). Meta-analysis of 11 articles on the Dark Triad and infidelity.
+Infidelity correlated with narcissism r = .13, Machiavellianism r = .23, psychopathy r = .25 *(abstract)*.
+The only meta-analysis found; small k, published in a small journal, self-reported infidelity.
+
+**brewer2015** (B). Two samples of heterosexual women (N = 102 and 108).
+Women's Dark Triad scores predicted past infidelity, intentions to be unfaithful and revenge after a partner's (hypothetical) infidelity; secondary psychopathy was the strongest single trait *(secondary: repository abstracts)*.
+Female Dark Triad has the same costs.
+
+**smith2014dt** (B). 45 heterosexual student couples, actor-partner models.
+Assortment: slightly negative for narcissism, positive for psychopathy; satisfaction marginally mediated effects of the traits on commitment *(secondary: abstract summaries)*.
+Very small sample; marginal results.
+
+**kardum2024** (B). 205 heterosexual couples, self and partner reports, dyadic response-surface analysis.
+The traits had mainly negative effects on both partners' relationship satisfaction; dissimilarity in narcissism lowered satisfaction for both, and dissimilarity in psychopathy lowered men's *(abstract)*.
+Best couple-level evidence: dark traits cost satisfaction, and mismatched couples fare worse.
+
+**richards2024** (B). Couples from the UK (104) and Fiji (99) plus a meta-analysis of within-couple correlations.
+Partners resemble each other on all three traits (small for narcissism and psychopathy, medium for Machiavellianism), through initial and active assortment, not convergence *(abstract; the two indexed abstract versions give different k, up to 14 samples per trait)*.
+Like with like again: dark people tend to pair with dark people.
+
+## "Nice guys" vs "bad boys": stated preferences
+
+**herold1999** (B). 165 Canadian university women, survey plus open answers.
+More than half agreed that nice guys have fewer sexual partners, but more than half preferred a nice guy over a bad boy as a date; women with more partners and more sexual permissiveness picked the bad boy more *(abstract)*.
+Nice guys: fewer partners, more wanted for commitment.
+
+**urbaniak2003** (B). Female students rated dating-show vignettes of "nice", "neutral" and "jerk" versions of a man, crossed with photos of varying attractiveness.
+Nice versions were preferred, but niceness mattered less than looks for casual sex *(secondary: summaries; abstract not read)*.
+Looks first for short-term; niceness wins for dating and commitment.
+
+---
+
+# Extension: paternity certainty and Y-chromosome history (section 11.11 of the review)
+
+Added 2026-10-28 at the researcher's request. Same format and grades.
+
+## How often is the presumed father not the biological father?
+
+**anderson2006** (A). Review of 67 studies of nonpaternity worldwide.
+Men with high paternity confidence: nonpaternity typically about 1.7 to 1.9%; men who doubted and paid for a paternity test: median about 30% *(abstract for the high-confidence figure; 29.8% secondary: press release)*.
+Source of both "1 to 2%" and "30%"; the 30% only applies to men who already suspected it.
+
+**bellis2005** (B). Review of 17 published estimates of paternal discrepancy.
+Range 0.8% to 30%, median 3.7%; higher among younger parents, in deprivation, in cohabiting rather than married couples *(abstract)*.
+Mixes test-lab and population samples, so the median is an upper-side estimate.
+
+**larmuseau2013** (A). Y-chromosome typing plus genealogies, Flanders, last few centuries.
+Extra-pair paternity about 1 to 2% per generation, far below the 8 to 30% claimed in some behavioural studies *(abstract)*.
+Historical rate, free of the contraception bias in modern data.
+
+**larmuseau2019** (A). Patrilineal genealogies over 500 years in the Low Countries, Y-chromosome typing of living descendants.
+Rates among married couples varied from 0.4% to 5.9%, peaking among families with a low socioeconomic background in densely populated late-19th-century cities *(abstract)*.
+Low overall, but strongly shaped by social context.
+
+**greeff2015** (B). 1,273 conceptions over 330 years in 23 Afrikaner families.
+Cuckoldry rate 0.9% (95% CI 0.4% to 1.5%) *(abstract)*.
+Agrees with about 1% for Western historical populations.
+
+**larmuseau2016** (B). Short review in Trends in Ecology and Evolution.
+Historical extra-pair paternity is low across studied populations, which argues against women routinely "shopping around" for good genes *(abstract)*.
+Directly relevant to the "dual mating strategy" claim online.
+
+**dahlen2022** (A). Nationwide Swedish ABO blood-group data, nearly two million mother-father-child trios.
+Misattributed paternity 1.7% overall, falling to about 1% today; more common with lower parental education *(abstract)*.
+The best modern population estimate.
+
+## Y-chromosome diversity: did fewer men reproduce?
+
+**wilder2004** (B). mtDNA vs Y-chromosome coalescence in Khoisan, Mongolian and Papua New Guinean samples.
+The mtDNA tree is about twice as deep as the Y tree, best explained by a larger female than male effective population size *(abstract)*.
+Genetic support for higher variance in male than female reproduction over human history.
+
+**karmin2015** (A). 456 high-coverage Y-chromosome sequences.
+A strong bottleneck in Y lineages (not in mtDNA) within the last 10,000 years, interpreted as cultural changes raising variance in male reproductive success *(abstract)*.
+Origin of the "17 women reproduced for every man" meme. The meme's ratio comes from a press summary (not read) and refers to effective population size, not to how many men had children.
+
+**zeng2018** (B). Mathematical model.
+The post-Neolithic Y bottleneck (5,000 to 7,000 years ago) can be explained by competition between patrilineal clans, where whole male lineages die out together *(abstract)*.
+Alternative to a "women chose few men" reading: lineage warfare and clan structure, not female choice.
+
+**rootsi2007** (B). Y-haplogroup N phylogeography across Eurasia.
+Haplogroup N reached eastern Europe on a northern route from inner Asia/southern Siberia about 12 to 14 thousand years ago, with serial bottlenecks and later expansions *(abstract)*.
+Why N is frequent in the Baltic and Finland: migration and founder effects.
+
+**pliss2015** (B). 159 ethnic Latvians, 28 SNPs and 12 STRs.
+N1c, R1a and I1 together cover more than 85% of Latvian paternal lineages; more than a third are R1a-M558; Latvian and Lithuanian N1c frequencies are comparable to Finno-Ugric neighbours *(abstract; per-haplogroup percentages not read; an earlier poster by the same group gives about 45% N1c, secondary)*.
+A high share of one haplogroup is a population-history signal, not a measure of how many men reproduced in any one generation.
