@@ -1,0 +1,11 @@
+[package]
+name = "hypergamy_meter"
+version = "0.1.0"
+edition = "2024"
+description = "A joke desktop app that gives a playful, unscientific 'market verdict'. For fun only."
+license = "MIT"
+authors = ["Umay Şamlı"]
+publish = false
+
+[dependencies]
+eframe = "=0.37.0"
