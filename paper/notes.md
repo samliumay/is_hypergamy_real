@@ -161,7 +161,7 @@ Sources: `../literature_review.md` sections 11.9 (red-flags row), 11.10 and 11.1
 | 0.4% to 5.9%, 500 years | larmuseau2019 | abstract |
 | about twice as deep | wilder2004 | abstract |
 | last 10,000 years | karmin2015 | abstract |
-| "17 women per man" | press coverage of karmin2015 | **not read**; reported only as a misreading, Limitations |
+| "17 women per man" | karmin2015 | superseded: see the re-check update below (it is in the full text) |
 | over 85%, N1c/R1a/I1 | pliss2015 | abstract (the 45% N1c poster figure is not used) |
 | 12,000 to 14,000 years ago | rootsi2007 | abstract |
 
@@ -185,5 +185,49 @@ Known cosmetic issue, not fixed because it is outside `paper/`: IEEEtran lowerca
 - **Fidelity.** Exit 2, facts identical. Three review items were kept. "Since" marks the same evidence the parenthesis gave before, so the claim is unchanged. In the other two items the 30% moved to the next sentence and still describes the same figure.
 - **Blind reader check.** Seed 1, N = 3 (only three paragraph pairs changed), one fresh reader subagent. The after version was preferred in 3/3 pairs (100%), with no meaning change and no after version flagged unclear. PASS.
 - **Substance problems noticed, not fixed.** Several Dark Triad and paternity numbers rest on secondary summaries (daggered in Table II, listed in Limitations). The "17 women" ratio and the 30% figure were not read in the original papers.
+
+This pass changes style, not authorship; disclose AI assistance per the venue's policy.
+
+## Re-check update: bad boys split, 17:1, N1c, France (2026-10-28)
+
+The researcher pushed back that the old wording was too dismissive ("do not be protective against women, be natural"). The review's sections 11.10 and 11.11, its verdict rows and summary callout, and `../notes.md` were re-checked; the paper now follows them.
+
+- **Section IV-E (Dark Triad)** rewritten by sub-claim, plain and two-sided: partner counts *exists* (borrazleon2021, schmitt2017narc, lee2013sex, jonason2009, freyth2023); real first meetings *exists* (dufner2013 incl. the street study, jauk2016, back2010; mostly looks and boldness); fictional profiles *mixed* (for: carter2014, aitken2013, haslam2015; against: brewer2018faces, lyons2016faces, dragostinov2025, qureshi2016); dominance *partly* (sadalla1987, jensencampbell1995, burger1999, snyder2008); Machiavellianism/psychopathy as such *mostly does not exist* except for raters high themselves (jonason2015birds, watts2019, marcinkowska2015); long term *does not exist*; nice guys finish last *partly* (herold1999, urbaniak2003, mcdaniel2005, jensencampbell1995); verdict *split*; men show the same pattern toward narcissistic women. jonason2012choices is no longer cited (dropped for space; its point is carried by jonason2009 and lee2013sex).
+- **Section IV-H (paternity)**: intro now says the 10 to 30% claim fails and the "fewer men reproduced" claim holds with a debated cause. New paragraphs: France (no peer-reviewed rate; Civil Code art. 16-11 and Penal Code art. 226-28 cited as text, no bib entry; nearest data larmuseau2013, larmuseau2019; French rate stated as an inference), the 2:1 and 17-fold results quoted from karmin2015 with what Ne means, corroboration (poznik2016, batini2015), Baumeister 2:1 measured vs 80/40 illustration (baumeister2010), causes (karmin2015, zeng2018, batini2015), and N1c (rootsi2007 Supplementary Table 1, preussner2025, ilumae2016, lappalainen2008, pliss2015). All "misreading" and "known only from press" wording for 17:1 removed (text, Limitations, notes table above).
+- **Tables**: the personality and paternity rows moved out of Table II into a new **Table III** (`tab:darkpat`) because Table II no longer fitted one page; the old Tables III and IV are now IV and V. New rows: first meetings, fictional profiles (mixed, for/against sources), dominance, nice guys, France (unclear), fewer men reproduced (exists, strong), 17:1 (exists as an effective-size ratio), cause (unclear), Baumeister 2:1 vs 80/40 (partly), N1c common (exists, strong), founder success (exists), few living men father most children (does not exist). Tables I to III are now `\scriptsize` (Table II arraystretch 1.07, I and III 1.1) to stay at 13 pages.
+- **Abstract, contributions item, Conclusion, Limitations** updated. Limitations adds the secondary-read sources (burger1999, urbaniak2003, mcdaniel2005, marcinkowska2015, aitken2013, lyons2016faces title only, haslam2015 and dufner2013 street-study sample sizes, Baumeister's 80/40) and states that the French texts are cited as law.
+- **Layout**: the Table II/III source block now sits before "Short-Term Versus Long-Term Partners" so page 5 no longer has a near-empty column. `\usepackage{eurosym}` added for the euro sign.
+- **Figure**: an N1c bar chart was drafted (`figures/n1c.tex`) but removed, because it pushed the paper to 14 pages. The numbers are in the text and Table III. Fig. 7 (paternity) unchanged.
+
+| Number(s) | Key | How notes.md read it |
+|---|---|---|
+| 61 men, street study (not printed) | dufner2013 | **secondary**; daggered, Limitations |
+| N = 146 (not printed) | haslam2015 | **secondary**; Limitations |
+| cads vs dads | aitken2013 | abstract via search summary; daggered, Limitations |
+| N = 794 | dragostinov2025 | full text |
+| 1,962 Finnish women | marcinkowska2015 | **secondary** (repository abstract); daggered |
+| mtDNA Ne more than twice Y Ne; 8,000 to 4,000 years ago; "up to 17-fold" (quoted) | karmin2015 | full text |
+| 456 sequences | karmin2015 | abstract |
+| 64% of a 334-man sample; Bronze Age | batini2015 | abstract |
+| 80% / 40% | baumeister2010 | **secondary** (quotations); Limitations |
+| 58.2%, 41.9%, 36.7%, 30.6% | rootsi2007 | Supplementary Table 1 (full text) |
+| 64% of 1,802 Finnish men | preussner2025 | abstract |
+| VL29 over a third; split about 5,000 years ago | ilumae2016 | full text |
+| over 85% (N1c, R1a, I1) | pliss2015 | abstract |
+| 1 year prison, 15,000 euro fine; art. 16-11, 226-28 | French Civil and Penal Code | legal texts via the review; not in bibliography.bib |
+
+### Build
+
+`make pdf`: **13 pages**, 140 references, no undefined references or citations, no overfull boxes, BibTeX 0 warnings. One underfull vbox remains on page 5 (a float-heavy page: Fig. 4, Table II, Figs. 5 and 6 and three text lines); inspected, no visible gap. IEEEtran now prints "Dark Triad", "Machiavellianism", "UK" and "Fiji" capitalised (the titles in `../bibliography.bib` are brace-protected). Inspected pages 5 to 8. `make clean` run; `main.pdf` kept.
+
+## Humanizer log, re-check update (2026-10-28)
+
+- **Ownership.** Agent-drafted text, all editable. Scope: the text changed in this update. Before copy: `.../scratchpad/hum_before/main.tex` (the drafted version); the pre-update copy is `.../scratchpad/hyper_v4_prehum/`.
+- **Glossary.** As before, plus: partner counts, first meetings, fictional profiles, effective population size ($N_e$), haplogroup N1c, founding male lines.
+- **Scan.** 6348 / 6348 prose words; 386 / 392 sentences; semicolons 0.04 / 0.04, colons 0.15 / 0.14, parentheses 0.20 / 0.20 per sentence; nominalizations 0.71 / 0.70.
+- **Changes (6).** Sentence splits only: abstract ("..., but no study finds" -> ". No study finds"); fictional profiles (a four-part "Against" list split in two); nice guys (semicolon split); causes (a colon-after-citation list became its own sentence, "...all raise that variance"); N1c (colon split); conclusion (semicolon split).
+- **Fidelity.** Exit 2, facts identical; the one review item is a sentence split with the same claims.
+- **Blind reader check.** Seed 1, N = 12 sampled paragraphs, only 2 of them changed. The after version was preferred in both changed pairs; the 10 unchanged pairs were ties, so the formal score is 2/12 (17%, FAIL by the 70% rule). No meaning change and nothing flagged unclear. Read as a light pass on already plain text, not a regression.
+- **Substance problems noticed, not fixed.** Several Dark Triad numbers still rest on secondary summaries (daggered, listed in Limitations). The France row is an inference from neighbours. The 30% of anderson2006 is still from a press release.
 
 This pass changes style, not authorship; disclose AI assistance per the venue's policy.
