@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1048" viewBox="0 0 1200 1048">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="1048.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >HOW THE HYPERGAMY METER WORKS</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >A joke model, drawn like a serious one</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Hand-picked weights, not estimated from data. Ethnicity is deliberately not an input.</text>
+<rect x="40.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#f0ede4" />
+<circle cx="68" cy="210" r="15" fill="#1b1f1c"/>
+<text x="68.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >1</text>
+<text x="54.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Ten inputs</text>
+<text x="54.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >age, gender,</text>
+<text x="54.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >education, income,</text>
+<text x="54.0" y="328.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >height, looks, build,</text>
+<text x="54.0" y="348.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >smarts, region, goal</text>
+<text x="54.0" y="368.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >+ size (optional)</text>
+<line x1="205" y1="283.0" x2="227" y2="283.0" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="232.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#f0ede4" />
+<circle cx="260" cy="210" r="15" fill="#1b1f1c"/>
+<text x="260.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >2</text>
+<text x="246.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Points</text>
+<text x="246.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >each input adds or</text>
+<text x="246.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >subtracts points;</text>
+<text x="246.0" y="328.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >looks weigh most,</text>
+<text x="246.0" y="348.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >smarts: +6, then +3</text>
+<line x1="397" y1="283.0" x2="419" y2="283.0" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="424.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#1f6a4a" />
+<circle cx="452" cy="210" r="15" fill="#fff"/>
+<text x="452.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="middle" >3</text>
+<text x="438.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="start" >Goal weights</text>
+<text x="438.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#d6eadf" text-anchor="start" >the goal stretches</text>
+<text x="438.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#d6eadf" text-anchor="start" >or shrinks those</text>
+<text x="438.0" y="328.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#d6eadf" text-anchor="start" >points (see below)</text>
+<line x1="589" y1="283.0" x2="611" y2="283.0" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="616.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#f0ede4" />
+<circle cx="644" cy="210" r="15" fill="#1b1f1c"/>
+<text x="644.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >4</text>
+<text x="630.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Score</text>
+<text x="630.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >add it all up,</text>
+<text x="630.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >clamp to 0 to 100</text>
+<line x1="781" y1="283.0" x2="803" y2="283.0" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="808.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#f0ede4" />
+<circle cx="836" cy="210" r="15" fill="#1b1f1c"/>
+<text x="836.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >5</text>
+<text x="822.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Tier</text>
+<text x="822.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >six tiers, from</text>
+<text x="822.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >“Top of the market”</text>
+<text x="822.0" y="328.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >to “It's over”</text>
+<line x1="973" y1="283.0" x2="995" y2="283.0" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="1000.0" y="180.0" width="160.0" height="206.0" rx="14" fill="#f0ede4" />
+<circle cx="1028" cy="210" r="15" fill="#1b1f1c"/>
+<text x="1028.0" y="216.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >6</text>
+<text x="1014.0" y="260.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Meme card</text>
+<text x="1014.0" y="288.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >huge captions,</text>
+<text x="1014.0" y="308.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >then the retraction:</text>
+<text x="1014.0" y="328.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >“go touch grass :D”</text>
+<text x="40.0" y="440.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >THE METER: TIERS BY SCORE</text>
+<rect x="41.0" y="456.0" width="278.0" height="40.0" rx="6" fill="#b8322b" />
+<text x="180.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >It's over*</text>
+<rect x="321.0" y="456.0" width="166.0" height="40.0" rx="6" fill="#d0663a" />
+<text x="404.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Clearance aisle</text>
+<rect x="489.0" y="456.0" width="166.0" height="40.0" rx="6" fill="#d69a2a" />
+<text x="572.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Acquired taste</text>
+<rect x="657.0" y="456.0" width="166.0" height="40.0" rx="6" fill="#a7a83a" />
+<text x="740.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Not bad</text>
+<rect x="825.0" y="456.0" width="166.0" height="40.0" rx="6" fill="#5e9f4a" />
+<text x="908.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Strong buy</text>
+<rect x="993.0" y="456.0" width="166.0" height="40.0" rx="6" fill="#2e8555" />
+<text x="1076.0" y="482.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Top of the market</text>
+<text x="40.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >0</text>
+<text x="320.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >25</text>
+<text x="488.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >40</text>
+<text x="656.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >55</text>
+<text x="824.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >70</text>
+<text x="992.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >85</text>
+<text x="1160.0" y="520.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >100</text>
+<text x="1160.0" y="546.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="end" >*followed by: “...just kidding, go touch grass :D”</text>
+<text x="40.0" y="596.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >STEP 3: GOAL WEIGHTS</text>
+<text x="381.2" y="636.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="17" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="middle" >Casual</text>
+<text x="603.8" y="636.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="17" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="middle" >Long-term</text>
+<text x="826.2" y="636.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="17" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="middle" >Marriage</text>
+<text x="1048.8" y="636.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="17" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="middle" >No idea, honestly</text>
+<rect x="40.0" y="654.0" width="1120.0" height="44.0" rx="6" fill="#f0ede4" />
+<text x="56.0" y="682.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Looks</text>
+<rect x="290.0" y="667.0" width="132.5" height="18.0" rx="4" fill="#2e8555" />
+<line x1="378.3" y1="662" x2="378.3" y2="690" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="682.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.5x</text>
+<rect x="512.5" y="667.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="600.8" y1="662" x2="600.8" y2="690" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="682.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="735.0" y="667.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="823.3" y1="662" x2="823.3" y2="690" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="682.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="957.5" y="667.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="662" x2="1045.8" y2="690" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="682.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<text x="56.0" y="726.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Build</text>
+<rect x="290.0" y="711.0" width="132.5" height="18.0" rx="4" fill="#2e8555" />
+<line x1="378.3" y1="706" x2="378.3" y2="734" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="726.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.5x</text>
+<rect x="512.5" y="711.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="600.8" y1="706" x2="600.8" y2="734" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="726.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="735.0" y="711.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="823.3" y1="706" x2="823.3" y2="734" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="726.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="957.5" y="711.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="706" x2="1045.8" y2="734" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="726.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="40.0" y="742.0" width="1120.0" height="44.0" rx="6" fill="#f0ede4" />
+<text x="56.0" y="770.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Education</text>
+<rect x="290.0" y="755.0" width="44.2" height="18.0" rx="4" fill="#c4553a" />
+<line x1="378.3" y1="750" x2="378.3" y2="778" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="770.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c4553a" text-anchor="start" >0.5x</text>
+<rect x="512.5" y="755.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="600.8" y1="750" x2="600.8" y2="778" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="770.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="735.0" y="755.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="823.3" y1="750" x2="823.3" y2="778" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="770.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="957.5" y="755.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="750" x2="1045.8" y2="778" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="770.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<text x="56.0" y="814.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Income</text>
+<rect x="290.0" y="799.0" width="44.2" height="18.0" rx="4" fill="#c4553a" />
+<line x1="378.3" y1="794" x2="378.3" y2="822" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="814.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c4553a" text-anchor="start" >0.5x</text>
+<rect x="512.5" y="799.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="600.8" y1="794" x2="600.8" y2="822" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="814.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="735.0" y="799.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="823.3" y1="794" x2="823.3" y2="822" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="814.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="957.5" y="799.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="794" x2="1045.8" y2="822" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="814.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="40.0" y="830.0" width="1120.0" height="44.0" rx="6" fill="#f0ede4" />
+<text x="56.0" y="858.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Smarts</text>
+<rect x="290.0" y="843.0" width="44.2" height="18.0" rx="4" fill="#c4553a" />
+<line x1="378.3" y1="838" x2="378.3" y2="866" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="858.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c4553a" text-anchor="start" >0.5x</text>
+<rect x="512.5" y="843.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="600.8" y1="838" x2="600.8" y2="866" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="858.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="735.0" y="843.0" width="106.0" height="18.0" rx="4" fill="#2e8555" />
+<line x1="823.3" y1="838" x2="823.3" y2="866" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="858.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.2x</text>
+<rect x="957.5" y="843.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="838" x2="1045.8" y2="866" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="858.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<text x="56.0" y="902.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Age, height, size, goal</text>
+<rect x="290.0" y="887.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="378.3" y1="882" x2="378.3" y2="910" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="434.5" y="902.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="512.5" y="887.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="600.8" y1="882" x2="600.8" y2="910" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="657.0" y="902.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="735.0" y="887.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="823.3" y1="882" x2="823.3" y2="910" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="879.5" y="902.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<rect x="957.5" y="887.0" width="88.3" height="18.0" rx="4" fill="#b9bdb5" />
+<line x1="1045.8" y1="882" x2="1045.8" y2="910" stroke="#1b1f1c" stroke-width="1.2" stroke-dasharray="3 3"/>
+<text x="1102.0" y="902.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1x</text>
+<text x="40.0" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Dashed line = 1x. Example: a man's high income, worth +10, becomes +12 for long-term or marriage, and +5 for casual.</text>
+<line x1="40" y1="988" x2="1160" y2="988" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="1018.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >From app/src/model.rs in the is_hypergamy_real repository. For fun only. Not science, not advice.</text>
+</svg>

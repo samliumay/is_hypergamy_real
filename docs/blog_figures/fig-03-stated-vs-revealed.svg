@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="742" viewBox="0 0 1200 742">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="742.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >WHAT PEOPLE SAY VS WHOM THEY LIKE</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >On paper the gap is small. In person it almost vanishes.</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Women say earnings matter a bit more. Face to face, earnings barely predict attraction for anyone.</text>
+<rect x="40.0" y="176.0" width="545.0" height="470.0" rx="16" fill="#f0ede4" />
+<text x="68.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="24" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >1  What people say</text>
+<text x="68.0" y="252.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Survey ratings, 45 countries, 14,399 people</text>
+<text x="68.0" y="274.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Walter et al. (2020)</text>
+<text x="80.0" y="330.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Good financial prospects</text>
+<rect x="80.0" y="348.0" width="465.0" height="26.0" rx="6" fill="#e7e3d7" />
+<rect x="80.0" y="348.0" width="23.2" height="26.0" rx="6" fill="#c46a1c" />
+<line x1="545.0" y1="342" x2="545.0" y2="380" stroke="#8e938a" stroke-width="1.5"/>
+<text x="545.0" y="398.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="end" >whole 1 to 7 scale</text>
+<text x="80.0" y="398.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >women rate it higher by</text>
+<text x="272.3" y="398.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >0.30 points</text>
+<text x="80.0" y="458.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Physical attractiveness</text>
+<rect x="80.0" y="476.0" width="465.0" height="26.0" rx="6" fill="#e7e3d7" />
+<rect x="80.0" y="476.0" width="20.9" height="26.0" rx="6" fill="#2a74a8" />
+<line x1="545.0" y1="470" x2="545.0" y2="508" stroke="#8e938a" stroke-width="1.5"/>
+<text x="545.0" y="526.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="end" >whole 1 to 7 scale</text>
+<text x="80.0" y="526.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >men rate it higher by</text>
+<text x="256.1" y="526.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >0.27 points</text>
+<text x="68.0" y="598.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >The coloured sliver is the sex difference, drawn to</text>
+<text x="68.0" y="620.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >scale against the full width of the rating scale.</text>
+<rect x="615.0" y="176.0" width="545.0" height="470.0" rx="16" fill="#f0ede4" />
+<text x="643.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="24" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >2  Whom they like in person</text>
+<text x="643.0" y="252.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Meta-analysis of 97 studies</text>
+<text x="643.0" y="274.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Eastwick et al. (2014)</text>
+<text x="655.0" y="322.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >How well a trait predicts romantic interest (r)</text>
+<text x="655.0" y="360.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Their attractiveness</text>
+<rect x="655.0" y="372.0" width="465.0" height="34.0" rx="6" fill="#e7e3d7" />
+<rect x="655.0" y="372.0" width="372.0" height="34.0" rx="6" fill="#1b1f1c" />
+<text x="1039.0" y="397.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >r ≈ .40</text>
+<text x="655.0" y="452.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Their earning prospects</text>
+<rect x="655.0" y="464.0" width="465.0" height="34.0" rx="6" fill="#e7e3d7" />
+<rect x="655.0" y="464.0" width="93.0" height="34.0" rx="6" fill="#c46a1c" />
+<text x="760.0" y="489.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >r ≈ .10</text>
+<line x1="655.0" y1="508" x2="655.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="655.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >0</text>
+<line x1="748.0" y1="508" x2="748.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="748.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >.1</text>
+<line x1="841.0" y1="508" x2="841.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="841.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >.2</text>
+<line x1="934.0" y1="508" x2="934.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="934.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >.3</text>
+<line x1="1027.0" y1="508" x2="1027.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="1027.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >.4</text>
+<line x1="1120.0" y1="508" x2="1120.0" y2="514" stroke="#8e938a" stroke-width="1.5"/>
+<text x="1120.0" y="534.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#8e938a" text-anchor="middle" >.5</text>
+<rect x="655.0" y="554.0" width="465.0" height="66.0" rx="10" fill="#faf8f3" />
+<text x="671.0" y="582.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Earning prospects: the same for men and women.</text>
+<text x="671.0" y="606.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >Sex difference about .03</text>
+<line x1="40" y1="680" x2="1160" y2="680" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="710.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Covers early attraction and existing couples, not long-term choice from a big pool, so the debate is still open.</text>
+</svg>

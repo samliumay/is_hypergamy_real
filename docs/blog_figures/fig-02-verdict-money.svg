@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="920" viewBox="0 0 1200 920">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="920.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >THE VERDICT, CLAIM BY CLAIM</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Is hypergamy real?</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Nine common claims about money and status, checked against the research.</text>
+<rect x="41.0" y="166.0" width="495.8" height="12.0" rx="3" fill="#2e8555" />
+<rect x="538.8" y="166.0" width="246.9" height="12.0" rx="3" fill="#c8820f" />
+<rect x="787.7" y="166.0" width="122.4" height="12.0" rx="3" fill="#c4553a" />
+<rect x="912.1" y="166.0" width="246.9" height="12.0" rx="3" fill="#a3282a" />
+<circle cx="46" cy="195" r="6" fill="#2e8555"/>
+<text x="58.0" y="201.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >4 × exists</text>
+<circle cx="174.0" cy="195" r="6" fill="#c8820f"/>
+<text x="186.0" y="201.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >2 × partly</text>
+<circle cx="302.0" cy="195" r="6" fill="#c4553a"/>
+<text x="314.0" y="201.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >1 × mostly not</text>
+<circle cx="463.6" cy="195" r="6" fill="#a3282a"/>
+<text x="475.6" y="201.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >2 × does not exist</text>
+<text x="64.0" y="236.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >CLAIM</text>
+<text x="880.0" y="236.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="middle" letter-spacing="1.6" >VERDICT</text>
+<text x="1040.0" y="236.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >EVIDENCE</text>
+<rect x="40.0" y="248.0" width="1120.0" height="58.0" rx="8" fill="#f0ede4" />
+<rect x="40.0" y="258.0" width="6.0" height="38.0" rx="3" fill="#2e8555" />
+<text x="64.0" y="284.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Women say a partner's earnings matter more than men say</text>
+<rect x="782.0" y="259.0" width="196.0" height="36.0" rx="18.0" fill="#2e8555" /><text x="880.0" y="283.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Exists</text>
+<rect x="1040.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="271.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="316.0" width="6.0" height="38.0" rx="3" fill="#c8820f" />
+<text x="64.0" y="342.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >That stated gap is large</text>
+<rect x="782.0" y="317.0" width="196.0" height="36.0" rx="18.0" fill="#c8820f" /><text x="880.0" y="341.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Partly</text>
+<rect x="1040.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="329.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="364.0" width="1120.0" height="58.0" rx="8" fill="#f0ede4" />
+<rect x="40.0" y="374.0" width="6.0" height="38.0" rx="3" fill="#2e8555" />
+<text x="64.0" y="400.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Both sexes rank kindness and intelligence above money and looks</text>
+<rect x="782.0" y="375.0" width="196.0" height="36.0" rx="18.0" fill="#2e8555" /><text x="880.0" y="399.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Exists</text>
+<rect x="1040.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="387.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="432.0" width="6.0" height="38.0" rx="3" fill="#c4553a" />
+<text x="64.0" y="458.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Stated status preferences predict whom people like in person</text>
+<rect x="782.0" y="433.0" width="196.0" height="36.0" rx="18.0" fill="#c4553a" /><text x="880.0" y="457.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Mostly not</text>
+<rect x="1040.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="445.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="480.0" width="1120.0" height="58.0" rx="8" fill="#f0ede4" />
+<rect x="40.0" y="490.0" width="6.0" height="38.0" rx="3" fill="#c8820f" />
+<text x="64.0" y="516.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Women marry up in education</text>
+<rect x="782.0" y="491.0" width="196.0" height="36.0" rx="18.0" fill="#c8820f" /><text x="880.0" y="515.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Partly</text>
+<rect x="1040.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="503.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="548.0" width="6.0" height="38.0" rx="3" fill="#2e8555" />
+<text x="64.0" y="574.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Women marry men who earn more</text>
+<rect x="782.0" y="549.0" width="196.0" height="36.0" rx="18.0" fill="#2e8555" /><text x="880.0" y="573.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Exists</text>
+<rect x="1040.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="561.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="596.0" width="1120.0" height="58.0" rx="8" fill="#f0ede4" />
+<rect x="40.0" y="606.0" width="6.0" height="38.0" rx="3" fill="#2e8555" />
+<text x="64.0" y="632.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Women partner with slightly older men</text>
+<rect x="782.0" y="607.0" width="196.0" height="36.0" rx="18.0" fill="#2e8555" /><text x="880.0" y="631.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Exists</text>
+<rect x="1040.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="619.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="664.0" width="6.0" height="38.0" rx="3" fill="#a3282a" />
+<text x="64.0" y="690.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Aiming “up” is a female trait</text>
+<rect x="782.0" y="665.0" width="196.0" height="36.0" rx="18.0" fill="#a3282a" /><text x="880.0" y="689.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Does not exist</text>
+<rect x="1040.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1102.0" y="677.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="40.0" y="712.0" width="1120.0" height="58.0" rx="8" fill="#f0ede4" />
+<rect x="40.0" y="722.0" width="6.0" height="38.0" rx="3" fill="#a3282a" />
+<text x="64.0" y="748.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="20" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >Most women chase the top 20% of men</text>
+<rect x="782.0" y="723.0" width="196.0" height="36.0" rx="18.0" fill="#a3282a" /><text x="880.0" y="747.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Does not exist</text>
+<rect x="1040.0" y="735.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1040.0" y="735.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1071.0" y="735.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="1071.0" y="735.0" width="26.0" height="12.0" rx="3" fill="#1b1f1c" />
+<rect x="1102.0" y="735.0" width="26.0" height="12.0" rx="3" fill="#e7e3d7" />
+<rect x="40.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<rect x="40.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#1b1f1c" />
+<rect x="59.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<rect x="59.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#1b1f1c" />
+<rect x="78.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<rect x="78.0" y="806.5" width="16.0" height="9.0" rx="3" fill="#1b1f1c" />
+<text x="102.0" y="816.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >strong: several large studies or meta-analyses agree</text>
+<rect x="562.4" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<rect x="562.4" y="806.5" width="16.0" height="9.0" rx="3" fill="#1b1f1c" />
+<rect x="581.4" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<rect x="581.4" y="806.5" width="16.0" height="9.0" rx="3" fill="#1b1f1c" />
+<rect x="600.4" y="806.5" width="16.0" height="9.0" rx="3" fill="#e7e3d7" />
+<text x="624.4" y="816.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >moderate</text>
+<line x1="40" y1="856" x2="1160" y2="856" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="886.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Summary of the literature review in the is_hypergamy_real repository.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="832" viewBox="0 0 1200 832">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="832.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >ONE WORD, FOUR CLAIMS</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >What does “hypergamy” even mean?</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Online arguments slide between four meanings. Research measures each one separately.</text>
+<text x="370.0" y="180.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >WHAT THE INTERNET SAYS</text>
+<text x="1030.0" y="180.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="middle" letter-spacing="1.6" >WHAT RESEARCH FINDS</text>
+<path d="M232,464.0 C290,464.0 230,257.0 296,257.0" fill="none" stroke="#c8820f" stroke-width="3" marker-end="url(#arrM)"/>
+<rect x="300.0" y="196.0" width="860.0" height="122.0" rx="14" fill="#f0ede4" />
+<rect x="300.0" y="196.0" width="8.0" height="122.0" rx="4" fill="#c8820f" />
+<circle cx="338" cy="232" r="18" fill="#c8820f"/>
+<text x="338.0" y="239.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >1</text>
+<text x="370.0" y="239.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Marrying up</text>
+<text x="370.0" y="272.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="18" font-weight="normal" font-style="italic" fill="#5b6159" text-anchor="start" >“Women always marry up.”</text>
+<text x="370.0" y="300.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.2" >MEASURED BY</text>
+<text x="478.0" y="300.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >census data on real couples: education, income, age</text>
+<rect x="925.0" y="218.0" width="210.0" height="36.0" rx="18.0" fill="#c8820f" /><text x="1030.0" y="242.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Partly</text>
+<text x="1030.0" y="276.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >Education gap flipped;</text>
+<text x="1030.0" y="296.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >income and age gaps remain</text>
+<path d="M232,464.0 C290,464.0 230,395.0 296,395.0" fill="none" stroke="#2e8555" stroke-width="3" marker-end="url(#arrM)"/>
+<rect x="300.0" y="334.0" width="860.0" height="122.0" rx="14" fill="#f0ede4" />
+<rect x="300.0" y="334.0" width="8.0" height="122.0" rx="4" fill="#2e8555" />
+<circle cx="338" cy="370" r="18" fill="#2e8555"/>
+<text x="338.0" y="377.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >2</text>
+<text x="370.0" y="377.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Saying you want up</text>
+<text x="370.0" y="410.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="18" font-weight="normal" font-style="italic" fill="#5b6159" text-anchor="start" >“Women want a rich partner.”</text>
+<text x="370.0" y="438.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.2" >MEASURED BY</text>
+<text x="478.0" y="438.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >surveys of how much people say each trait matters</text>
+<rect x="925.0" y="356.0" width="210.0" height="36.0" rx="18.0" fill="#2e8555" /><text x="1030.0" y="380.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Exists, small</text>
+<text x="1030.0" y="414.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >Earnings gap about 0.30</text>
+<text x="1030.0" y="434.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >on a 1 to 7 scale</text>
+<path d="M232,464.0 C290,464.0 230,533.0 296,533.0" fill="none" stroke="#2f7f86" stroke-width="3" marker-end="url(#arrM)"/>
+<rect x="300.0" y="472.0" width="860.0" height="122.0" rx="14" fill="#f0ede4" />
+<rect x="300.0" y="472.0" width="8.0" height="122.0" rx="4" fill="#2f7f86" />
+<circle cx="338" cy="508" r="18" fill="#2f7f86"/>
+<text x="338.0" y="515.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >3</text>
+<text x="370.0" y="515.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Choosing up</text>
+<text x="370.0" y="548.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="18" font-weight="normal" font-style="italic" fill="#5b6159" text-anchor="start" >“Women only date up.”</text>
+<text x="370.0" y="576.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.2" >MEASURED BY</text>
+<text x="478.0" y="576.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >messages, replies, speed dates, who pairs with whom</text>
+<rect x="925.0" y="494.0" width="210.0" height="36.0" rx="18.0" fill="#2f7f86" /><text x="1030.0" y="518.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Everyone does it</text>
+<text x="1030.0" y="552.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >Men and women both message</text>
+<text x="1030.0" y="572.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >about 25% “up”</text>
+<path d="M232,464.0 C290,464.0 230,671.0 296,671.0" fill="none" stroke="#a3282a" stroke-width="3" marker-end="url(#arrM)"/>
+<rect x="300.0" y="610.0" width="860.0" height="122.0" rx="14" fill="#f0ede4" />
+<rect x="300.0" y="610.0" width="8.0" height="122.0" rx="4" fill="#a3282a" />
+<circle cx="338" cy="646" r="18" fill="#a3282a"/>
+<text x="338.0" y="653.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >4</text>
+<text x="370.0" y="653.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >The strong online claim</text>
+<text x="370.0" y="686.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="18" font-weight="normal" font-style="italic" fill="#5b6159" text-anchor="start" >“80% of women chase the top 20% of men.”</text>
+<text x="370.0" y="714.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="12" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.2" >MEASURED BY</text>
+<text x="478.0" y="714.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" >nothing peer-reviewed; viral numbers trace to blogs</text>
+<rect x="925.0" y="632.0" width="210.0" height="36.0" rx="18.0" fill="#a3282a" /><text x="1030.0" y="656.1" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Does not exist</text>
+<text x="1030.0" y="690.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >Not as stated</text>
+<text x="1030.0" y="710.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" ></text>
+<circle cx="140" cy="464.0" r="92" fill="#1b1f1c"/>
+<circle cx="140" cy="464.0" r="80" fill="none" stroke="#faf8f3" stroke-width="1.5" stroke-dasharray="4 5"/>
+<text x="140.0" y="460.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="21" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >“Hypergamy”</text>
+<text x="140.0" y="486.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#cfd3cc" text-anchor="middle" >one word</text>
+<line x1="40" y1="772" x2="1160" y2="772" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="802.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Evidence for one meaning does not prove another. Verdicts and numbers from the post and the is_hypergamy_real literature review.</text>
+</svg>

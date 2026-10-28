@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="812" viewBox="0 0 1200 812">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="812.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >THE MALE-TALLER NORM</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Taller is wanted. Couples only partly follow.</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >What students say they want, next to who real couples are.</text>
+<rect x="40.0" y="176.0" width="545.0" height="540.0" rx="16" fill="#f0ede4" />
+<text x="68.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="24" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >1  The ideal height gap</text>
+<text x="68.0" y="252.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >650 Dutch students, Stulp et al. (2013a)</text>
+<line x1="90" y1="556" x2="535" y2="556" stroke="#1b1f1c" stroke-width="2"/>
+<line x1="90.0" y1="556" x2="90.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="90.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >0</text>
+<line x1="179.0" y1="556" x2="179.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="179.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >+5</text>
+<line x1="268.0" y1="556" x2="268.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="268.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >+10</text>
+<line x1="357.0" y1="556" x2="357.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="357.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >+15</text>
+<line x1="446.0" y1="556" x2="446.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="446.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >+20</text>
+<line x1="535.0" y1="556" x2="535.0" y2="564" stroke="#1b1f1c" stroke-width="2"/>
+<text x="535.0" y="586.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >+25</text>
+<text x="312.5" y="614.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >How much taller he is than she is (cm)</text>
+<line x1="232.4" y1="394" x2="232.4" y2="544" stroke="#2a74a8" stroke-width="3"/>
+<circle cx="232.4" cy="556" r="11" fill="#2a74a8" stroke="#f0ede4" stroke-width="3"/>
+<text x="240.4" y="368.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >Men's ideal</text>
+<text x="240.4" y="390.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >she is about 8 cm shorter</text>
+<line x1="463.8" y1="324" x2="463.8" y2="544" stroke="#c46a1c" stroke-width="3"/>
+<circle cx="463.8" cy="556" r="11" fill="#c46a1c" stroke="#f0ede4" stroke-width="3"/>
+<text x="483.8" y="298.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" >Women's ideal</text>
+<text x="483.8" y="320.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="end" >he is about 21 cm taller</text>
+<path d="M232.4,446 L232.4,436 L463.8,436 L463.8,446" fill="none" stroke="#5b6159" stroke-width="1.8"/>
+<text x="348.1" y="426.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="middle" >the two ideals</text>
+<rect x="615.0" y="176.0" width="545.0" height="540.0" rx="16" fill="#f0ede4" />
+<text x="643.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="24" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >2  Real couples</text>
+<text x="643.0" y="252.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >12,502 UK couples, Stulp et al. (2013b)</text>
+<text x="643.0" y="304.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Couples where the man is not taller</text>
+<text x="655.0" y="342.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Observed</text>
+<rect x="655.0" y="352.0" width="465.0" height="30.0" rx="6" fill="#e7e3d7" />
+<rect x="655.0" y="352.0" width="290.6" height="30.0" rx="6" fill="#1b1f1c" />
+<text x="957.6" y="375.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >7.5%</text>
+<text x="655.0" y="428.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >If people paired at random</text>
+<rect x="655.0" y="438.0" width="465.0" height="30.0" rx="6" fill="#e7e3d7" />
+<rect x="655.0" y="438.0" width="395.2" height="30.0" rx="6" fill="#8e938a" />
+<text x="1062.2" y="461.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >10.2%</text>
+<text x="655.0" y="536.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >About 1 couple in 13:</text>
+<rect x="661.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="675.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="697.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="711.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="733.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="747.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="769.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="783.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="805.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="819.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="841.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="855.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="877.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="891.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="913.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="927.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="949.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="963.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="985.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="999.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="1021.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="1035.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="1057.0" y="560.0" width="10.0" height="46.0" rx="3" fill="#b9bdb5" />
+<rect x="1071.0" y="570.0" width="10.0" height="36.0" rx="3" fill="#cfd2ca" />
+<rect x="1093.0" y="572.0" width="10.0" height="34.0" rx="3" fill="#2a74a8" />
+<rect x="1107.0" y="562.0" width="10.0" height="44.0" rx="3" fill="#c46a1c" />
+<line x1="655" y1="607" x2="1123" y2="607" stroke="#d9d5c9" stroke-width="2"/>
+<text x="655.0" y="646.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Men are taller on average, so chance alone gives a taller</text>
+<text x="655.0" y="668.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >man about 90% of the time. Preference adds only a little.</text>
+<text x="1117.0" y="558.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" >she is taller</text>
+<line x1="40" y1="750" x2="1160" y2="750" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="780.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Height on dating profiles is also inflated, mostly by men, so app “height effects” come with a measurement problem.</text>
+</svg>

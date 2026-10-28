@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="726" viewBox="0 0 1200 726">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="726.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >EVERYONE AIMS UP</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Aiming high is not a female trait. Nearly everyone does it.</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Whom people message on a large US dating site, and who gets a reply.</text>
+<rect x="40.0" y="178.0" width="640.0" height="452.0" rx="16" fill="#f0ede4" />
+<text x="68.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Whom people message</text>
+<text x="68.0" y="248.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Bruch and Newman (2018)</text>
+<defs><linearGradient id="desir" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#e7e3d7"/><stop offset="1" stop-color="#1b1f1c" stop-opacity="0.22"/></linearGradient></defs>
+<text x="240.0" y="290.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="22" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="middle" >Men</text>
+<rect x="218.0" y="306.0" width="44.0" height="260.0" rx="10" fill="url(#desir)" />
+<line x1="210" y1="384.0" x2="270" y2="384.0" stroke="#2a74a8" stroke-width="4" stroke-dasharray="6 4"/>
+<circle cx="178" cy="372.5" r="11.049999999999999" fill="#2a74a8"/><path d="M161.0,411.6 Q161.0,387.8 178,387.8 Q195.0,387.8 195.0,411.6 Z" fill="#2a74a8"/>
+<text x="148.0" y="390.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="end" >you</text>
+<line x1="210" y1="338.5" x2="270" y2="338.5" stroke="#2a74a8" stroke-width="4"/>
+<circle cx="240" cy="338.5" r="9" fill="#2a74a8"/>
+<text x="200.0" y="330.5" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="end" >whom they</text>
+<text x="200.0" y="349.5" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="end" >message</text>
+<path d="M274,384.0 C310,384.0 310,338.5 280,338.5" fill="none" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<text x="316.0" y="370.2" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="26" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >+25%</text>
+<text x="510.0" y="290.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="22" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="middle" >Women</text>
+<rect x="488.0" y="306.0" width="44.0" height="260.0" rx="10" fill="url(#desir)" />
+<line x1="480" y1="384.0" x2="540" y2="384.0" stroke="#c46a1c" stroke-width="4" stroke-dasharray="6 4"/>
+<circle cx="448" cy="372.5" r="11.049999999999999" fill="#c46a1c"/><path d="M431.0,411.6 Q431.0,387.8 448,387.8 Q465.0,387.8 465.0,411.6 Z" fill="#c46a1c"/>
+<text x="418.0" y="390.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" >you</text>
+<line x1="480" y1="338.5" x2="540" y2="338.5" stroke="#c46a1c" stroke-width="4"/>
+<circle cx="510" cy="338.5" r="9" fill="#c46a1c"/>
+<text x="470.0" y="330.5" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" >whom they</text>
+<text x="470.0" y="349.5" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" >message</text>
+<path d="M544,384.0 C580,384.0 580,338.5 550,338.5" fill="none" stroke="#1b1f1c" stroke-width="3" marker-end="url(#arr)"/>
+<text x="586.0" y="370.2" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="26" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >+25%</text>
+<text x="80.0" y="304.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="1" font-weight="normal" font-style="normal" fill="#1b1f1c" text-anchor="start" ></text>
+<text x="68.0" y="600.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Columns schematic: desirability from the bottom up. The 25% is the</text>
+<text x="68.0" y="618.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >measured average for both sexes.</text>
+<rect x="700.0" y="178.0" width="460.0" height="452.0" rx="16" fill="#f0ede4" />
+<text x="728.0" y="222.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="23" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Who sends, who gets replies</text>
+<text x="728.0" y="248.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Kreager et al. (2014)</text>
+<text x="728.0" y="302.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Messages sent</text>
+<text x="728.0" y="346.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >Men</text>
+<rect x="810.0" y="328.0" width="34.0" height="24.0" rx="3" fill="#2a74a8" /><path d="M810,329 L827,341 L844,329" fill="none" stroke="#f0ede4" stroke-width="2"/>
+<rect x="854.0" y="328.0" width="34.0" height="24.0" rx="3" fill="#2a74a8" /><path d="M854,329 L871,341 L888,329" fill="none" stroke="#f0ede4" stroke-width="2"/>
+<rect x="898.0" y="328.0" width="34.0" height="24.0" rx="3" fill="#2a74a8" /><path d="M898,329 L915,341 L932,329" fill="none" stroke="#f0ede4" stroke-width="2"/>
+<rect x="942.0" y="328.0" width="34.0" height="24.0" rx="3" fill="#2a74a8" /><path d="M942,329 L959,341 L976,329" fill="none" stroke="#f0ede4" stroke-width="2"/>
+<text x="728.0" y="386.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >Women</text>
+<rect x="810.0" y="368.0" width="34.0" height="24.0" rx="3" fill="#c46a1c" /><path d="M810,369 L827,381 L844,369" fill="none" stroke="#f0ede4" stroke-width="2"/>
+<text x="860.0" y="386.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >about 4 times fewer</text>
+<text x="728.0" y="442.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Chance a message gets a reply</text>
+<text x="728.0" y="486.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >Men</text>
+<rect x="810.0" y="468.0" width="150.0" height="24.0" rx="4" fill="#2a74a8" />
+<text x="970.0" y="486.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >1x</text>
+<text x="728.0" y="526.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >Women</text>
+<rect x="810.0" y="508.0" width="300.0" height="24.0" rx="4" fill="#c46a1c" />
+<text x="1120.0" y="526.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >2x</text>
+<text x="728.0" y="600.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Relative scale; only the ratios are from the study.</text>
+<line x1="40" y1="664" x2="1160" y2="664" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="694.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Messages sent “up” go unanswered more often, so couples end up roughly matched.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="738" viewBox="0 0 1200 738">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="738.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >MARRY UP, REVERSED</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Same wish, new supply</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Share of couples with an education gap, by who has more education.</text>
+<rect x="898.0" y="30.0" width="262.0" height="34.0" rx="17" fill="#fbeceb" stroke="#b8322b" stroke-width="1.5"/><text x="1029.0" y="52.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="bold" font-style="normal" fill="#b8322b" text-anchor="middle" letter-spacing="1.4" >ILLUSTRATIVE, NOT DATA</text>
+<rect x="130.0" y="170.0" width="574.2" height="430.0" rx="0" fill="#2a74a8" fill-opacity="0.06"/>
+<rect x="704.2" y="170.0" width="415.8" height="430.0" rx="0" fill="#c46a1c" fill-opacity="0.07"/>
+<text x="146.0" y="584.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" letter-spacing="1.4" >THEN: MORE MEN HOLD DEGREES</text>
+<text x="1104.0" y="584.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="end" letter-spacing="1.4" >NOW: MORE WOMEN HOLD DEGREES</text>
+<line x1="130" y1="497.5" x2="1120" y2="497.5" stroke="#d9d5c9" stroke-width="1"/>
+<line x1="130" y1="395.0" x2="1120" y2="395.0" stroke="#d9d5c9" stroke-width="1"/>
+<line x1="130" y1="292.5" x2="1120" y2="292.5" stroke="#d9d5c9" stroke-width="1"/>
+<path d="M130.0,240.5 L142.4,240.6 L154.8,240.8 L167.1,241.0 L179.5,241.2 L191.9,241.4 L204.2,241.7 L216.6,242.0 L229.0,242.3 L241.4,242.7 L253.8,243.1 L266.1,243.6 L278.5,244.1 L290.9,244.6 L303.2,245.3 L315.6,246.0 L328.0,246.7 L340.4,247.6 L352.8,248.6 L365.1,249.6 L377.5,250.8 L389.9,252.1 L402.2,253.6 L414.6,255.2 L427.0,256.9 L439.4,258.8 L451.8,261.0 L464.1,263.3 L476.5,265.8 L488.9,268.6 L501.2,271.7 L513.6,274.9 L526.0,278.5 L538.4,282.3 L550.8,286.4 L563.1,290.8 L575.5,295.5 L587.9,300.5 L600.2,305.8 L612.6,311.3 L625.0,317.1 L637.4,323.1 L649.8,329.3 L662.1,335.6 L674.5,342.1 L686.9,348.8 L699.2,355.4 L711.6,362.1 L724.0,368.8 L736.4,375.4 L748.8,381.9 L761.1,388.2 L773.5,394.4 L785.9,400.3 L798.2,406.0 L810.6,411.5 L823.0,416.7 L835.4,421.6 L847.8,426.3 L860.1,430.6 L872.5,434.7 L884.9,438.4 L897.2,441.9 L909.6,445.2 L922.0,448.2 L934.4,450.9 L946.8,453.4 L959.1,455.7 L971.5,457.8 L983.9,459.7 L996.2,461.4 L1008.6,462.9 L1021.0,464.4 L1033.4,465.6 L1045.8,466.8 L1058.1,467.8 L1070.5,468.8 L1082.9,469.6 L1095.2,470.4 L1107.6,471.1 L1120.0,471.7" fill="none" stroke="#2a74a8" stroke-width="7" stroke-linecap="round"/>
+<path d="M130.0,488.1 L142.4,488.0 L154.8,487.8 L167.1,487.7 L179.5,487.5 L191.9,487.3 L204.2,487.0 L216.6,486.7 L229.0,486.4 L241.4,486.1 L253.8,485.7 L266.1,485.3 L278.5,484.9 L290.9,484.3 L303.2,483.8 L315.6,483.1 L328.0,482.4 L340.4,481.6 L352.8,480.7 L365.1,479.8 L377.5,478.7 L389.9,477.5 L402.2,476.2 L414.6,474.7 L427.0,473.1 L439.4,471.4 L451.8,469.4 L464.1,467.3 L476.5,465.0 L488.9,462.4 L501.2,459.6 L513.6,456.6 L526.0,453.4 L538.4,449.9 L550.8,446.1 L563.1,442.1 L575.5,437.8 L587.9,433.3 L600.2,428.5 L612.6,423.4 L625.0,418.2 L637.4,412.7 L649.8,407.0 L662.1,401.2 L674.5,395.2 L686.9,389.2 L699.2,383.1 L711.6,377.0 L724.0,370.9 L736.4,364.9 L748.8,358.9 L761.1,353.1 L773.5,347.5 L785.9,342.1 L798.2,336.8 L810.6,331.8 L823.0,327.1 L835.4,322.6 L847.8,318.4 L860.1,314.4 L872.5,310.7 L884.9,307.2 L897.2,304.0 L909.6,301.1 L922.0,298.4 L934.4,295.9 L946.8,293.6 L959.1,291.5 L971.5,289.6 L983.9,287.8 L996.2,286.3 L1008.6,284.8 L1021.0,283.5 L1033.4,282.4 L1045.8,281.3 L1058.1,280.4 L1070.5,279.5 L1082.9,278.7 L1095.2,278.0 L1107.6,277.4 L1120.0,276.8" fill="none" stroke="#c46a1c" stroke-width="7" stroke-linecap="round"/>
+<line x1="704.2" y1="170" x2="704.2" y2="600" stroke="#5b6159" stroke-width="2" stroke-dasharray="7 6"/>
+<circle cx="704.2" cy="369.5" r="13" fill="#faf8f3" stroke="#1b1f1c" stroke-width="4"/>
+<rect x="718.2" y="178.0" width="300.0" height="36.0" rx="18" fill="#1b1f1c" />
+<text x="868.2" y="202.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#fff" text-anchor="middle" >Women overtake men in education</text>
+<text x="160.0" y="221.2" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >He has more education (“she married up”)</text>
+<text x="160.0" y="527.5" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="21" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >She has more education (“she married down”)</text>
+<line x1="130" y1="600" x2="1120" y2="600" stroke="#1b1f1c" stroke-width="2"/>
+<line x1="130" y1="170" x2="130" y2="600" stroke="#1b1f1c" stroke-width="2"/>
+<text x="130.0" y="634.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Then (mid 20th century)</text>
+<text x="1120.0" y="634.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="end" >Now (2010s)</text>
+<text x="100.0" y="395.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" transform="rotate(-90 100 395.0)">Share of couples with an education gap</text>
+<line x1="40" y1="678" x2="1160" y2="678" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="708.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Shape only, based on the global trend in Esteve et al. (2016). Once more women hold degrees, “down” becomes common.</text>
+</svg>
