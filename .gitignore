@@ -22,3 +22,6 @@ target/
 # OS / editor
 .DS_Store
 .obsidian/workspace*
+
+# Private code notes
+docs/code.md
