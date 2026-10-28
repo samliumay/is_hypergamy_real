@@ -2,7 +2,7 @@
 //! the screenshots in the README and the blog post.
 
 use crate::model::{
-    Build, Education, Gender, Goal, IncomeBand, Looks, Profile, Region, Size, Smarts,
+    Build, Education, Gender, Goal, IncomeBand, Looks, Profile, RedFlags, Region, Size, Smarts,
 };
 
 /// Every demo, by the name given after `--demo`.
@@ -19,6 +19,7 @@ pub const DEMOS: [(&str, Profile); 4] = [
             build: Build::GymRegular,
             smarts: Smarts::Smart,
             size: Size::PreferNotToSay,
+            red_flags: RedFlags::None,
             region: Region::TurkeyMiddleEast,
             goal: Goal::LongTerm,
         },
@@ -35,6 +36,7 @@ pub const DEMOS: [(&str, Profile); 4] = [
             build: Build::Average,
             smarts: Smarts::VerySmart,
             size: Size::PreferNotToSay,
+            red_flags: RedFlags::None,
             region: Region::SouthernEurope,
             goal: Goal::Casual,
         },
@@ -51,6 +53,7 @@ pub const DEMOS: [(&str, Profile); 4] = [
             build: Build::CouchPotato,
             smarts: Smarts::Average,
             size: Size::BelowAverage,
+            red_flags: RedFlags::None,
             region: Region::EastAsia,
             goal: Goal::Undecided,
         },
@@ -67,6 +70,7 @@ pub const DEMOS: [(&str, Profile); 4] = [
             build: Build::CouchPotato,
             smarts: Smarts::GalaxyBrain,
             size: Size::PreferNotToSay,
+            red_flags: RedFlags::None,
             region: Region::EastAsia,
             goal: Goal::Undecided,
         },

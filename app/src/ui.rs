@@ -4,7 +4,7 @@ use eframe::egui::{self, Color32, RichText};
 
 use crate::model::{
     self, Build, Contribution, Education, Gender, Goal, HEIGHT_RANGE_CM, IncomeBand, Looks,
-    MAX_AGE, MIN_AGE, Profile, ProfileError, Region, Size, Smarts, Verdict,
+    MAX_AGE, MIN_AGE, Profile, ProfileError, RedFlags, Region, Size, Smarts, Verdict,
 };
 use crate::{gauge, memes};
 
@@ -171,6 +171,16 @@ impl MeterApp {
                     enum_combo(ui, "size", &mut self.profile.size, &Size::ALL, Size::label);
                     ui.end_row();
                 }
+
+                ui.label("Red flags 🚩");
+                enum_combo(
+                    ui,
+                    "red_flags",
+                    &mut self.profile.red_flags,
+                    &RedFlags::ALL,
+                    RedFlags::label,
+                );
+                ui.end_row();
 
                 ui.label("Country / region");
                 enum_combo(

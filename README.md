@@ -10,7 +10,7 @@ deliberately silly desktop app, the **Hypergamy Meter**.
 ## The Hypergamy Meter
 
 You enter a few facts (age, gender, education, income band, optional height,
-self-rated looks, build and smarts, an optional size joke for men,
+self-rated looks, build and smarts, red flags, an optional size joke for men,
 country/region, relationship goal), press **Consult the market**, and the app
 gives you a completely unscientific "market verdict":
 

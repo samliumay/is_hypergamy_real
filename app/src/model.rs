@@ -36,6 +36,9 @@
 //!  * The relationship goal reweights everything: short-term choices lean on
 //!    looks and build, long-term ones on status and smarts (Kenrick et al.
 //!    1990; Li & Kenrick 2006).
+//!  * Red flags (Dark Triad traits, literature_review.md section 11.10): a
+//!    small first-date bonus that turns into a long-term penalty (Jauk et
+//!    al. 2016; Dufner et al. 2013; Ataman et al. 2025). A joke, not advice.
 //!  * Ethnicity is deliberately not an input: the studies on it document
 //!    discrimination, and a score would repeat it (review, section 11.8).
 //!
@@ -377,6 +380,49 @@ impl Size {
     }
 }
 
+/// Self-rated red flags (narcissism, scheming, charming chaos). A joke input.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum RedFlags {
+    /// None that anyone has noticed.
+    None,
+    /// One or two.
+    AFew,
+    /// Several.
+    Several,
+    /// A whole parade.
+    Parade,
+}
+
+impl RedFlags {
+    /// Every variant, in display order.
+    pub const ALL: [RedFlags; 4] = [
+        RedFlags::None,
+        RedFlags::AFew,
+        RedFlags::Several,
+        RedFlags::Parade,
+    ];
+
+    /// Human-readable label.
+    pub const fn label(self) -> &'static str {
+        match self {
+            RedFlags::None => "None (that I know of)",
+            RedFlags::AFew => "A few",
+            RedFlags::Several => "Several",
+            RedFlags::Parade => "A whole parade 🚩",
+        }
+    }
+
+    /// Number of flags, 0 to 3.
+    const fn level(self) -> f32 {
+        match self {
+            RedFlags::None => 0.0,
+            RedFlags::AFew => 1.0,
+            RedFlags::Several => 2.0,
+            RedFlags::Parade => 3.0,
+        }
+    }
+}
+
 /// Everything the user enters.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Profile {
@@ -398,6 +444,8 @@ pub struct Profile {
     pub smarts: Smarts,
     /// Penis size (men only; ignored for women).
     pub size: Size,
+    /// Self-rated red flags.
+    pub red_flags: RedFlags,
     /// Country or region.
     pub region: Region,
     /// Relationship goal.
@@ -416,6 +464,7 @@ impl Default for Profile {
             build: Build::Average,
             smarts: Smarts::Average,
             size: Size::PreferNotToSay,
+            red_flags: RedFlags::None,
             region: Region::TurkeyMiddleEast,
             goal: Goal::LongTerm,
         }
@@ -468,6 +517,8 @@ pub enum Factor {
     Smarts,
     /// Penis size (men and non-binary users who answer).
     Size,
+    /// Red flags; already goal-specific, so `goal_weight` leaves it alone.
+    RedFlags,
     /// Relationship goal.
     Goal,
 }
@@ -484,6 +535,7 @@ impl Factor {
             Factor::Build => "Build",
             Factor::Smarts => "Smarts",
             Factor::Size => "Size",
+            Factor::RedFlags => "Red flags",
             Factor::Goal => "Goal",
         }
     }
@@ -783,6 +835,41 @@ fn size_contribution(size: Size, gender: Gender) -> Option<Contribution> {
     })
 }
 
+/// Red-flags contribution: per flag, +3 for casual (capped at +8), -5 for
+/// long-term (capped at -15), -8 for marriage (capped at -24), 0 when
+/// undecided. Red flags win the first date, not the marriage.
+fn red_flags_contribution(flags: RedFlags, goal: Goal) -> Contribution {
+    let level = flags.level();
+    let (delta, note) = match goal {
+        Goal::Casual => (
+            (3.0 * level).min(8.0),
+            "Casual: red flags win the first date. Mostly thanks to confidence.",
+        ),
+        Goal::LongTerm => (
+            (-5.0 * level).max(-15.0),
+            "Long-term: the charm fades once people get to know you. Studies agree.",
+        ),
+        Goal::Marriage => (
+            (-8.0 * level).max(-24.0),
+            "Marriage: red flags win the first date, not the marriage.",
+        ),
+        Goal::Undecided => (
+            0.0,
+            "Undecided: the flags are waving at nobody in particular.",
+        ),
+    };
+    let note = if flags == RedFlags::None {
+        "No red flags: boring on paper, great in year five."
+    } else {
+        note
+    };
+    Contribution {
+        factor: Factor::RedFlags,
+        delta,
+        note,
+    }
+}
+
 /// How much the relationship goal stretches or shrinks each factor.
 /// Short-term choices lean on looks and build; long-term ones on status and
 /// smarts (Kenrick et al. 1990; Li & Kenrick 2006). Goal itself is 1.
@@ -838,6 +925,7 @@ pub fn contributions(profile: &Profile) -> Vec<Contribution> {
     out.push(build_contribution(profile.build, profile.gender));
     out.push(smarts_contribution(profile.smarts));
     out.extend(size_contribution(profile.size, profile.gender));
+    out.push(red_flags_contribution(profile.red_flags, profile.goal));
     out.push(goal_contribution(profile.goal));
     for c in &mut out {
         c.delta *= goal_weight(profile.goal, c.factor);
@@ -982,6 +1070,17 @@ mod tests {
             assert!(delta.abs() <= 1.0);
         }
         assert!(size_contribution(Size::PreferNotToSay, Gender::Man).is_none());
+    }
+
+    #[test]
+    fn red_flags_help_casual_and_hurt_marriage() {
+        let d = |flags, goal| red_flags_contribution(flags, goal).delta;
+        assert_eq!(d(RedFlags::Parade, Goal::Casual), 8.0);
+        assert_eq!(d(RedFlags::AFew, Goal::LongTerm), -5.0);
+        assert_eq!(d(RedFlags::Parade, Goal::Marriage), -24.0);
+        assert_eq!(d(RedFlags::None, Goal::Marriage), 0.0);
+        // The goal weight does not stretch it a second time.
+        assert_eq!(goal_weight(Goal::Casual, Factor::RedFlags), 1.0);
     }
 
     #[test]
