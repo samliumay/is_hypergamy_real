@@ -1,0 +1,22 @@
+% Fig.: goal weights of the Hypergamy Meter, copied from goal_weight() in app/src/model.rs.
+% Illustrative: hand-picked multipliers, not estimates. Black and grey only.
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.92\columnwidth, height=3.5cm,
+  ybar, bar width=10pt, ymin=0, ymax=1.75,
+  ytick={0,0.5,1,1.5}, ylabel={goal weight $w_{g,k}$},
+  ylabel style={font=\footnotesize}, yticklabel style={font=\footnotesize},
+  symbolic x coords={Casual,Long-term / marriage,Undecided},
+  xtick=data, xticklabel style={font=\footnotesize},
+  enlarge x limits=0.25,
+  nodes near coords, nodes near coords style={font=\scriptsize},
+  every node near coord/.append style={/pgf/number format/.cd, fixed, precision=1},
+  legend style={font=\scriptsize, at={(0.5,1.03)}, anchor=south, draw=none, legend columns=2, /tikz/every even column/.append style={column sep=8pt}}, area legend,
+  axis lines*=left, ymajorgrids, grid style={black!12},
+]
+\addplot[draw=black, fill=black!70] coordinates {(Casual,1.5) (Long-term / marriage,1.0) (Undecided,1.0)};
+\addplot[draw=black, fill=black!20] coordinates {(Casual,0.5) (Long-term / marriage,1.2) (Undecided,1.0)};
+\legend{{looks, build},{education, income, smarts}}
+\draw[dashed, black!60] ({rel axis cs:0,0} |- {axis cs:Casual,1}) -- ({rel axis cs:1,0} |- {axis cs:Casual,1});
+\end{axis}
+\end{tikzpicture}

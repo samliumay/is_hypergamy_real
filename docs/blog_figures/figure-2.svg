@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680">
+<rect width="1200" height="680" fill="#ffffff"/>
+<text x="40" y="55" font-family="Noto Serif, DejaVu Serif, serif" font-size="30" font-weight="bold" fill="#222">Marry up, reversed</text>
+<text x="40" y="90" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" fill="#a8322d" font-style="italic">Illustrative shape only, not data. Based on the global trend in Esteve et al. (2016).</text>
+<line x1="130" y1="560" x2="1120" y2="560" stroke="#333" stroke-width="2"/>
+<line x1="130" y1="120" x2="130" y2="560" stroke="#333" stroke-width="2"/>
+<path d="M130.0,201.1 L154.8,201.6 L179.5,202.2 L204.2,202.9 L229.0,203.9 L253.8,205.0 L278.5,206.5 L303.2,208.2 L328.0,210.4 L352.8,213.1 L377.5,216.4 L402.2,220.4 L427.0,225.2 L451.8,231.0 L476.5,237.9 L501.2,246.0 L526.0,255.4 L550.8,266.1 L575.5,278.1 L600.2,291.2 L625.0,305.4 L649.8,320.3 L674.5,335.6 L699.2,350.9 L724.0,365.8 L748.8,380.0 L773.5,393.1 L798.2,405.1 L823.0,415.8 L847.8,425.2 L872.5,433.3 L897.2,440.2 L922.0,446.0 L946.8,450.8 L971.5,454.8 L996.2,458.1 L1021.0,460.8 L1045.8,463.0 L1070.5,464.7 L1095.2,466.2 L1120.0,467.3" fill="none" stroke="#2b5c8a" stroke-width="6"/>
+<path d="M130.0,479.2 L154.8,478.8 L179.5,478.3 L204.2,477.7 L229.0,476.9 L253.8,475.9 L278.5,474.7 L303.2,473.2 L328.0,471.4 L352.8,469.1 L377.5,466.4 L402.2,463.0 L427.0,459.0 L451.8,454.1 L476.5,448.3 L501.2,441.6 L526.0,433.7 L550.8,424.7 L575.5,414.7 L600.2,403.6 L625.0,391.7 L649.8,379.2 L674.5,366.4 L699.2,353.6 L724.0,341.1 L748.8,329.2 L773.5,318.1 L798.2,308.1 L823.0,299.1 L847.8,291.2 L872.5,284.5 L897.2,278.7 L922.0,273.8 L946.8,269.8 L971.5,266.4 L996.2,263.7 L1021.0,261.4 L1045.8,259.6 L1070.5,258.1 L1095.2,256.9 L1120.0,255.9" fill="none" stroke="#c07d10" stroke-width="6"/>
+<line x1="701.2" y1="120" x2="701.2" y2="560" stroke="#999" stroke-width="2" stroke-dasharray="8 6"/>
+<circle cx="701.2" cy="352.1" r="8" fill="#333"/>
+<text x="715.2" y="144" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" fill="#444">Women overtake men in education</text>
+<text x="159.8" y="185.5" font-family="Noto Serif, DejaVu Serif, serif" font-size="21" font-weight="bold" fill="#2b5c8a">He has more education (“she married up”)</text>
+<text x="159.8" y="512.9" font-family="Noto Serif, DejaVu Serif, serif" font-size="21" font-weight="bold" fill="#c07d10">She has more education (“she married down”)</text>
+<text x="130" y="596" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" fill="#444">Then (mid 20th century)</text>
+<text x="1120" y="596" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" fill="#444" text-anchor="end">Now (2010s)</text>
+<text x="110" y="340.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="19" fill="#444" text-anchor="middle" transform="rotate(-90 110 340.0)">Share of couples with an education gap</text>
+<text x="40" y="650" font-family="Noto Serif, DejaVu Serif, serif" font-size="18" fill="#555">Same wish for a similar partner, new supply: once more women hold degrees, “down” becomes common.</text>
+</svg>

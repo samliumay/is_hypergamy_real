@@ -1,4 +1,4 @@
-%% is_hypergamy_real: short fun paper, first version 2026-10-28.
+%% is_hypergamy_real: short fun paper, first version 2026-10-28; "Beyond status" update 2026-10-28.
 %% Sources: ../literature_review.md, ../notes.md, ../bibliography.bib (verified keys only).
 %% Every number in the text comes from ../notes.md; see paper/notes.md for the list.
 \documentclass[conference,a4paper]{IEEEtran}
@@ -26,10 +26,11 @@
 samliumay965@gmail.com}}
 
 \begin{document}
+\bstctlcite{IEEEexample:BSTcontrol}
 \maketitle
 
 \begin{abstract}
-Online, ``hypergamy'' is used as a law of nature: women always marry up, and most of them chase the top 20\% of men. In the research literature the word covers at least four separate claims, and the evidence differs for each. We sort published findings by claim. On average, women in almost every country studied say a partner's earning prospects matter more to them than men say, but the gap is small on any single trait, and both sexes rank kindness and intelligence higher. Once people meet face to face, earning prospects predict attraction only weakly, and about equally for both sexes. Women marrying up in education was the norm for most of the twentieth century and has now reversed in most countries; models show that the reversal follows the supply of educated men and women, with no change in preferences needed. Women still tend to partner with men who earn more and who are a few years older. The ``80/20'' claim is not supported: attention on dating sites is unequal, but men and women aim above themselves by about the same amount, and most couples match like with like. We close with the Hypergamy Meter, a desktop toy whose hand-picked weights make it a joke, not a measurement.
+Online, ``hypergamy'' is used as a law of nature: women always marry up, and most of them chase the top 20\% of men. In the research literature the word covers at least four separate claims, and the evidence differs for each. We sort published findings by claim. On average, women in almost every country studied say a partner's earning prospects matter more to them than men say, but the gap is small on any single trait, and both sexes rank kindness and intelligence higher. Once people meet face to face, earning prospects predict attraction only weakly, and about equally for both sexes. Women marrying up in education was the norm for most of the twentieth century and has now reversed in most countries; models show that the reversal follows the supply of educated men and women, with no change in preferences needed. Women still tend to partner with men who earn more and who are a few years older. The ``80/20'' claim is not supported: attention on dating sites is unequal, but men and women aim above themselves by about the same amount, and most couples match like with like. Beyond status, women's stronger interest in a partner's status is mostly a long-term preference: for casual partners both sexes put looks first, and the claimed shifts in women's taste around ovulation have not held up in large preregistered studies. Height, build, penis size and intelligence count in ratings, mostly by small amounts, and couples resemble each other in height and intelligence. Most of the famous dating-app numbers, such as the ``Gini of likes'', come from blogs and press stories. Racial hierarchies on dating sites are well documented, and we treat them as discrimination. We close with the Hypergamy Meter, a desktop toy whose hand-picked weights make it a joke, not a measurement. It leaves ethnicity out on purpose.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -46,6 +47,7 @@ This paper sorts the claims and checks each one against the evidence. It is a si
 \item a split of ``hypergamy'' into four claims, each with the kind of data that could support it (Fig.~\ref{fig:concept});
 \item a verdict for each claim, graded by strength of evidence (Table~\ref{tab:verdict});
 \item a short account of the three main explanations, including a supply-based model in which hypergamy appears and then reverses without anyone's preferences changing \cite{grow2015};
+\item a second verdict table for claims beyond status (Table~\ref{tab:beyond}) and an evidence grade for each famous dating-app number (Table~\ref{tab:appnums});
 \item a description of the Hypergamy Meter, and a plain statement of why its output means nothing.
 \end{itemize}
 
@@ -80,7 +82,8 @@ Table~\ref{tab:verdict} summarises the verdicts. \emph{Strong} means several lar
 \label{tab:verdict}
 \footnotesize
 \renewcommand{\arraystretch}{1.12}
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.3cm} c c >{\raggedright\arraybackslash}p{4.6cm} l >{\raggedright\arraybackslash}p{2.9cm}@{}}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.85cm} c c >{\raggedright\arraybackslash}p{4.5cm} l >{\raggedright\arraybackslash}p{2.9cm}@{}}
 \toprule
 \textbf{Claim} & \textbf{Def.} & & \textbf{Verdict} & \textbf{Strength} & \textbf{Main sources}\\
 \midrule
@@ -161,7 +164,7 @@ On a large US site, desirability formed one shared hierarchy, and men and women 
 \begin{figure*}[t]
 \centering
 \input{figures/pipeline.tex}
-\caption{The Hypergamy Meter pipeline, as implemented in \texttt{app/src/model.rs} and \texttt{app/src/memes.rs}. Every step is a pure function; the meme card shown is the one for the lowest tier. The weights are illustrative, not estimates.}
+\caption{The Hypergamy Meter pipeline, as implemented in \texttt{app/src/model.rs} and \texttt{app/src/memes.rs}. Every step is a pure function. The two cards are the lowest-tier memes for men and for women (non-binary users get ``IT'S OVER (ALL GENDERS EDITION)''). The weights are illustrative, not estimates.}
 \label{fig:pipeline}
 \end{figure*}
 
@@ -170,9 +173,105 @@ The claim is that most women compete for the top fifth of men. The best research
 
 The peer-reviewed data tell a different story. Attention is unequal for both sexes and men get fewer replies, but both sexes aim above themselves by about the same amount, women's messages are not limited to a top 20\%, and final couples are mostly matched like with like \cite{bruch2018,kreager2014}. Even OkCupid's 2009 post, a likely root of the ``women rate 80\% of men below average'' line, reported that women's messaging was only slightly skewed toward attractive men \cite{rudder2009}. Attention inequality on one app is not partnering inequality in a population. Verdict: not supported as stated.
 
+\section{Beyond Status}
+\label{sec:beyond}
+Online arguments about dating go well past money and degrees: casual versus serious dating, height, build, penis size, intelligence, looks, age and race. Table~\ref{tab:beyond} gives the verdicts on the same scale as Table~\ref{tab:verdict}. One warning applies to most of it. Much of this evidence comes from small groups of Western students rating photos, figures or questionnaires, so it measures stated or first-impression preferences (D2, or D3 at first contact). Where data on real contacts or couples exist, the effects are usually smaller.
+
+\begin{table*}[t]
+\centering
+\caption{Verdicts beyond status, same symbols and strength scale as Table~\ref{tab:verdict}.}
+\label{tab:beyond}
+\footnotesize
+\renewcommand{\arraystretch}{1.12}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{5.85cm} c c >{\raggedright\arraybackslash}p{4.5cm} l >{\raggedright\arraybackslash}p{2.9cm}@{}}
+\toprule
+\textbf{Claim} & \textbf{Def.} & & \textbf{Verdict} & \textbf{Strength} & \textbf{Main sources}\\
+\midrule
+\rowcolor{black!6}
+Women weight status more for long-term partners; for short-term partners both sexes put looks first & D2 & \vexists & exists, in stated preferences & moderate & \cite{buss1993,kenrick1990,likenrick2006,braun2006}\\
+Men lower their standards for casual sex far more than women, but not for a long-term partner & D2 & \vexists & exists (stated) & moderate & \cite{kenrick1990,buss1993}\\
+\rowcolor{black!6}
+Women's taste shifts toward masculine men around ovulation & D2 & \vnot & mostly not: meta-analyses disagree, large preregistered studies find no shift & moderate & \cite{gildersleeve2014,wood2014,jones2018,stern2020}\\
+Women want taller men more than men want shorter women & D2, D3 & \vexists & exists, stated and at first contact & strong & \cite{stulp2013paid,hitsch2010qme}\\
+\rowcolor{black!6}
+Couples follow the ``man taller'' norm & D1 & \vpartly & yes, but only a little more often than chance & strong & \cite{stulp2013plos}\\
+Tall men get far more messages (``6'3'' gets 65\% more than 5'7''\,'') & D3 & \vunclear & height counts relative to one's own; the 65\% is from an unpublished draft & weak & \cite{hitsch2010qme,xia2014}\\
+\rowcolor{black!6}
+Perceived upper-body strength drives ratings of men's bodies & D2 & \vexists & exists in photo and figure ratings & moderate & \cite{sell2017,mautz2013,frederick2007,braun2006}\\
+Arm span (``wingspan'') affects attractiveness & -- & \vunclear & no direct study; it would mostly be a height effect & none & \cite{sorokowski2008} (proxy)\\
+\rowcolor{black!6}
+Penis size affects women's ratings of men & D2 & \vpartly & small, about as large as height, diminishing returns & weak to moderate & \cite{mautz2013,prause2015}\\
+Women prefer a larger penis for short-term partners & D2 & \vpartly & 0.3\,cm difference in one study & weak & \cite{prause2015}\\
+\rowcolor{black!6}
+Men overestimate how much size matters to women & D2 & \vexists & 85\% of women satisfied vs.\ 55\% of men & moderate & \cite{lever2006}\\
+Intelligence is among the most wanted traits for both sexes & D2 & \vexists & exists & strong & \cite{buss1989,walter2020}\\
+\rowcolor{black!6}
+Wanting intelligence has a ceiling near the 90th percentile & D2 & \vpartly & found twice, one lab, stated ratings only & weak to moderate & \cite{gignac2018,gignac2019}\\
+Partners resemble each other in intelligence and education & D1 & \vexists & $r\approx.44$ for IQ, $.55$ for education & strong & \cite{horwitz2023}\\
+\rowcolor{black!6}
+Higher intelligence helps people find a partner & D1 & \vunclear & one old cohort, opposite signs by sex & weak & \cite{taylor2005}\\
+Looks drive online messages for both sexes, a bit more for men & D3 & \vexists & exists & strong & \cite{hitsch2010qme,eastwick2014,lee2008}\\
+\rowcolor{black!6}
+People rated less attractive adjust whom they approach, men less than women & D3 & \vexists & exists & moderate & \cite{lee2008,kreager2014}\\
+Men's messages target younger women, more so as men age & D3 & \vexists & exists & moderate to strong & \cite{hitsch2010qme,skopek2011age,bruch2018}\\
+\rowcolor{black!6}
+A measured ``Gini of likes'' shows extreme inequality for men & D4 & \vunclear & no peer-reviewed or audited estimate & weak (grade D) & \cite{tyson2016}\\
+Racial hierarchies shape who is contacted and answered & D3 & \vexists & exists, as documented bias & strong & \cite{lin2013,robnett2011,hitsch2010qme,bruch2019,curington2021}\\
+\rowcolor{black!6}
+Racial bias in dating is fading & D1, D3 & \vunclear & intermarriage rising for some groups only & weak to moderate & \cite{qian2011,rudder2014race}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Short-Term Versus Long-Term Partners}
+Sexual strategies theory holds that both sexes pursue separate strategies for casual and committed relationships \cite{buss1993,buss2019}, and stated preferences agree. When 93 US students set minimum standards on 24 traits for four levels of commitment, women were more selective overall, especially on status. Men accepted far lower standards for a sexual partner but were nearly as choosy as women for a long-term one \cite{kenrick1990}. In mate-budget tasks women treated status as a necessity for a long-term partner, while for a short-term partner both sexes spent first on looks \cite{likenrick2006}, and body shape mattered most for a one-time encounter \cite{braun2006}. In a German community speed-dating study ($N=382$, ages 18 to 54), both sexes chose mainly on looks and women also on men's education and income. Only 6\% of matches led to sex and 4\% to a relationship within a year \cite{asendorpf2011}.
+
+The ovulation story, that women prefer more masculine men around ovulation, has not held up. Two meta-analyses of the same literature disagree \cite{gildersleeve2014,wood2014}. The largest longitudinal study ($N=584$, hormone measures) found no link between hormones and a preference for masculine faces \cite{jones2018}, and a preregistered study with ovulation tests ($N=157$) found no shift \cite{stern2020}. Both still found that masculinity counts more in short-term ratings. So context matters and the cycle mostly does not. The stated status preference is mainly a long-term one, and one status weight for every kind of relationship overstates hypergamy for casual dating.
+
+\subsection{Height and Build}
+Women want a taller partner more than men want a shorter one: in a Dutch student sample ($N=650$), women were most satisfied with a partner about 21\,cm taller, men with one about 8\,cm shorter \cite{stulp2013paid}. On a US dating site the effect at first contact was relative to one's own height, and women showed no preference for absolute height \cite{hitsch2010qme}. The famous ``6'3'' gets 65\% more messages than 5'7''\,'' comes from a 2006 draft of that work, and the published papers say non-robust earlier results were dropped. Profile heights are also inflated, mostly by men \cite{hancock2007}. In 12,502 UK couples, partners' heights correlated at $r=.18$, and the man was not taller in 7.5\% of couples against 10.2\% expected under random pairing \cite{stulp2013plos}. Random pairing alone would give the ``man taller'' norm about 90\% of the time, because men are taller on average.
+
+For men's bodies, perceived upper-body strength explained over 70\% of the variation in rated bodily attractiveness \cite{sell2017}. Women rated muscular men as sexier but less committed and rated moderate muscularity highest \cite{frederick2007}, and torso shape was the strongest predictor for life-size male figures \cite{mautz2013}. We found no study on arm span. The nearest proxy is leg length, where legs about 5\% longer than average were rated most attractive \cite{sorokowski2008}. All of this is ratings of photos and figures, not real partner choice.
+
+\subsection{Penis Size}
+In ratings of life-size figures, larger size raised attractiveness with diminishing returns, about as much as height and less than torso shape \cite{mautz2013}. With 3D models, 75 US women preferred about 16.3\,cm length for a one-time partner and 16.0\,cm for a long-term one \cite{prause2015}. Clinician-measured studies of up to 15,521 men give a mean erect length of 13.1\,cm (SD 1.7) \cite{veale2015}, though handled models and clinical measurements are not directly comparable. In an online survey of 52,031 heterosexual US adults, 85\% of women were satisfied with their partner's size, but only 55\% of men with their own \cite{lever2006}. Size worries men far more than it matters to women, and no study links it to actual partner choice.
+
+\subsection{Intelligence}
+Intelligence ranks near the top for both sexes \cite{buss1989,walter2020}. Rated desirability of a partner's IQ peaked around the 90th percentile (about IQ 120) and dropped slightly at the 99th \cite{gignac2018}, and a replication with 214 young adults found the same \cite{gignac2019}. Both are stated ratings from one lab. Couples are clearly matched: a meta-analysis of 199 studies gives partner correlations of $r=.44$ for IQ and $r=.55$ for education \cite{horwitz2023}. Whether intelligence helps anyone find a partner is unclear. In a Scottish cohort born in 1921 ($N=883$), higher childhood IQ lowered women's odds of marrying by mid-life (odds ratio 0.42 per standard deviation), while the link for men was positive but not significant \cite{taylor2005}.
+
+\subsection{The Famous Dating-App Numbers}
+Looks drive first contact for both sexes, a bit more for men \cite{hitsch2010qme,lee2008}, and men's messages target younger women, more so as they age \cite{hitsch2010qme,skopek2011age}. Table~\ref{tab:appnums} grades the numbers that circulate in the debate. The peer-reviewed ones say that both sexes aim up and that markets split by age and race \cite{bruch2018,bruch2019,hitsch2010qme}. The most quoted ones (the Tinder and Hinge ``Gini of likes'', ``women rate 80\% of men below average'', ``6'3'' gets 65\% more'') come from blogs, press retellings or a dropped draft. We found no peer-reviewed or audited estimate of like or swipe inequality on a swipe app. Unequal attention on apps is plausible and fits the messaging studies, but every specific ``Gini'' or ``80/20'' number is blog-grade.
+
+\begin{table}[t]
+\centering
+\caption{Famous dating-app figures by evidence grade: A peer-reviewed and large or replicated, C conference paper, draft or book, D company blog, anonymous post or press.}
+\label{tab:appnums}
+\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{4.25cm}>{\raggedright\arraybackslash}p{2.75cm}c@{}}
+\toprule
+\textbf{Figure} & \textbf{Source} & \textbf{Grade}\\
+\midrule
+Both sexes message about 25\% ``up'' & \cite{bruch2018} & A\\
+Women weight income, men looks, a bit more & \cite{hitsch2010qme} & A\\
+Markets split by age and race & \cite{bruch2019} & A\\
+Tinder matches: men about 0.6\%, women about 10\% & \cite{tyson2016} & C\\
+6'3'' men get 65\% more messages than 5'7'' & 2006 draft, dropped from \cite{hitsch2010qme} & C\\
+Women rate 80\% of men below medium & OkCupid blog \cite{rudder2009} & D\\
+Racial attraction charts, 2009 to 2014 & OkCupid blog \cite{rudder2014race} & D\\
+Tinder ``Gini of likes'' 0.58 & anonymous blog post (not cited) & D\\
+Hinge Gini for men 0.54 or 0.73 & press retellings, which disagree (not cited) & D\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Race and Ethnicity: Documented Bias}
+This subsection describes discrimination. It does not rank anyone's worth. On US dating sites both sexes mostly contact people of their own race, and 30 of 31 estimated race effects were negative. A white man was 10\% less likely to contact a black woman than a white woman, and a white woman 12\% less likely to contact an Asian man than a white man \cite{hitsch2010qme}. In replies a racial hierarchy appeared that a college degree did not offset \cite{lin2013}. In 6,070 US profiles, Asian men and black women were the most excluded \cite{robnett2011}. A book-length study calls this ``digital-sexual racism'' \cite{curington2021}. OkCupid's blog charts point the same way, with no decline from 2009 to 2014 by the company's account \cite{rudder2014race}. In US marriages, black-white intermarriage tripled between 1980 and 2008, while intermarriage with whites stalled for Asians and American Indians \cite{qian2011}. These studies measure bias against people, not anyone's value as a partner, which is why the app in Section~\ref{sec:app} has no ethnicity input.
+
 \section{Explanations}
 \label{sec:explain}
-\textbf{Evolutionary.} Different reproductive costs shaped different preferences: women value resources and ambition more, men value youth and looks more \cite{buss1989,kenrick1992}. This fits the universality of the stated gap and of the age gap \cite{walter2020}. It fits less well the small sex differences once people meet \cite{eastwick2014} and how fast educational hypergamy reversed.
+\textbf{Evolutionary.} Different reproductive costs shaped different preferences: women value resources and ambition more, men value youth and looks more \cite{buss1989,kenrick1992}. This fits the universality of the stated gap and of the age gap \cite{walter2020}, and it predicted the short- versus long-term difference of Section~\ref{sec:beyond} \cite{buss1993}. It fits less well the small sex differences once people meet \cite{eastwick2014} and how fast educational hypergamy reversed.
 
 \textbf{Social role.} The division of labour shapes preferences, so the provider preference should weaken when women earn their own resources \cite{eagly1999,wood2002}. Some cross-national data agree \cite{kasser1999,zentner2012}, as does the shrinking age gap \cite{walter2020}. The largest replications find little moderation for other traits \cite{zhang2019,walter2020}.
 
@@ -186,45 +285,62 @@ The three accounts can all be partly right. In our reading, a modest, cross-cult
 
 \section{The Hypergamy Meter}
 \label{sec:app}
-To make the point in the most unserious way we could, we wrote a small desktop app in Rust with the egui toolkit. You enter your age, gender, education, income band, optional height, region and relationship goal, press \emph{Consult the market}, and receive a ``market verdict''. Fig.~\ref{fig:pipeline} shows the pipeline and Table~\ref{tab:weights} the weights.
+To make the point in the most unserious way we could, we wrote a small desktop app in Rust with the egui toolkit. You enter your age, gender, education, income band, optional height, self-rated looks, build and smarts, region and relationship goal. Men and non-binary users also get an optional size question. You press \emph{Consult the market} and receive a ``market verdict''. Fig.~\ref{fig:pipeline} shows the pipeline and Table~\ref{tab:weights} the weights.
 
-\textbf{The model.} The score starts at 60. Each input adds one signed contribution $\delta_k$, the sum is clamped to $[0,100]$, and the result is mapped to one of six tiers with lower bounds 85, 70, 55, 40 and 25: from \emph{Top of the market} down to \emph{Clearance aisle (still a bargain)} and, below 25, \emph{Your life is over (statistically, for this joke model)}. The education contribution is multiplied by a region factor from 0.6 (Northern Europe) to 1.5 (East Asia), meant as a ``strength of the marry-up norm''. Non-binary users get the midpoint of the woman and man weights, because the model has no data and says so. Invalid ages or heights produce a friendly message, not a crash. Each tier has a meme card drawn by the app itself, and the inputs that moved the score are listed, each with a one-line joke.
+\textbf{The model.} Each input $k$ adds one signed contribution $\delta_k$, and the relationship goal $g$ then multiplies some of them by a goal weight $w_{g,k}$ (Fig.~\ref{fig:goal}). The score is
+\begin{equation}
+S = \min\Bigl(100,\ \max\bigl(0,\ 60 + \textstyle\sum_k w_{g,k}\,\delta_k\bigr)\Bigr).
+\end{equation}
+This score is mapped to one of six tiers with lower bounds 85, 70, 55, 40 and 25: from \emph{Top of the market} down to \emph{Clearance aisle (still a bargain)} and, below 25, \emph{Your life is over (statistically, for this joke model)}. The education contribution is also multiplied by a region factor from 0.6 (Northern Europe) to 1.5 (East Asia), meant as a ``strength of the marry-up norm''. Non-binary users get the midpoint of the woman and man weights, because the model has no data and says so. Invalid ages or heights produce a friendly message, not a crash. The inputs that moved the score are listed, each with a one-line joke.
 
-\textbf{The weights are made up.} Nothing in Table~\ref{tab:weights} was estimated. The source code says so in capital letters. The weights only copy the \emph{direction} of a few findings. Income moves the score for both genders, a bit more for men, but never dominates, like a stated difference that is real but small \cite{buss1989,eastwick2008}. For women the education curve bends down at Master's and PhD, a nod to the reversal of educational hypergamy \cite{esteve2016}: anyone who insists on marrying up has fewer ``equal or higher'' partners. The age curve peaks earlier for women than for men, loosely after online-dating data \cite{bruch2018}. The sizes are arbitrary, and the height and goal terms are jokes.
+\textbf{Meme cards.} Each tier has a meme card drawn by the app itself. Only the lowest one is gendered, after the internet's own doom memes. Men get ``IT'S OVER'' above ``\ldots JUST KIDDING, GO TOUCH GRASS :D'' with a seedling, women get ``SINGLE MOTHER ARC'' above ``\ldots OR IT'S OVER. KIDDING, GO TOUCH GRASS :D'' with a baby bottle, and non-binary users get ``IT'S OVER (ALL GENDERS EDITION)''. Every bottom caption takes the verdict back.
 
-\textbf{Two examples.} The default profile (woman, 28, Bachelor's, middle income, Turkey/Middle East, long-term) scores $60+12+4\times1.3+0+2=79.2$, \emph{Highly competitive asset}. A 60-year-old woman with a PhD, low income, East Asia, undecided, scores $60-22-8\times1.5-2-2=22$, and her card reads ``LIFE IS OVER'' over ``\ldots JUST KIDDING, GO TOUCH GRASS :D''.
+\textbf{The weights are made up.} Nothing in Table~\ref{tab:weights} was estimated. The source code says so in capital letters. The weights only copy the \emph{direction} of a few findings. Income moves the score for both genders, a bit more for men, but never dominates, like a stated difference that is real but small \cite{buss1989,eastwick2008}. For women the education curve bends down at Master's and PhD, a nod to the reversal of educational hypergamy \cite{esteve2016}: anyone who insists on marrying up has fewer ``equal or higher'' partners. The age curve peaks earlier for women than for men, loosely after online-dating data \cite{bruch2018}. Self-rated looks get the largest weight for both sexes \cite{eastwick2014,hitsch2010qme}. Build helps men more and is capped \cite{sell2017}. Smarts rise to a ceiling and then fall back \cite{gignac2019}. Size moves the score by at most one point \cite{mautz2013,lever2006}. The goal weights follow the short- versus long-term findings \cite{kenrick1990,likenrick2006}. The sizes are arbitrary, and the height and goal terms are jokes.
 
-\textbf{Why it is not science.} The meter breaks most of the rules in Sections~\ref{sec:evidence} and~\ref{sec:explain}. It applies group averages to one person, it mixes stated and revealed preferences, it ignores that most couples form like with like \cite{kalmijn1998,conroybeam2019sr} and that the other side chooses too \cite{kreager2014,antfolk2017}, and it has five inputs and no personality. Group averages hide large overlap and large individual variation \cite{walter2020,conroybeam2015}, so a score for one person carries no information. That is the joke. The app stores nothing and is labelled ``for fun only, not science, not advice''.
+\textbf{No ethnicity input.} The studies in Section~\ref{sec:beyond} document discrimination. A score that used race would turn that bias into a personal ``result'' and repeat it, so ethnicity is neither an input nor an output.
 
+\textbf{Two examples.} The default profile (woman, 28, Bachelor's, middle income, average looks, build and smarts, Turkey/Middle East, long-term) scores $60+12+4\times1.3\times1.2+2=80.24$, \emph{Highly competitive asset}. A 60-year-old woman with a PhD, low income, average looks, build and smarts, East Asia, undecided, scores $60-22-8\times1.5-2-2=22$, and her card reads ``SINGLE MOTHER ARC''. Four demo profiles (\texttt{-{}-demo top}, \texttt{niche}, \texttt{its-over}, \texttt{single-mother-arc}) open the app already scored, and a unit test keeps each in the tier its name promises.
 
+\textbf{Why it is not science.} The meter breaks most of the rules in Sections~\ref{sec:evidence} to~\ref{sec:explain}. It applies group averages to one person, it mixes stated and revealed preferences, it ignores that most couples form like with like \cite{kalmijn1998,conroybeam2019sr,horwitz2023} and that the other side chooses too \cite{kreager2014,antfolk2017}, and it has eleven inputs, most of them self-rated, and no personality. Group averages hide large overlap and large individual variation \cite{walter2020,conroybeam2015}, so a score for one person carries no information. That is the joke. The app stores nothing and is labelled ``for fun only, not science, not advice''.
+
+\begin{figure}[t]
+\centering
+\input{figures/goal_weights.tex}
+\caption{Goal weights $w_{g,k}$ of the Hypergamy Meter, exactly as in \texttt{goal\_weight} in \texttt{app/src/model.rs}. \emph{Illustrative}: the values are hand-picked. Only their direction follows the short- versus long-term findings \cite{kenrick1990,likenrick2006}. Age, height, size and the goal term itself always have weight 1.}
+\label{fig:goal}
+\end{figure}
 
 \begin{table}[t]
 \centering
-\caption{Hypergamy Meter contributions in points (hand-picked, \emph{not} estimated). Ranges show the lowest and highest value per input.}
+\caption{Hypergamy Meter contributions in points (hand-picked, not estimated). Ranges show the lowest and highest value per input.}
 \label{tab:weights}
 \footnotesize
-\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.55cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.3cm}@{}}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{3.2cm}>{\raggedright\arraybackslash}p{3.2cm}@{}}
 \toprule
 \textbf{Input} & \textbf{Woman} & \textbf{Man}\\
 \midrule
 Age & $+12$ at 25--29; $-22$ at 50+ & $+10$ at 30--34; $-10$ at 50+\\
-Education$^{a}$ & $+4$ Bachelor's; $-8$ PhD & $-6$ high school; $+6$ Master's or PhD\\
-Income band & $-2$ low; $+3$ high & $-10$ low; $+10$ high\\
+Education$^{a,b}$ & $+4$ Bachelor's; $-8$ PhD & $-6$ high school; $+6$ Master's or PhD\\
+Income band$^{b}$ & $-2$ low; $+3$ high & $-10$ low; $+10$ high\\
 Height & $-1$ to $+1$ & $-6$ under 170\,cm; $+7$ at 190+\\
+Looks$^{c}$ & $-8$ below average; $+11$ head-turner & $-7$ below average; $+10$ head-turner\\
+Build$^{c}$ & $-1$ couch potato; $+2$ gym or statue & $-3$ couch potato; $+5$ Greek statue\\
+Smarts$^{b}$ & \multicolumn{2}{>{\raggedright\arraybackslash}p{6.2cm}@{}}{$0$ average, $+4$ smart, $+6$ very smart, $+3$ galaxy brain}\\
+Size & not asked & $-1$ below average to $+1$\\
 Goal & \multicolumn{2}{l}{$-2$ undecided to $+3$ casual, same for everyone}\\
 \midrule
-\multicolumn{3}{@{}p{8.3cm}@{}}{\scriptsize Base 60; total clamped to $[0,100]$; height is optional; non-binary users get the midpoint. $^{a}$Multiplied by a region factor: 0.6 Northern Europe, 0.9 North America, 1.0 Latin America, 1.1 Southern Europe, 1.3 Turkey/Middle East, 1.5 East Asia.}\\
+\multicolumn{3}{@{}p{8.3cm}@{}}{\scriptsize Base 60; total clamped to $[0,100]$; height and size are optional; non-binary users get the midpoint, and the man's size row. $^{a}$Multiplied by a region factor: 0.6 Northern Europe, 0.9 North America, 1.0 Latin America, 1.1 Southern Europe, 1.3 Turkey/Middle East, 1.5 East Asia. $^{b}$Multiplied by 0.5 for a casual goal and 1.2 for long-term or marriage. $^{c}$Multiplied by 1.5 for a casual goal.}\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Limitations}
-This is a narrative review, not a systematic one, and it leans on Western, mostly US and European, data; work on South and East Asia is thin here apart from Japan \cite{raymo2005}. Several numbers come from abstracts or secondary summaries rather than full texts: the meta-analytic correlations \cite{eastwick2014} (from an author copy), the Tinder match rates \cite{tyson2016}, the OkCupid figures \cite{rudder2009} (an archived company blog) and the gender-equality results of \cite{zentner2012} (from a press release). The breadwinner replication \cite{rosenberg2024} is a working paper. Dating-site studies use self-selected users, and fake-profile experiments test first impressions only. Income is measured after marriage, which itself changes earnings. Evidence on same-sex couples is thin \cite{bailey1994,lippa2007,schwartz2009samesex}. Fig.~\ref{fig:reversal} is a schematic, and the app's weights are invented.
+This is a narrative review, not a systematic one, and it leans on Western, mostly US and European, data; work on South and East Asia is thin here apart from Japan \cite{raymo2005}. Several numbers come from abstracts or secondary summaries rather than full texts: the meta-analytic correlations \cite{eastwick2014} (from an author copy), the Tinder match rates \cite{tyson2016}, the OkCupid figures \cite{rudder2009} (an archived company blog) and the gender-equality results of \cite{zentner2012} (from a press release). Beyond status, \cite{stulp2013paid,sorokowski2008,gignac2018,taylor2005} and parts of \cite{mautz2013} are read from secondary summaries, and \cite{curington2021} from its publisher's description. The breadwinner replication \cite{rosenberg2024} is a working paper, and \cite{xia2014} is a preprint. Most evidence beyond status comes from students rating photos, figures or questionnaires, not from real partner choice. Dating-site studies use self-selected users, and fake-profile experiments test first impressions only. Income is measured after marriage, which itself changes earnings. Evidence on same-sex couples is thin \cite{bailey1994,lippa2007,schwartz2009samesex}. Fig.~\ref{fig:reversal} is a schematic, and the app's weights are invented.
 
 \section{Conclusion}
-Is hypergamy real? Partly, and it depends which one you mean. Women's stated preference for earning prospects is real, cross-cultural and small per trait. Women still tend to partner with men who earn more and are a few years older. Educational hypergamy was real and has mostly reversed, and supply explains the reversal without any change in what people want. The claims that power the online version (status is all that matters, only women aim up, most women share the top fifth of men) are not supported. The strongest pattern in the data is the least dramatic one: people mostly pair with people like themselves. If the Hypergamy Meter ever tells you your life is over, believe the bottom caption.
+Is hypergamy real? Partly, and it depends which one you mean. Women's stated preference for earning prospects is real, cross-cultural and small per trait. Women still tend to partner with men who earn more and are a few years older. Educational hypergamy was real and has mostly reversed, and supply explains the reversal without any change in what people want. The claims that power the online version (status is all that matters, only women aim up, most women share the top fifth of men) are not supported. Beyond status, the sexes differ most in what they say they want from a long-term partner and least for a casual one. Height, build, penis size and intelligence count in ratings, mostly by small amounts. The most viral dating-app numbers are blog-grade, and the racial patterns on apps are discrimination, not a measure of anyone's worth. The strongest pattern in the data is the least dramatic one: people mostly pair with people like themselves. If the Hypergamy Meter ever tells you your life is over, believe the bottom caption.
 
 \bibliographystyle{IEEEtran}
-\bibliography{bibliography}
+\bibliography{bstcontrol,bibliography}
 
 \end{document}
