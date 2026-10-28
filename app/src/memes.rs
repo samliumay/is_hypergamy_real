@@ -1,4 +1,5 @@
-//! Meme cards: one per verdict tier, drawn by the app itself.
+//! Meme cards: one per verdict tier, drawn by the app itself. Only the lowest
+//! tier differs by gender, after the internet's own "it's over" memes.
 //!
 //! Classic layout: a coloured background with a big emoji "picture", bold
 //! white TOP TEXT and BOTTOM TEXT with a black outline. No images are
@@ -6,7 +7,7 @@
 
 use eframe::egui::{self, Align2, Color32, CornerRadius, FontId, Pos2, Sense, Vec2};
 
-use crate::model::Tier;
+use crate::model::{Gender, Tier};
 
 /// Everything needed to draw one meme card.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
@@ -23,9 +24,9 @@ pub struct Meme {
     pub joke: &'static str,
 }
 
-/// The meme table: one card per tier. Exhaustive on purpose, so a new tier
-/// cannot ship without a meme.
-pub const fn meme_for(tier: Tier) -> Meme {
+/// The meme table: one card per tier (the lowest one per gender). Exhaustive
+/// on purpose, so a new tier or gender cannot ship without a meme.
+pub const fn meme_for(tier: Tier, gender: Gender) -> Meme {
     match tier {
         Tier::TopOfTheMarket => Meme {
             top: "Top of the market",
@@ -62,12 +63,35 @@ pub const fn meme_for(tier: Tier) -> Meme {
             background: [160, 70, 60],
             joke: "Haha, discounted by a model that has never heard you tell a joke.",
         },
-        Tier::LifeIsOver => Meme {
-            top: "Life is over",
+        Tier::LifeIsOver => rock_bottom(gender),
+    }
+}
+
+/// The lowest-tier card. Men get the classic "it's over"; women get the
+/// "single mother arc" version of the same meme. The joke line always
+/// undercuts it, because the model is five inputs and a sum.
+const fn rock_bottom(gender: Gender) -> Meme {
+    match gender {
+        Gender::Man => Meme {
+            top: "It's over",
             bottom: "...just kidding, go touch grass :D",
             emoji: "🌱",
             background: [60, 60, 60],
             joke: "Haha, five inputs and an additive model cannot end anything. Go outside.",
+        },
+        Gender::Woman => Meme {
+            top: "Single mother arc",
+            bottom: "...or it's over. Kidding, go touch grass :D",
+            emoji: "🍼",
+            background: [90, 60, 90],
+            joke: "Haha, the forums say so. The forums also think the 80/20 rule is real.",
+        },
+        Gender::NonBinary => Meme {
+            top: "It's over (all genders edition)",
+            bottom: "...just kidding, go touch grass :D",
+            emoji: "🌱",
+            background: [60, 60, 60],
+            joke: "Haha, the model has no data on you, so even its doom is made up.",
         },
     }
 }
@@ -92,9 +116,9 @@ fn caption_size(width: f32, text: &str) -> f32 {
     (width * 0.92 / (chars * 0.62)).min(width * 0.08)
 }
 
-/// Draws the meme card for `tier`, then its joke line underneath.
-pub fn draw(ui: &mut egui::Ui, tier: Tier) {
-    let meme = meme_for(tier);
+/// Draws the meme card for `tier` and `gender`, then its joke line underneath.
+pub fn draw(ui: &mut egui::Ui, tier: Tier, gender: Gender) {
+    let meme = meme_for(tier, gender);
     let width = ui.available_width().min(420.0);
     let size = Vec2::new(width, width * 0.6);
     let (response, painter) = ui.allocate_painter(size, Sense::hover());
@@ -137,7 +161,10 @@ mod tests {
 
     #[test]
     fn every_tier_has_a_distinct_meme() {
-        let memes: Vec<Meme> = Tier::THRESHOLDS.iter().map(|(t, _)| meme_for(*t)).collect();
+        let memes: Vec<Meme> = Tier::THRESHOLDS
+            .iter()
+            .map(|(t, _)| meme_for(*t, Gender::Man))
+            .collect();
         for (i, a) in memes.iter().enumerate() {
             assert!(!a.top.is_empty() && !a.bottom.is_empty() && !a.joke.is_empty());
             assert!(memes[i + 1..].iter().all(|b| b.top != a.top));
@@ -154,8 +181,23 @@ mod tests {
 
     #[test]
     fn lowest_tier_is_an_obvious_joke() {
-        let meme = meme_for(Tier::LifeIsOver);
-        assert_eq!(meme.top, "Life is over");
-        assert!(meme.bottom.contains("just kidding"));
+        for gender in Gender::ALL {
+            let meme = meme_for(Tier::LifeIsOver, gender);
+            assert!(meme.bottom.to_lowercase().contains("kidding"));
+        }
+    }
+
+    #[test]
+    fn lowest_tier_meme_depends_on_gender() {
+        assert_eq!(meme_for(Tier::LifeIsOver, Gender::Man).top, "It's over");
+        assert_eq!(
+            meme_for(Tier::LifeIsOver, Gender::Woman).top,
+            "Single mother arc"
+        );
+        // Every other tier is the same for everyone.
+        assert_eq!(
+            meme_for(Tier::SolidContender, Gender::Man),
+            meme_for(Tier::SolidContender, Gender::Woman)
+        );
     }
 }

@@ -1,0 +1,230 @@
+%% is_hypergamy_real: short fun paper, first version 2026-10-28.
+%% Sources: ../literature_review.md, ../notes.md, ../bibliography.bib (verified keys only).
+%% Every number in the text comes from ../notes.md; see paper/notes.md for the list.
+\documentclass[conference,a4paper]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage{microtype,booktabs,amsmath,amssymb,array}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+% Verdict symbols for Table I (black and grey only).
+\DeclareRobustCommand{\vexists}{\tikz[baseline=-0.6ex]\fill[black] (0,0) circle (2.6pt);}
+\DeclareRobustCommand{\vpartly}{\tikz[baseline=-0.6ex]{\draw[black] (0,0) circle (2.6pt);\fill[black] (0,0) -- (90:2.6pt) arc (90:270:2.6pt) -- cycle;}}
+\DeclareRobustCommand{\vnot}{\tikz[baseline=-0.6ex]\draw[black, thick] (0,0) circle (2.4pt);}
+\DeclareRobustCommand{\vunclear}{\tikz[baseline=-0.6ex]{\fill[black!30] (0,0) circle (2.6pt);\node[font=\tiny\bfseries, inner sep=0] at (0,0) {?};}}
+
+\title{Marrying Up, Messaging Up, Making It Up:\\ Where Hypergamy Is Real, Half Real and Not Real}
+
+\author{\IEEEauthorblockN{Umay~\c{S}aml\i{}}
+\IEEEauthorblockA{\textit{Independent researcher}\\
+samliumay965@gmail.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Online, ``hypergamy'' is used as a law of nature: women always marry up, and most of them chase the top 20\% of men. In the research literature the word covers at least four separate claims, and the evidence differs for each. We sort published findings by claim. On average, women in almost every country studied say a partner's earning prospects matter more to them than men say, but the gap is small on any single trait, and both sexes rank kindness and intelligence higher. Once people meet face to face, earning prospects predict attraction only weakly, and about equally for both sexes. Women marrying up in education was the norm for most of the twentieth century and has now reversed in most countries; models show that the reversal follows the supply of educated men and women, with no change in preferences needed. Women still tend to partner with men who earn more and who are a few years older. The ``80/20'' claim is not supported: attention on dating sites is unequal, but men and women aim above themselves by about the same amount, and most couples match like with like. We close with the Hypergamy Meter, a desktop toy whose hand-picked weights make it a joke, not a measurement.
+\end{abstract}
+
+\begin{IEEEkeywords}
+hypergamy, assortative mating, mate preferences, online dating, educational hypogamy, satire
+\end{IEEEkeywords}
+
+\section{Introduction}
+Ask the internet whether hypergamy is real and you will be told, with great confidence, that it is the master key to modern dating. In this version, women only ever partner with men above them, status is all that matters, and a small elite of men gets most of the attention while everyone else is left out.
+
+Sociology and psychology use the word more narrowly. Hypergamy usually means a pattern in couples: the woman's partner ranks above her on some dimension, such as education \cite{esteve2012,esteve2016}. Mate-preference research asks a separate question, namely what people \emph{say} they want \cite{buss1989,walter2020}, and dating research asks a third: whom people actually contact, like and marry \cite{eastwick2014,bruch2018,hitsch2010aer}. Online arguments slide between these, so evidence for one claim gets passed off as proof of another.
+
+This paper sorts the claims and checks each one against the evidence. It is a side project and it has a joke app attached (Section~\ref{sec:app}), but the review is meant to be accurate. Our contributions are:
+\begin{itemize}
+\item a split of ``hypergamy'' into four claims, each with the kind of data that could support it (Fig.~\ref{fig:concept});
+\item a verdict for each claim, graded by strength of evidence (Table~\ref{tab:verdict});
+\item a short account of the three main explanations, including a supply-based model in which hypergamy appears and then reverses without anyone's preferences changing \cite{grow2015};
+\item a description of the Hypergamy Meter, and a plain statement of why its output means nothing.
+\end{itemize}
+
+\section{Four Meanings of ``Hypergamy''}
+\label{sec:defs}
+Fig.~\ref{fig:concept} shows the four meanings we use throughout.
+
+\textbf{D1, partnering up.} In a couple, the man ranks above the woman on education, income, occupation, class or age. The evidence is the share of couples in which he is higher, compared with what random pairing would give, and it comes from censuses, registers and couple surveys.
+
+\textbf{D2, stated preference.} Women say they weigh a partner's status or earnings more than men do. The evidence is questionnaire ratings.
+
+\textbf{D3, revealed preference and actual matching.} Whom people contact, reply to, swipe on, date and marry. The evidence is dating-site logs, speed dating, field experiments and marriage records.
+
+\textbf{D4, the strong online claim.} Most women pursue a small top fraction of men (``80/20''), and status is all that matters. The evidence would have to show that both attention and actual partnering are concentrated on a few men.
+
+None of these implies another. D1 can appear even when nobody prefers it, because of who is available (Section~\ref{sec:explain}), and a stated preference (D2) may say little about whom people end up liking (D3) \cite{eastwick2008,eastwick2014}. Attention on an app (D3, first contact) is not the same thing as who ends up in a couple (D4 is about both).
+
+\begin{figure}[t]
+\centering
+\input{figures/concept_map.tex}
+\caption{The four meanings of ``hypergamy'' used in this paper. Evidence for one is not evidence for another: D1 can arise from supply alone, D2 predicts D3 weakly once people meet, and attention on an app (D3, D4) is not partnering.}
+\label{fig:concept}
+\end{figure}
+
+\section{Evidence by Claim}
+\label{sec:evidence}
+Table~\ref{tab:verdict} summarises the verdicts. \emph{Strong} means several large or representative studies or meta-analyses agree; \emph{moderate} means good studies with some disagreement or limited settings; \emph{weak} means small, local, grey or unreplicated work.
+
+\begin{table*}[t]
+\centering
+\caption{Verdict table: \vexists{} exists, \vpartly{} partly, \vnot{} does not exist (as stated), \vunclear{} unclear.}
+\label{tab:verdict}
+\footnotesize
+\renewcommand{\arraystretch}{1.12}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{6.3cm} c c >{\raggedright\arraybackslash}p{4.6cm} l >{\raggedright\arraybackslash}p{2.9cm}@{}}
+\toprule
+\textbf{Claim} & \textbf{Def.} & & \textbf{Verdict} & \textbf{Strength} & \textbf{Main sources}\\
+\midrule
+\rowcolor{black!6}
+Women, on average, \emph{say} earning prospects matter more than men say & D2 & \vexists & exists, in nearly every country studied & strong & \cite{buss1989,walter2020,conroybeam2015,zhang2019}\\
+That stated difference is large & D2 & \vpartly & small per trait, large only when many traits are combined & strong & \cite{walter2020,conroybeam2015}\\
+\rowcolor{black!6}
+Both sexes rank kindness and intelligence above money and looks & D2 & \vexists & exists & strong & \cite{buss1989,walter2020}\\
+The stated sex difference shrinks with gender equality & D2 & \vunclear & some studies yes; largest replications no, except for age gaps & moderate & \cite{zentner2012,kasser1999,zhang2019,walter2020}\\
+\rowcolor{black!6}
+Stated status preferences predict in-person attraction, more for women & D2$\to$D3 & \vnot & mostly not: weak for both sexes, no reliable sex difference & strong (contested) & \cite{eastwick2008,eastwick2014}\\
+When screening profiles online, women weight a man's education or income more & D3 & \vexists & exists & moderate & \cite{hitsch2010qme,neyt2019,skopek2011}\\
+\rowcolor{black!6}
+Women marry up in education & D1 & \vpartly & historically yes; now reversed in most countries & strong & \cite{esteve2012,esteve2016,vanbavel2018,qian2017}\\
+Educational hypergamy reflected a wish to marry up & D1 & \vnot & not needed: supply plus a taste for similarity reproduces it & moderate (model) & \cite{grow2015,dehauw2017}\\
+\rowcolor{black!6}
+Women partner with men who earn more & D1 & \vexists & exists, and persists after the education reversal & strong & \cite{qian2017,chudnovskaya2020}\\
+That income gap shows women's preference for higher earners & D1 & \vpartly & mixed with pay gap, selection and men's choices & moderate & \cite{chudnovskaya2020,fisman2006,autor2019}\\
+\rowcolor{black!6}
+A breadwinner norm shows as a drop where wives start to out-earn husbands & D1 & \vunclear & the drop exists; its reading is contested & moderate & \cite{bertrand2015,binder2022,zinovyeva2021,rosenberg2024}\\
+Women partner with older men & D1 & \vexists & about 2 to 3 years on average & strong & \cite{kenrick1992,walter2020,antfolk2017}\\
+\rowcolor{black!6}
+Marriages where she ``married down'' are less stable & D1 & \vnot & not in recent US cohorts & moderate & \cite{schwartz2014,vanbavel2018}\\
+Women trade beauty for men's status & D1 & \vunclear & much apparent exchange is like-with-like matching & moderate & \cite{mcclintock2014,gullickson2017,mcclintock2017}\\
+\rowcolor{black!6}
+Aiming above oneself is a female trait & D3 & \vnot & both sexes aim up by similar amounts & strong & \cite{bruch2018,kreager2014}\\
+Attention on dating apps is unequal; men get fewer replies & D3 & \vexists & exists & moderate & \cite{bruch2018,kreager2014,tyson2016}\\
+\rowcolor{black!6}
+Most women chase the top $\sim$20\% of men, leaving most men out & D4 & \vnot & not supported as stated & moderate & \cite{bruch2018,kreager2014,rudder2009}\\
+Some groups of women face fewer ``marriageable'' men & D1 & \vexists & exists for some groups and places & moderate to strong & \cite{lichter2020,autor2019,raymo2005}\\
+\rowcolor{black!6}
+Same-sex couples show the same status patterns & D1 & \vunclear & thin evidence; less homogamy overall & weak to moderate & \cite{bailey1994,lippa2007,schwartz2009samesex}\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Stated Preferences (D2)}
+Buss surveyed 37 samples in 33 countries ($N=10{,}047$) \cite{buss1989}. In most samples women rated ``good financial prospects'' and ambition higher than men did, and men rated youth and looks higher. A pre-planned replication in 45 countries ($N=14{,}399$) found the same direction \cite{walter2020}. On a 1 to 7 scale, women rated financial prospects about 0.30 points higher than men, and men rated physical attractiveness about 0.27 points higher. Both sexes rated kindness, intelligence and health above money and looks.
+
+Whether that is a big difference depends on how you count. Per trait, it is small. Across all 18 items of the 1989 data the multivariate distance is $D=2.41$, about 22.8\% overlap, and sex can be predicted from a person's preference profile with 92.2\% accuracy \cite{conroybeam2015}. Across five items in the 2020 data it is $D=0.73$ \cite{walter2020}. Multivariate distances grow with the number of items, so an honest report gives both: single traits overlap heavily, while whole profiles differ more.
+
+Does the gap shrink where women have more equality? Some studies say yes \cite{kasser1999,zentner2012}, as social role theory predicts \cite{eagly1999,wood2002}. The largest and most careful replications found little moderation except for age gaps \cite{zhang2019,walter2020}, and neighbouring countries are not independent data points \cite{gangestad2006}. The difference appears in every country studied. Whether equality shrinks it is still open.
+
+\subsection{Stated Versus Revealed Preferences (D2 to D3)}
+In speed dating, the stated sex difference in caring about earning prospects did not predict whom people liked after meeting \cite{eastwick2008}. A meta-analysis of 97 studies reports that attractiveness predicts romantic evaluations at about $r=.40$ and earning prospects at about $r=.10$ for \emph{both} sexes, with a sex difference near .03 \cite{eastwick2014}. Critics say this covers early attraction and existing couples rather than long-term choice from a wide pool, so the debate continues.
+
+At first contact the difference comes back. Women on a US dating site weighted a man's income more than men weighted a woman's \cite{hitsch2010qme}. In a Tinder field experiment in Belgium (24 fake profiles, 3,600 evaluations), women strongly preferred highly educated men, while men showed neither a preference for nor an aversion to highly educated women \cite{neyt2019}. In speed dating, men did not value a woman's intelligence or ambition when it exceeded their own \cite{fisman2006}, a male-side asymmetry that also produces ``hypergamous'' couples. So status counts for more in screening and for much less once people actually meet.
+
+\subsection{Actual Matching: Education (D1)}
+The strongest pattern in marriage data is like marrying like. US educational homogamy rose from 1960 to 2003 \cite{schwartz2005}, and sorting on similarity runs through partner choice in general \cite{kalmijn1998}.
+
+Educational hypergamy did exist: for most of the twentieth century, when spouses differed, he usually had more schooling. That pattern has reversed. Census data from 56 countries show a near-universal decline \cite{esteve2012}, and 420 samples from 120 countries (1960 to 2011) link the end of hypergamy to women overtaking men in education \cite{esteve2016}. In Western countries, couples in which the wife has more education now outnumber those in which the husband does \cite{vanbavel2018}. In the US, newlyweds moved from women marrying up (1980) to women marrying down (2008 to 2012) \cite{qian2017}. In Europe, highly educated women more often partnered with less educated men instead of staying single, and low-educated men more often stayed single \cite{dehauw2017}. Fig.~\ref{fig:reversal} sketches the shape of this change.
+
+Two follow-ups matter for the online story. Marriages in which the wife had more education used to be more likely to end, but in recent US cohorts that link has gone \cite{schwartz2014}. And where a strong norm meets a changing supply, marriage can fall instead: in Japan, fewer highly educated women marry, which is linked to a shortage of men with the education and earnings they and the local norms expect \cite{raymo2005}.
+
+\begin{figure}[t]
+\centering
+\input{figures/reversal.tex}
+\caption{Schematic of educational hypergamy reversing as women's education overtakes men's. \emph{Illustrative only}: the curves are drawn by hand and contain no data. The direction of change follows \cite{esteve2012,esteve2016,vanbavel2018,qian2017}. Timing and size vary by country.}
+\label{fig:reversal}
+\end{figure}
+
+\subsection{Actual Matching: Income (D1)}
+Income hypergamy outlived educational hypergamy. In the US, women's tendency to marry men with higher incomes persisted from 1980 to 2008--2012, and was \emph{stronger} when the wife was as educated as her husband or more \cite{qian2017}. In Swedish register data, women in education-hypogamous couples had higher class background and occupational prestige than their partners but lower income, partly because lower-earning people select into such couples \cite{chudnovskaya2020}. A partner who is ``up'' on one dimension is often ``down'' on another. Spouses' earnings have also become more alike over time, which is like-with-like again \cite{schwartz2010}.
+
+The shortage side is real too. The men that unmarried US women would be expected to marry, constructed from the husbands of comparable married women, earn about 58\% more than the unmarried men actually available and are more often employed (90\% vs.\ 70\%) \cite{lichter2020}. When manufacturing declined, young men's earnings fell relative to women's and marriage fell with them \cite{autor2019}.
+
+The best-known ``proof'' online is a sharp drop in the number of US couples just past the point where the wife out-earns the husband, read as a male-breadwinner norm \cite{bertrand2015}. Later work shows that matching models with no norm reproduce the distribution and that the drop comes from couples with exactly equal earnings \cite{binder2022}. In Finland it comes from co-working spouses whose earnings converge \cite{zinovyeva2021}, and a replication, not yet peer reviewed, finds the labour-force result turns to zero with hourly wages \cite{rosenberg2024}. The norm may exist, but this evidence does not settle it.
+
+\subsection{Actual Matching: Age (D1)}
+Age is the most stable finding. Women prefer and marry slightly older men at all ages, and men's preference for younger women grows as they age \cite{kenrick1992}. In the 45-country data, women's partners were on average 2.4 years older and men's 2.3 years younger, and the gap was smaller in more gender-equal countries \cite{walter2020}, the one place where equality clearly moderated a sex difference. In a Finnish sample ($N=2{,}655$), men's considered age range widened with age, but interest in much younger women was rarely turned into actual sex, because the other side chooses too \cite{antfolk2017}.
+
+\subsection{Online Dating (D3)}
+Meeting online became the most common way heterosexual US couples meet, overtaking meeting through friends around 2013 \cite{rosenfeld2019}, so app behaviour now matters for real couples.
+
+On a large US site, desirability formed one shared hierarchy, and men and women both messaged people about 25\% more desirable than themselves (26\% and 23\%) \cite{bruch2018}. Men's desirability rose with education and peaked near age 50; women's fell from age 18 and peaked at an undergraduate degree. In six months of messages in one US city (8,259 men, 6,274 women), both sexes messaged the most desirable people regardless of their own standing; women sent four times fewer messages, but their messages were twice as likely to connect, and couple similarity arose mostly from unanswered messages \cite{kreager2014}. Feeding estimated preferences into Gale--Shapley matching \cite{gale1962} reproduces observed matches and marriage sorting \cite{hitsch2010aer}. Users also screen with a few deal-breakers before weighing anything else \cite{bruch2016}.
+
+\begin{figure*}[t]
+\centering
+\input{figures/pipeline.tex}
+\caption{The Hypergamy Meter pipeline, as implemented in \texttt{app/src/model.rs} and \texttt{app/src/memes.rs}. Every step is a pure function; the meme card shown is the one for the lowest tier. The weights are illustrative, not estimates.}
+\label{fig:pipeline}
+\end{figure*}
+
+\subsection{The 80/20 Claim (D4)}
+The claim is that most women compete for the top fifth of men. The best research figure on swipe asymmetry is small: in a conference study of Tinder activity by fake profiles, men matched about 0.6\% of the time and women about 10\% \cite{tyson2016}, as reported in secondary summaries. Popular ``Gini of likes'' figures come from an anonymous blog post and from company numbers quoted in the press; we could not audit them and do not cite them.
+
+The peer-reviewed data tell a different story. Attention is unequal for both sexes and men get fewer replies, but both sexes aim above themselves by about the same amount, women's messages are not limited to a top 20\%, and final couples are mostly matched like with like \cite{bruch2018,kreager2014}. Even OkCupid's 2009 post, a likely root of the ``women rate 80\% of men below average'' line, reported that women's messaging was only slightly skewed toward attractive men \cite{rudder2009}. Attention inequality on one app is not partnering inequality in a population. Verdict: not supported as stated.
+
+\section{Explanations}
+\label{sec:explain}
+\textbf{Evolutionary.} Different reproductive costs shaped different preferences: women value resources and ambition more, men value youth and looks more \cite{buss1989,kenrick1992}. This fits the universality of the stated gap and of the age gap \cite{walter2020}. It fits less well the small sex differences once people meet \cite{eastwick2014} and how fast educational hypergamy reversed.
+
+\textbf{Social role.} The division of labour shapes preferences, so the provider preference should weaken when women earn their own resources \cite{eagly1999,wood2002}. Some cross-national data agree \cite{kasser1999,zentner2012}, as does the shrinking age gap \cite{walter2020}. The largest replications find little moderation for other traits \cite{zhang2019,walter2020}.
+
+\textbf{Structural (who is available).} Whom people marry depends on preferences, third parties and whom they meet \cite{kalmijn1998}. The clearest demonstration is the agent-based model of Grow and Van Bavel \cite{grow2015}. Calibrated on 12 Western European countries for cohorts born from 1921 to 2012, it reproduces both the old hypergamy and the new hypogamy with only two ingredients: a preference for a partner with similar education and a preference for higher earnings. It needs no preference for ``marrying up'' and no change in preferences over time; the shifting supply of educated men and women does the work. In a stylised form (ours, not their exact specification), a chooser $i$ scores a candidate $j$ as
+\begin{equation}
+s_{ij} = -\alpha\,\lvert e_i - e_j\rvert + \beta\, y_j ,
+\end{equation}
+with education $e$, expected earnings $y$ and fixed weights $\alpha,\beta>0$. If men outnumber women among graduates, a taste for similarity alone leaves many women with more-educated husbands. Once the balance flips, the same fixed $\alpha$ and $\beta$ leave many highly educated women with less-educated husbands. Hypergamy then looks like a preference when it is mostly arithmetic. This does not prove that no preference exists. It shows that the marriage pattern alone cannot prove that one does.
+
+The three accounts can all be partly right. In our reading, a modest, cross-cultural sex difference in stated preferences exists, and its size may depend on context. Actual pairing is driven mostly by like-with-like matching and by supply.
+
+\section{The Hypergamy Meter}
+\label{sec:app}
+To make the point in the most unserious way we could, we wrote a small desktop app in Rust with the egui toolkit. You enter your age, gender, education, income band, optional height, region and relationship goal, press \emph{Consult the market}, and receive a ``market verdict''. Fig.~\ref{fig:pipeline} shows the pipeline and Table~\ref{tab:weights} the weights.
+
+\textbf{The model.} The score starts at 60. Each input adds one signed contribution $\delta_k$, the sum is clamped to $[0,100]$, and the result is mapped to one of six tiers with lower bounds 85, 70, 55, 40 and 25: from \emph{Top of the market} down to \emph{Clearance aisle (still a bargain)} and, below 25, \emph{Your life is over (statistically, for this joke model)}. The education contribution is multiplied by a region factor from 0.6 (Northern Europe) to 1.5 (East Asia), meant as a ``strength of the marry-up norm''. Non-binary users get the midpoint of the woman and man weights, because the model has no data and says so. Invalid ages or heights produce a friendly message, not a crash. Each tier has a meme card drawn by the app itself, and the inputs that moved the score are listed, each with a one-line joke.
+
+\textbf{The weights are made up.} Nothing in Table~\ref{tab:weights} was estimated. The source code says so in capital letters. The weights only copy the \emph{direction} of a few findings. Income moves the score for both genders, a bit more for men, but never dominates, like a stated difference that is real but small \cite{buss1989,eastwick2008}. For women the education curve bends down at Master's and PhD, a nod to the reversal of educational hypergamy \cite{esteve2016}: anyone who insists on marrying up has fewer ``equal or higher'' partners. The age curve peaks earlier for women than for men, loosely after online-dating data \cite{bruch2018}. The sizes are arbitrary, and the height and goal terms are jokes.
+
+\textbf{Two examples.} The default profile (woman, 28, Bachelor's, middle income, Turkey/Middle East, long-term) scores $60+12+4\times1.3+0+2=79.2$, \emph{Highly competitive asset}. A 60-year-old woman with a PhD, low income, East Asia, undecided, scores $60-22-8\times1.5-2-2=22$, and her card reads ``LIFE IS OVER'' over ``\ldots JUST KIDDING, GO TOUCH GRASS :D''.
+
+\textbf{Why it is not science.} The meter breaks most of the rules in Sections~\ref{sec:evidence} and~\ref{sec:explain}. It applies group averages to one person, it mixes stated and revealed preferences, it ignores that most couples form like with like \cite{kalmijn1998,conroybeam2019sr} and that the other side chooses too \cite{kreager2014,antfolk2017}, and it has five inputs and no personality. Group averages hide large overlap and large individual variation \cite{walter2020,conroybeam2015}, so a score for one person carries no information. That is the joke. The app stores nothing and is labelled ``for fun only, not science, not advice''.
+
+
+
+\begin{table}[t]
+\centering
+\caption{Hypergamy Meter contributions in points (hand-picked, \emph{not} estimated). Ranges show the lowest and highest value per input.}
+\label{tab:weights}
+\footnotesize
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{1.55cm}>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{3.3cm}@{}}
+\toprule
+\textbf{Input} & \textbf{Woman} & \textbf{Man}\\
+\midrule
+Age & $+12$ at 25--29; $-22$ at 50+ & $+10$ at 30--34; $-10$ at 50+\\
+Education$^{a}$ & $+4$ Bachelor's; $-8$ PhD & $-6$ high school; $+6$ Master's or PhD\\
+Income band & $-2$ low; $+3$ high & $-10$ low; $+10$ high\\
+Height & $-1$ to $+1$ & $-6$ under 170\,cm; $+7$ at 190+\\
+Goal & \multicolumn{2}{l}{$-2$ undecided to $+3$ casual, same for everyone}\\
+\midrule
+\multicolumn{3}{@{}p{8.3cm}@{}}{\scriptsize Base 60; total clamped to $[0,100]$; height is optional; non-binary users get the midpoint. $^{a}$Multiplied by a region factor: 0.6 Northern Europe, 0.9 North America, 1.0 Latin America, 1.1 Southern Europe, 1.3 Turkey/Middle East, 1.5 East Asia.}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Limitations}
+This is a narrative review, not a systematic one, and it leans on Western, mostly US and European, data; work on South and East Asia is thin here apart from Japan \cite{raymo2005}. Several numbers come from abstracts or secondary summaries rather than full texts: the meta-analytic correlations \cite{eastwick2014} (from an author copy), the Tinder match rates \cite{tyson2016}, the OkCupid figures \cite{rudder2009} (an archived company blog) and the gender-equality results of \cite{zentner2012} (from a press release). The breadwinner replication \cite{rosenberg2024} is a working paper. Dating-site studies use self-selected users, and fake-profile experiments test first impressions only. Income is measured after marriage, which itself changes earnings. Evidence on same-sex couples is thin \cite{bailey1994,lippa2007,schwartz2009samesex}. Fig.~\ref{fig:reversal} is a schematic, and the app's weights are invented.
+
+\section{Conclusion}
+Is hypergamy real? Partly, and it depends which one you mean. Women's stated preference for earning prospects is real, cross-cultural and small per trait. Women still tend to partner with men who earn more and are a few years older. Educational hypergamy was real and has mostly reversed, and supply explains the reversal without any change in what people want. The claims that power the online version (status is all that matters, only women aim up, most women share the top fifth of men) are not supported. The strongest pattern in the data is the least dramatic one: people mostly pair with people like themselves. If the Hypergamy Meter ever tells you your life is over, believe the bottom caption.
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
+
+\end{document}

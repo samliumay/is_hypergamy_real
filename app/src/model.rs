@@ -399,6 +399,8 @@ pub struct Verdict {
     pub score: f32,
     /// Headline tier for the score.
     pub tier: Tier,
+    /// Gender of the scored profile (the lowest-tier meme depends on it).
+    pub gender: Gender,
     /// Every contribution, largest absolute effect first.
     pub contributions: Vec<Contribution>,
 }
@@ -558,6 +560,7 @@ pub fn evaluate(profile: &Profile) -> Result<Verdict, ProfileError> {
     Ok(Verdict {
         score,
         tier: Tier::from_score(score),
+        gender: profile.gender,
         contributions,
     })
 }

@@ -34,6 +34,12 @@ cd app
 cargo run --release
 ```
 
+To open the app already scored with a preset profile (handy for screenshots):
+
+```sh
+cargo run --release -- --demo top                # or niche, its-over, single-mother-arc
+```
+
 Checks:
 
 ```sh
@@ -43,9 +49,22 @@ cargo clippy --all-targets -- -D warnings
 cargo test
 ```
 
-### Screenshot
+### Screenshots
 
-_Screenshot coming soon._ <!-- TODO: add docs/screenshot.png -->
+The form before you press the button:
+
+![The form](docs/screenshots/form.png)
+
+Top of the market (`--demo top`):
+
+![Top of the market](docs/screenshots/top.png)
+
+The bottom tier for men (`--demo its-over`) and for women (`--demo single-mother-arc`):
+
+![It's over](docs/screenshots/its-over.png)
+![Single mother arc](docs/screenshots/single-mother-arc.png)
+
+More demos: `--demo niche` (screenshot in `docs/screenshots/niche.png`).
 
 ## Architecture
 
@@ -54,11 +73,12 @@ The app is one small crate in `app/` (`hypergamy_meter`, GUI with
 
 | File | What it does |
 |------|--------------|
-| `app/src/main.rs` | Opens the native window and hands it to `ui::MeterApp`. |
+| `app/src/main.rs` | Opens the native window and hands it to `ui::MeterApp`; `--demo NAME` starts it already scored. |
+| `app/src/demo.rs` | The preset profiles for `--demo`, with a test that each lands in the tier its name promises. |
 | `app/src/model.rs` | The scoring model. Input enums (`Gender`, `Education`, `IncomeBand`, `Region`, `Goal`), `Profile`, validation, one pure function per input that returns a signed `Contribution`, the clamped total, and the `Tier` table. All unit-tested. |
-| `app/src/ui.rs` | The egui form and the verdict panel (headline, explanation rows, disclaimer footer). Holds the app state. |
+| `app/src/ui.rs` | The egui form and the verdict panel (headline, explanation rows, disclaimer footer). Holds the app state and scrolls the verdict into view after each press. |
 | `app/src/gauge.rs` | Draws the semicircular meter with the egui painter. |
-| `app/src/memes.rs` | The meme table (one card per tier: top text, bottom text, emoji, colour, joke line) and the code that draws a card. |
+| `app/src/memes.rs` | The meme table (one card per tier: top text, bottom text, emoji, colour, joke line; the lowest tier differs by gender: "It's over" for men, "Single mother arc" for women) and the code that draws a card. |
 
 How a score flows:
 

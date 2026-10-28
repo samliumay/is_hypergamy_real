@@ -37,10 +37,12 @@ pub fn needle_angle(score: f32) -> f32 {
 /// Draws the meter with the needle at `score` (or with no needle for `None`).
 pub fn draw(ui: &mut egui::Ui, score: Option<f32>) {
     let width = ui.available_width().min(420.0);
-    let (response, painter) = ui.allocate_painter(Vec2::new(width, width * 0.58), Sense::hover());
+    let (response, painter) = ui.allocate_painter(Vec2::new(width, width * 0.5), Sense::hover());
     let rect = response.rect;
-    let radius = width * 0.42;
-    let center = Pos2::new(rect.center().x, rect.top() + radius + 16.0);
+    // The painter clips to `rect`, so the dial leaves room around it for the
+    // "doomed", "meh" and "iconic" labels.
+    let radius = width * 0.36;
+    let center = Pos2::new(rect.center().x, rect.top() + radius + 30.0);
     let thickness = radius * 0.22;
 
     for i in 0..SEGMENTS {

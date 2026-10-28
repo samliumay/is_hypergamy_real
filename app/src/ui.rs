@@ -33,6 +33,9 @@ pub struct MeterApp {
     height_cm: u16,
     /// Result of the last button press, if any.
     outcome: Option<Result<Verdict, ProfileError>>,
+    /// Scroll the verdict into view on the next frame (set by a press, so the
+    /// result is visible even in a small or tiled window).
+    scroll_to_verdict: bool,
 }
 
 impl Default for MeterApp {
@@ -42,6 +45,21 @@ impl Default for MeterApp {
             include_height: false,
             height_cm: DEFAULT_HEIGHT_CM,
             outcome: None,
+            scroll_to_verdict: false,
+        }
+    }
+}
+
+impl MeterApp {
+    /// An app whose form is pre-filled with `profile` and already scored, as
+    /// if the button had been pressed (used by `--demo`).
+    pub fn scored(profile: Profile) -> Self {
+        MeterApp {
+            include_height: profile.height_cm.is_some(),
+            height_cm: profile.height_cm.unwrap_or(DEFAULT_HEIGHT_CM),
+            outcome: Some(model::evaluate(&profile)),
+            scroll_to_verdict: true,
+            profile,
         }
     }
 }
@@ -160,7 +178,7 @@ fn show_verdict(ui: &mut egui::Ui, verdict: &Verdict) {
     ui.heading(RichText::new(verdict.tier.headline()).strong().size(24.0));
     ui.label(RichText::new(verdict.tier.tagline()).italics());
     ui.add_space(8.0);
-    memes::draw(ui, verdict.tier);
+    memes::draw(ui, verdict.tier, verdict.gender);
     ui.add_space(8.0);
     ui.label(format!(
         "Market index: {:.1} / 100 (starts at {:.0}). What moved it:",
@@ -216,9 +234,13 @@ impl eframe::App for MeterApp {
                 if self.form(ui) {
                     self.profile.height_cm = self.include_height.then_some(self.height_cm);
                     self.outcome = Some(model::evaluate(&self.profile));
+                    self.scroll_to_verdict = true;
                 }
 
                 ui.separator();
+                if std::mem::take(&mut self.scroll_to_verdict) {
+                    ui.scroll_to_cursor(Some(egui::Align::TOP));
+                }
                 ui.vertical_centered(|ui| self.verdict(ui));
             });
         });

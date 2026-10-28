@@ -1,0 +1,30 @@
+% Fig. 4: the Hypergamy Meter pipeline, drawn from app/src/model.rs and app/src/memes.rs.
+\begin{tikzpicture}[
+  font=\footnotesize, node distance=4mm,
+  box/.style={draw, rounded corners=2pt, align=center, fill=black!4, inner sep=3pt, minimum height=1.25cm},
+  arr/.style={-{Stealth[length=4pt]}, thick, black!75},
+]
+\node[box, text width=2.35cm] (in) {\textbf{Form inputs}\\ age, gender, education, income band, height (optional), region, goal};
+\node[box, text width=1.65cm, right=of in] (val) {\textbf{validate}\\ age 18--120\\ height 100--250\,cm};
+\node[box, text width=2.3cm, right=of val] (con) {\textbf{one contribution per input}\\ hand-picked weights;\\ education $\times$ region factor};
+\node[box, text width=1.9cm, right=of con] (sc) {\textbf{score}\\ $60+\sum_k \delta_k$,\\ clamped to $[0,100]$};
+\node[box, text width=1.75cm, right=of sc] (tier) {\textbf{tier}\\ thresholds\\ 85/70/55/40/25};
+% meme card
+\node[right=5mm of tier, draw, very thick, fill=black!70, minimum width=2.55cm, minimum height=1.6cm] (card) {};
+\node[font=\bfseries\footnotesize, text=white, anchor=north] at ([yshift=-1.5pt]card.north) {LIFE IS OVER};
+% seedling, standing in for the app's emoji
+\draw[white, thick] ([yshift=-5pt]card.center) -- ([yshift=4pt]card.center);
+\fill[white] ([yshift=3pt]card.center) .. controls +(-0.25,0.05) and +(-0.05,0.18) .. ([xshift=-7pt,yshift=8pt]card.center) .. controls +(0.15,-0.05) and +(-0.05,0.12) .. ([yshift=3pt]card.center);
+\fill[white] ([yshift=3pt]card.center) .. controls +(0.25,0.05) and +(0.05,0.18) .. ([xshift=7pt,yshift=8pt]card.center) .. controls +(-0.15,-0.05) and +(0.05,0.12) .. ([yshift=3pt]card.center);
+\node[font=\bfseries\tiny, text=white, anchor=south, align=center] at ([yshift=2pt]card.south) {...JUST KIDDING,\\ GO TOUCH GRASS :D};
+\node[font=\scriptsize\itshape, anchor=north, align=center] at (card.south) {meme card (score $<25$)};
+\draw[arr] (in) -- (val);
+\draw[arr] (val) -- (con);
+\draw[arr] (con) -- (sc);
+\draw[arr] (sc) -- (tier);
+\draw[arr] (tier) -- (card);
+\node[font=\scriptsize\itshape, anchor=north, align=center] (err) at ([yshift=-3mm]val.south) {invalid: friendly\\error, no crash};
+\draw[arr, dashed, black!55] (val.south) -- (err.north);
+\node[font=\scriptsize\itshape, anchor=north, align=center] at ([yshift=-3mm]con.south) {also listed as\\``what moved the score''};
+\node[font=\scriptsize\itshape, anchor=north, align=center] at ([yshift=-3mm]sc.south) {also drives the\\gauge needle};
+\end{tikzpicture}
