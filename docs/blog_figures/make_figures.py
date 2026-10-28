@@ -2,7 +2,10 @@
 
 Run `python3 make_figures.py` from anywhere: the SVGs land next to this file,
 and `render.sh` turns them into the PNGs the site serves. Figures 9 to 12 of
-the post are app screenshots and are not built here.
+the post are app screenshots and are not built here. File numbers are stable
+names, not the figure numbers in the post: fig-09 and fig-10 were added later
+(Dark Triad, paternity), fig-13 keeps its name and fig-14 (haplogroup N1c)
+came last.
 
 Every number drawn here comes from the blog post (which cites
 literature_review.md and notes.md) or, for the Hypergamy Meter, from
@@ -40,6 +43,10 @@ V_NOT = "#a3282a"
 V_UNCLEAR = "#6c706a"
 V_NONE = "#a3a69f"
 V_BIAS = "#5b4b9a"
+V_MIXED = "#8f7a2a"   # mixed: studies point both ways
+# "Split" (the answer depends on the sub-claim) is drawn as a green-to-red
+# gradient, defined once in svg() as #split.
+V_SPLIT = "url(#split)"
 
 # two neutral series colours (site chart-a / chart-b)
 SER_A = "#2a74a8"     # blue
@@ -103,6 +110,9 @@ def svg(h, body):
         f'<path d="M0,0 L10,5 L0,10 z" fill="{ACCENT}"/></marker>',
         '<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">'
         f'<path d="M0,0 L10,5 L0,10 z" fill="{MUTED}"/></marker>',
+        '<linearGradient id="split" x1="0" y1="0" x2="1" y2="0">'
+        f'<stop offset="0" stop-color="{V_EXISTS}"/><stop offset="0.5" stop-color="{V_PARTLY}"/>'
+        f'<stop offset="1" stop-color="{V_NOT}"/></linearGradient>',
         "</defs>",
         rect(0, 0, W, h, BG),
         *body,
@@ -207,9 +217,33 @@ BEYOND_ROWS = [
     ("Racial bias shapes who gets messages and replies", "Documented bias", 3),
 ]
 
+RED_FLAG_ROWS = [
+    ("High scorers report more casual sex and more partners", "Exists", 2.5),
+    ("That link is a men-only pattern", "Does not exist", 2),
+    ("Men score higher on the Dark Triad, on average", "Exists", 3),
+    ("Narcissists win real first meetings, in both sexes", "Exists", 2),
+    ("Women rate a fictional \u201cdark\u201d man as more attractive", "Mixed", 1.5),
+    ("Dominance makes men more attractive", "Partly", 2),
+    ("Scheming and callousness are attractive in themselves", "Mostly not", 2),
+    ("The narcissist's charm fades as people get to know them", "Exists", 2),
+    ("Dark Triad partners are wanted for the long term", "Does not exist", 2),
+    ("Dark Triad traits predict cheating, in both sexes", "Exists", 2),
+    ("\u201cNice guys finish last\u201d", "Partly", 2),
+    ("\u201cWomen love bad boys\u201d", "Split", 2),
+    ("10 to 30% of children are not their presumed dad's", "Does not exist", 3),
+    ("Misattributed paternity is higher in poorer settings", "Exists", 2),
+    ("A measured paternity rate for France", "No evidence", 0),
+    ("In the past, fewer men than women had children", "Exists", 3),
+    ("\u201c17 women per man\u201d, as an effective-size ratio", "Exists", 2),
+    ("That bottleneck came from women choosing few men", "Unclear", 2),
+    ("N1c is carried by 30 to 64% of Finnic and Baltic men", "Exists", 3),
+    ("A few founding male lines out-reproduced the rest", "Exists", 2),
+    ("A few living men father most children today", "Does not exist", 2),
+]
+
 COLOURS = {"Exists": V_EXISTS, "Partly": V_PARTLY, "Mostly not": V_MOSTLY_NOT,
            "Does not exist": V_NOT, "Unclear": V_UNCLEAR, "No evidence": V_NONE,
-           "Documented bias": V_BIAS}
+           "Documented bias": V_BIAS, "Mixed": V_MIXED, "Split": V_SPLIT}
 
 
 # ------------------------------------------------ fig 1: four meanings map --
@@ -591,20 +625,139 @@ def fig_iq():
     write("fig-08-iq-ceiling", y0 + 160, out)
 
 
+# ------------------------------- fig 10: paternity, claim vs measurement --
+def fig_paternity():
+    out = header("Paternity: the claim vs the measurement",
+                 "How many kids are not their dad's?",
+                 "Share of children whose presumed father is not the biological father.")
+    x0, x1 = 470, W - 110          # bar area, 0 to 35%
+    vmax = 35.0
+    sc = (x1 - x0) / vmax
+    top = 196
+
+    def X(v):
+        return x0 + v * sc
+
+    # gridlines and axis labels are drawn after the rows are measured
+
+    groups = [
+        ("THE VIRAL CLAIM", [
+            ("“10 to 30% of kids”", "forums and videos", (10, 30), None, ALERT),
+        ]),
+        ("WHOLE POPULATIONS (GENETIC STUDIES)", [
+            ("Sweden, today", "nearly 2 million families, Dahlén et al. (2022)", None, 1.0, V_EXISTS),
+            ("Sweden, overall", "same study, all cohorts", None, 1.7, V_EXISTS),
+            ("Flanders, per generation", "Y chromosomes + family trees, Larmuseau et al. (2013)", (1, 2), None, V_EXISTS),
+            ("Afrikaners, 330 years", "1,273 conceptions, Greeff and Erasmus (2015)", None, 0.9, V_EXISTS),
+            ("Low Countries, 500 years", "range by class and place, Larmuseau et al. (2019)", (0.4, 5.9), None, V_EXISTS),
+        ]),
+        ("MEN WHO TOOK A TEST (REVIEW OF 67 STUDIES)", [
+            ("Men confident they are the father", "Anderson (2006)", (1.7, 1.9), None, SER_A),
+            ("Men who already doubted", "Anderson (2006)", None, 30.0, SER_B),
+        ]),
+        ("FRANCE", [
+            ("No peer-reviewed rate", "private tests are illegal: court order only (Civil Code art. 16-11)", None, None, V_NONE),
+        ]),
+    ]
+    rh, gh = 56, 46
+    y = top
+    rows_out = []
+    for gname, rows in groups:
+        rows_out.append(t(40, y + 28, gname, 13, FAINT, SANS, "bold", spacing=1.6))
+        y += gh
+        for i, (lab, sub, rng, val, col) in enumerate(rows):
+            if i % 2 == 0:
+                rows_out.append(rect(40, y, W - 80, rh, PANEL, rx=8))
+            rows_out.append(t(56, y + 25, lab, 18, INK, SANS, "bold"))
+            rows_out.append(t(56, y + 45, sub, 13.5, MUTED))
+            cy = y + rh / 2
+            if rng is None and val is None:
+                # no measurement: say so in the bar area instead of drawing a bar
+                rows_out.append(t(x0 + 10, cy + 7, "no study; nearest data: Flanders, Low Countries",
+                                  16, MUTED, SANS, "bold"))
+            elif rng is not None:
+                a, b = rng
+                rows_out.append(rect(X(a), cy - 11, max(X(b) - X(a), 6), 22, col, rx=6,
+                                     extra='fill-opacity="0.85"'))
+                label = f"{a:g} to {b:g}%"
+                rows_out.append(t(max(X(b), X(a) + 6) + 10, cy + 7, label, 17, col, SANS, "bold"))
+            else:
+                rows_out.append(rect(x0, cy - 11, max(val * sc, 4), 22, col, rx=6))
+                label = f"about {val:g}%" if val >= 30 else f"{val:g}%"
+                rows_out.append(t(x0 + max(val * sc, 4) + 10, cy + 7, label, 17, col, SANS, "bold"))
+            y += rh
+        y += 10
+    yb = y
+    # grid behind rows: draw first so bars sit on top
+    grid = []
+    for v in (0, 5, 10, 15, 20, 25, 30, 35):
+        gx = X(v)
+        grid.append(f'<line x1="{gx:.1f}" y1="{top + 30}" x2="{gx:.1f}" y2="{yb}" stroke="{RULE}" stroke-width="1"/>')
+        grid.append(t(gx, yb + 24, f"{v}%", 14, MUTED, anchor="middle"))
+    out.extend(grid)
+    out.extend(rows_out)
+    # callout
+    cy0 = yb + 52
+    out.append(rect(40, cy0, W - 80, 92, BG, rx=12, extra=f'stroke="{RULE}" stroke-width="1.5"'))
+    out.append(rect(40, cy0, 8, 92, SER_B, rx=4))
+    out.append(t(68, cy0 + 34, "Where the 30% comes from: men who already suspected it and paid for a test.", 18, INK, SANS, "bold"))
+    out.append(t(68, cy0 + 62, "For a man in a Western married couple today, the realistic risk is about 1 in 50 to 1 in 100.", 16, MUTED))
+    out.extend(footer(cy0 + 152, ["Sources: literature review section 11.11 in the is_hypergamy_real repository. Historical rates are not biased by contraception."]))
+    write("fig-10-paternity", cy0 + 182, out)
+
+
+# ------------------------------- fig 14: haplogroup N1c among men today --
+def fig_n1c():
+    out = header("Haplogroup N1c", "One male line, very common in the north-east",
+                 "Share of men carrying Y haplogroup N1c (also written N3 or N1a1).")
+    rows = [
+        ("Finland", "1,802 men, Preussner et al. (2025)", 64.0),
+        ("Finland", "536 men, compiled in Rootsi et al. (2007)", 58.2),
+        ("Latvia", "86 men, Rootsi et al. (2007)", 41.9),
+        ("Lithuania", "196 men, Rootsi et al. (2007)", 36.7),
+        ("Estonia", "209 men, Rootsi et al. (2007)", 30.6),
+    ]
+    x0, x1 = 430, W - 130          # bar area, 0 to 70%
+    vmax = 70.0
+    sc = (x1 - x0) / vmax
+    top, rh = 196, 62
+    yb = top + rh * len(rows)
+    for v in range(0, 71, 10):
+        gx = x0 + v * sc
+        out.append(f'<line x1="{gx:.1f}" y1="{top}" x2="{gx:.1f}" y2="{yb}" stroke="{RULE}" stroke-width="1"/>')
+        out.append(t(gx, yb + 24, f"{v}%", 14, MUTED, anchor="middle"))
+    for i, (lab, sub, val) in enumerate(rows):
+        y = top + i * rh
+        if i % 2 == 0:
+            out.append(rect(40, y, W - 80, rh, PANEL, rx=8, extra='fill-opacity="0.6"'))
+        out.append(t(56, y + 28, lab, 19, INK, SANS, "bold"))
+        out.append(t(56, y + 49, sub, 13.5, MUTED))
+        cy = y + rh / 2
+        out.append(rect(x0, cy - 12, val * sc, 24, SER_A, rx=6))
+        out.append(t(x0 + val * sc + 10, cy + 7, f"{val:g}%", 18, SER_A, SANS, "bold"))
+    cy0 = yb + 56
+    out.append(rect(40, cy0, W - 80, 92, BG, rx=12, extra=f'stroke="{RULE}" stroke-width="1.5"'))
+    out.append(rect(40, cy0, 8, 92, ACCENT, rx=4))
+    out.append(t(68, cy0 + 34, "Its northern branches spread over the last 5,000 years or so, not in one generation.", 18, INK, SANS, "bold"))
+    out.append(t(68, cy0 + 62, "One sub-branch (VL29) alone covers over a third of Estonian, Latvian and Lithuanian men (Ilum\u00e4e et al., 2016).", 16, MUTED))
+    out.extend(footer(cy0 + 152, ["Sources: literature review section 11.11 in the is_hypergamy_real repository."]))
+    write("fig-14-n1c", cy0 + 182, out)
+
+
 # ------------------------------------------- fig 13: the meter's pipeline --
 def fig_pipeline():
     out = header("How the Hypergamy Meter works", "A joke model, drawn like a serious one",
                  "Hand-picked weights, not estimated from data. Ethnicity is deliberately not an input.")
     # flow of six stages
     stages = [
-        ("1", "Ten inputs", ["age, gender,", "education, income,", "height, looks, build,", "smarts, region, goal", "+ size (optional)"]),
-        ("2", "Points", ["each input adds or", "subtracts points;", "looks weigh most,", "smarts: +6, then +3"]),
+        ("1", "Eleven inputs", ["age, gender,", "education, income,", "height, looks, build,", "smarts, red flags,", "region, goal", "+ size (optional)"]),
+        ("2", "Points", ["each input adds or", "subtracts points;", "looks weigh most,", "smarts: +6, then +3,", "red flags depend", "on the goal"]),
         ("3", "Goal weights", ["the goal stretches", "or shrinks those", "points (see below)"]),
         ("4", "Score", ["add it all up,", "clamp to 0 to 100"]),
         ("5", "Tier", ["six tiers, from", "\u201cTop of the market\u201d", "to \u201cIt's over\u201d"]),
         ("6", "Meme card", ["huge captions,", "then the retraction:", "\u201cgo touch grass :D\u201d"]),
     ]
-    top, bh, bw, gap = 180, 206, 160, 32
+    top, bh, bw, gap = 180, 232, 160, 32
     for i, (num, title, lines) in enumerate(stages):
         x = 40 + i * (bw + gap)
         hl = num == "3"
@@ -666,8 +819,37 @@ def fig_pipeline():
             out.append(t(cx0 + full + 12, y + 28, f"{w:g}x", 16, col if w != 1 else MUTED, SANS, "bold"))
     yb = hy + 18 + len(factors) * rh
     out.append(t(40, yb + 30, "Dashed line = 1x. Example: a man's high income, worth +10, becomes +12 for long-term or marriage, and +5 for casual.", 15, MUTED))
-    out.extend(footer(yb + 100, ["From app/src/model.rs in the is_hypergamy_real repository. For fun only. Not science, not advice."]))
-    write("fig-13-meter-pipeline", yb + 130, out)
+
+    # red flags: already goal-specific, so the goal weights leave them alone
+    ry = yb + 92
+    out.append(t(40, ry, "RED FLAGS: POINTS FOR 0, 1, 2 AND 3 FLAGS, BY GOAL (NOT REWEIGHTED)", 13, FAINT, SANS, "bold", spacing=1.6))
+    flag_pts = [("Casual", [0, 3, 6, 8], "+3 each, max +8"),
+                ("Long-term", [0, -5, -10, -15], "\u22125 each, max \u221215"),
+                ("Marriage", [0, -8, -16, -24], "\u22128 each, max \u221224"),
+                ("No idea, honestly", [0, 0, 0, 0], "always 0")]
+    unit = 3.2                      # px per point
+    zero = ry + 70 + 8 * unit       # room for the labels and for +8
+    rb = round(zero + 24 * unit + 18)
+    out.append(rect(40, ry + 16, W - 80, rb - ry - 16, PANEL, rx=10))
+    out.append(t(56, zero + 6, "0 flags to 3", 15, MUTED))
+    out.append(t(56, zero + 26, "(None, A few,", 13.5, FAINT))
+    out.append(t(56, zero + 44, "Several, Parade)", 13.5, FAINT))
+    for j, (g, pts, lab) in enumerate(flag_pts):
+        cx0 = 40 + lab_w + j * col_w + 20
+        col = V_EXISTS if pts[-1] > 0 else (V_MOSTLY_NOT if pts[-1] < 0 else MUTED)
+        out.append(t(cx0, ry + 48, lab, 15, col, SANS, "bold"))
+        out.append(f'<line x1="{cx0 - 6}" y1="{zero}" x2="{cx0 + 4 * 30 + 2}" y2="{zero}" stroke="{INK}" stroke-width="1.5"/>')
+        for k, v in enumerate(pts):
+            bx = cx0 + k * 30
+            if v > 0:
+                out.append(rect(bx, zero - v * unit, 22, v * unit, V_EXISTS, rx=3))
+            elif v < 0:
+                out.append(rect(bx, zero, 22, -v * unit, V_MOSTLY_NOT, rx=3))
+            else:
+                out.append(rect(bx, zero - 1.5, 22, 3, "#b9bdb5", rx=1.5))
+    out.append(t(40, rb + 30, "Red flags win the first date, not the marriage. A joke, not a strategy.", 15, MUTED))
+    out.extend(footer(rb + 100, ["From app/src/model.rs in the is_hypergamy_real repository. For fun only. Not science, not advice."]))
+    write("fig-13-meter-pipeline", rb + 130, out)
 
 
 if __name__ == "__main__":
@@ -687,4 +869,12 @@ if __name__ == "__main__":
                   "Section 11 of the literature review in the is_hypergamy_real repository.")
     fig_height()
     fig_iq()
+    verdict_table("fig-09-verdict-bad-boys-paternity", "Bad boys, paternity and the Y chromosome",
+                  "Red flags and viral \u201cevolution\u201d",
+                  "Twenty-one more claims: the Dark Triad, misattributed paternity and Y-chromosome history.",
+                  RED_FLAG_ROWS, COLOURS,
+                  [(3, "strong"), (2, "moderate"), (1.5, "in between"), (0, "no study found")],
+                  "Sections 11.10 and 11.11 of the literature review in the is_hypergamy_real repository.")
+    fig_paternity()
+    fig_n1c()
     fig_pipeline()

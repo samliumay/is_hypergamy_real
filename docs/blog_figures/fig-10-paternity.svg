@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1158" viewBox="0 0 1200 1158">
+<defs>
+<marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f1c"/></marker>
+<marker id="arrA" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f6a4a"/></marker>
+<marker id="arrM" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b6159"/></marker>
+<linearGradient id="split" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2e8555"/><stop offset="0.5" stop-color="#c8820f"/><stop offset="1" stop-color="#a3282a"/></linearGradient>
+</defs>
+<rect x="0.0" y="0.0" width="1200.0" height="1158.0" rx="0" fill="#faf8f3" />
+<rect x="40.0" y="34.0" width="44.0" height="5.0" rx="2.5" fill="#1f6a4a" />
+<text x="40.0" y="64.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="15" font-weight="bold" font-style="normal" fill="#1f6a4a" text-anchor="start" letter-spacing="2.2" >PATERNITY: THE CLAIM VS THE MEASUREMENT</text>
+<text x="40.0" y="106.0" font-family="Noto Serif, DejaVu Serif, serif" font-size="36" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >How many kids are not their dad's?</text>
+<text x="40.0" y="140.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="19" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Share of children whose presumed father is not the biological father.</text>
+<line x1="470.0" y1="226" x2="470.0" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="470.0" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >0%</text>
+<line x1="558.6" y1="226" x2="558.6" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="558.6" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >5%</text>
+<line x1="647.1" y1="226" x2="647.1" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="647.1" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >10%</text>
+<line x1="735.7" y1="226" x2="735.7" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="735.7" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >15%</text>
+<line x1="824.3" y1="226" x2="824.3" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="824.3" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >20%</text>
+<line x1="912.9" y1="226" x2="912.9" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="912.9" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >25%</text>
+<line x1="1001.4" y1="226" x2="1001.4" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="1001.4" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >30%</text>
+<line x1="1090.0" y1="226" x2="1090.0" y2="924" stroke="#d9d5c9" stroke-width="1"/>
+<text x="1090.0" y="948.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="14" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="middle" >35%</text>
+<text x="40.0" y="224.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >THE VIRAL CLAIM</text>
+<rect x="40.0" y="242.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="267.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >“10 to 30% of kids”</text>
+<text x="56.0" y="287.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >forums and videos</text>
+<rect x="647.1" y="259.0" width="354.3" height="22.0" rx="6" fill="#b8322b" fill-opacity="0.85"/>
+<text x="1011.4" y="277.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#b8322b" text-anchor="start" >10 to 30%</text>
+<text x="40.0" y="336.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >WHOLE POPULATIONS (GENETIC STUDIES)</text>
+<rect x="40.0" y="354.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="379.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Sweden, today</text>
+<text x="56.0" y="399.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >nearly 2 million families, Dahlén et al. (2022)</text>
+<rect x="470.0" y="371.0" width="17.7" height="22.0" rx="6" fill="#2e8555" />
+<text x="497.7" y="389.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1%</text>
+<text x="56.0" y="435.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Sweden, overall</text>
+<text x="56.0" y="455.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >same study, all cohorts</text>
+<rect x="470.0" y="427.0" width="30.1" height="22.0" rx="6" fill="#2e8555" />
+<text x="510.1" y="445.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1.7%</text>
+<rect x="40.0" y="466.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="491.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Flanders, per generation</text>
+<text x="56.0" y="511.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Y chromosomes + family trees, Larmuseau et al. (2013)</text>
+<rect x="487.7" y="483.0" width="17.7" height="22.0" rx="6" fill="#2e8555" fill-opacity="0.85"/>
+<text x="515.4" y="501.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >1 to 2%</text>
+<text x="56.0" y="547.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Afrikaners, 330 years</text>
+<text x="56.0" y="567.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >1,273 conceptions, Greeff and Erasmus (2015)</text>
+<rect x="470.0" y="539.0" width="15.9" height="22.0" rx="6" fill="#2e8555" />
+<text x="495.9" y="557.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >0.9%</text>
+<rect x="40.0" y="578.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="603.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Low Countries, 500 years</text>
+<text x="56.0" y="623.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >range by class and place, Larmuseau et al. (2019)</text>
+<rect x="477.1" y="595.0" width="97.4" height="22.0" rx="6" fill="#2e8555" fill-opacity="0.85"/>
+<text x="584.5" y="613.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2e8555" text-anchor="start" >0.4 to 5.9%</text>
+<text x="40.0" y="672.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >MEN WHO TOOK A TEST (REVIEW OF 67 STUDIES)</text>
+<rect x="40.0" y="690.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="715.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Men confident they are the father</text>
+<text x="56.0" y="735.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Anderson (2006)</text>
+<rect x="500.1" y="707.0" width="6.0" height="22.0" rx="6" fill="#2a74a8" fill-opacity="0.85"/>
+<text x="516.1" y="725.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#2a74a8" text-anchor="start" >1.7 to 1.9%</text>
+<text x="56.0" y="771.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Men who already doubted</text>
+<text x="56.0" y="791.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Anderson (2006)</text>
+<rect x="470.0" y="763.0" width="531.4" height="22.0" rx="6" fill="#c46a1c" />
+<text x="1011.4" y="781.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="17" font-weight="bold" font-style="normal" fill="#c46a1c" text-anchor="start" >about 30%</text>
+<text x="40.0" y="840.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13" font-weight="bold" font-style="normal" fill="#8e938a" text-anchor="start" letter-spacing="1.6" >FRANCE</text>
+<rect x="40.0" y="858.0" width="1120.0" height="56.0" rx="8" fill="#f0ede4" />
+<text x="56.0" y="883.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >No peer-reviewed rate</text>
+<text x="56.0" y="903.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="13.5" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >private tests are illegal: court order only (Civil Code art. 16-11)</text>
+<text x="480.0" y="893.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="bold" font-style="normal" fill="#5b6159" text-anchor="start" >no study; nearest data: Flanders, Low Countries</text>
+<rect x="40.0" y="976.0" width="1120.0" height="92.0" rx="12" fill="#faf8f3" stroke="#d9d5c9" stroke-width="1.5"/>
+<rect x="40.0" y="976.0" width="8.0" height="92.0" rx="4" fill="#c46a1c" />
+<text x="68.0" y="1010.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="18" font-weight="bold" font-style="normal" fill="#1b1f1c" text-anchor="start" >Where the 30% comes from: men who already suspected it and paid for a test.</text>
+<text x="68.0" y="1038.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >For a man in a Western married couple today, the realistic risk is about 1 in 50 to 1 in 100.</text>
+<line x1="40" y1="1098" x2="1160" y2="1098" stroke="#d9d5c9" stroke-width="1.5"/>
+<text x="40.0" y="1128.0" font-family="Noto Sans, DejaVu Sans, sans-serif" font-size="16" font-weight="normal" font-style="normal" fill="#5b6159" text-anchor="start" >Sources: literature review section 11.11 in the is_hypergamy_real repository. Historical rates are not biased by contraception.</text>
+</svg>
