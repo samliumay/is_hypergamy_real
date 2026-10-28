@@ -1,28 +1,50 @@
-% Fig. 3: schematic of educational hypergamy reversing. ILLUSTRATIVE: the curves are
+% Fig. 2: schematic of educational hypergamy reversing. ILLUSTRATIVE: the curves are
 % hand-drawn logistic shapes, not data. Direction of change follows esteve2012,
 % esteve2016, vanbavel2018, qian2017; no values are taken from any source.
+% Greyscale: solid + circles (dark blue), dashed + squares (vermilion), dotted (green);
+% the two eras are shaded light blue (left) and light vermilion with hatching (right).
 \begin{tikzpicture}
 \begin{axis}[
-  width=\columnwidth, height=4.6cm,
-  xmin=0, xmax=10, ymin=0, ymax=1,
+  width=\columnwidth, height=4.9cm,
+  xmin=0, xmax=10, ymin=0, ymax=1.08,
   xtick={1,9}, xticklabels={earlier cohorts, recent cohorts},
   ytick=\empty,
   xlabel={time (schematic)}, ylabel={share among couples who differ},
-  ylabel style={font=\scriptsize}, xlabel style={font=\scriptsize},
+  ylabel style={font=\scriptsize}, xlabel style={font=\scriptsize, yshift=2pt},
   ticklabel style={font=\scriptsize},
-  axis lines=left, clip=false,
-  legend style={font=\scriptsize, draw=none, at={(0.5,-0.32)}, anchor=north, cells={anchor=west}},
+  axis lines=left, axis line style={hgink, -{Stealth[length=4pt]}}, clip=false,
+  legend style={font=\scriptsize, draw=none, fill=none, at={(0.5,-0.27)}, anchor=north,
+    cells={anchor=west}, row sep=-1pt},
   legend cell align=left,
 ]
-\addplot[black, very thick, domain=0:10, samples=80] {0.15 + 0.7/(1+exp(1.2*(x-5)))};
+% the two eras
+\fill[hgsky!16] (axis cs:0,0) rectangle (axis cs:5,1.0);
+\fill[hgverm!9] (axis cs:5,0) rectangle (axis cs:10,1.0);
+\fill[pattern=north west lines, pattern color=hgverm!22] (axis cs:5,0) rectangle (axis cs:10,1.0);
+\node[font=\scriptsize\bfseries, text=hgblue, anchor=west, align=left]
+  at (axis cs:0.15,0.5) {hypergamy\\[-1pt]more common};
+\node[font=\scriptsize\bfseries, text=hgverm!85!black, anchor=east, align=right]
+  at (axis cs:9.95,0.38) {hypogamy\\[-1pt]more common};
+% curves
+\addplot[name path=hyper, hgblue, very thick, domain=0:10, samples=80,
+  mark=*, mark size=1.5pt, mark repeat=10, mark phase=1, mark options={fill=white, solid}]
+  {0.15 + 0.7/(1+exp(1.2*(x-5)))};
 \addlegendentry{he has more education (hypergamy)}
-\addplot[black!55, very thick, dashed, domain=0:10, samples=80] {0.15 + 0.7/(1+exp(-1.2*(x-5)))};
+\addplot[name path=hypo, hgverm, very thick, dashed, domain=0:10, samples=80,
+  mark=square*, mark size=1.4pt, mark repeat=10, mark phase=6, mark options={fill=hgverm, solid}]
+  {0.15 + 0.7/(1+exp(-1.2*(x-5)))};
 \addlegendentry{she has more education (hypogamy)}
-\addplot[black!60, densely dotted, thick, domain=0:10, samples=80] {0.08 + 0.55/(1+exp(-1.0*(x-4.3)))};
+\addplot[hggreen!80!black, densely dotted, very thick, domain=0:10, samples=80]
+  {0.08 + 0.55/(1+exp(-1.0*(x-4.3)))};
 \addlegendentry{women's relative share of graduates}
-\draw[black!50, densely dotted] (axis cs:5,0) -- (axis cs:5,0.92);
-\node[font=\scriptsize\itshape, align=center, anchor=south] at (axis cs:5,0.92) {crossover};
-\node[font=\scriptsize, draw, fill=white, rounded corners=1pt, anchor=north east, align=center]
-  at (axis cs:10,1.0) {\textbf{ILLUSTRATIVE}\\not data};
+% gap between the two curves, shaded on each side of the crossover
+\addplot[hgblue!25, opacity=0.6] fill between[of=hyper and hypo, soft clip={domain=0:5}];
+\addplot[hgverm!25, opacity=0.6] fill between[of=hyper and hypo, soft clip={domain=5:10}];
+% crossover
+\draw[hgink!70, densely dotted, thick] (axis cs:5,0) -- (axis cs:5,1.0);
+\fill[hgink] (axis cs:5,0.5) circle (1.8pt);
+\node[font=\scriptsize\itshape, align=center, anchor=south, fill=white, inner sep=1pt,
+  rounded corners=1pt] at (axis cs:5,1.0) {crossover};
+\node[hgbadge, anchor=south east] at (axis cs:10,1.0) {\textbf{ILLUSTRATIVE}\\not data};
 \end{axis}
 \end{tikzpicture}

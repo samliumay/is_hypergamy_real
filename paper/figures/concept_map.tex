@@ -1,26 +1,36 @@
-% Fig. 1: the four meanings of "hypergamy" (concept map). Pure TikZ, black/grey.
+% Fig. 1: the four meanings of "hypergamy" (concept map). Pure TikZ.
+% Colours from the preamble palette; each card also carries its code (D1-D4) and the
+% header shades differ (dark, light, mid, mid), so it reads in greyscale.
 \begin{tikzpicture}[
   font=\footnotesize,
-  hub/.style={draw, thick, rounded corners=2pt, fill=black!15, align=center, inner sep=4pt},
-  mean/.style={draw, rounded corners=2pt, align=left, text width=3.5cm, inner sep=3pt, fill=black!3},
-  link/.style={-{Stealth[length=4pt]}, black!70, thick},
-  gap/.style={dashed, black!60, {Stealth[length=3pt]}-{Stealth[length=3pt]}},
-  lab/.style={font=\scriptsize\itshape, fill=white, inner sep=1pt, align=center},
+  hub/.style={ellipse, draw=hgink, very thick, fill=hgink, text=white, align=center,
+    inner sep=1.5pt, hgshadow},
+  card/.style={rectangle split, rectangle split parts=2, draw=#1, thick,
+    rounded corners=2.5pt, text width=3.45cm, align=left, inner sep=2.6pt,
+    rectangle split part fill={#1, #1!7}, hgshadow},
+  head/.style={text=white, font=\footnotesize\bfseries},
+  link/.style={-{Stealth[length=5pt]}, hgink, thick},
+  gap/.style={densely dashed, hgink!70, thick, {Stealth[length=4pt]}-{Stealth[length=4pt]}},
+  lab/.style={font=\scriptsize\itshape, fill=white, inner sep=1.2pt, align=center, text=hgink},
 ]
-\node[hub] (h) at (0,0) {\textbf{``hypergamy''}\\{\scriptsize one word, four claims}};
-\node[mean, anchor=south east] (d1) at (-0.35, 0.75)
-  {\textbf{D1 Pattern in couples}\\ her partner ranks above her in education, income or age\\
-   \textit{Data:} census, registers};
-\node[mean, anchor=south west] (d2) at (0.35, 0.75)
-  {\textbf{D2 Stated preference}\\ women \emph{say} status or earnings matter more than men say\\
-   \textit{Data:} surveys};
-\node[mean, anchor=north east] (d3) at (-0.35,-0.75)
-  {\textbf{D3 Revealed choice}\\ whom people contact, reply to, date and marry\\
-   \textit{Data:} dating logs, speed dating};
-\node[mean, anchor=north west] (d4) at (0.35,-0.75)
-  {\textbf{D4 Strong online claim}\\ ``80/20'': most women chase a small top group of men\\
-   \textit{Data:} app figures, mostly grey};
+\node[hub] (h) at (0,0) {\textbf{``hypergamy''}\\[-1pt]{\scriptsize one word, four claims}};
+\node[card=hgblue, anchor=south east] (d1) at (-0.3, 0.72)
+  {\nodepart[head]{one}D1\enspace Pattern in couples
+   \nodepart{two}her partner ranks above her in education, income or age\\
+   {\scriptsize\textit{Data:} census, registers}};
+\node[card=hgorange, anchor=south west] (d2) at (0.3, 0.72)
+  {\nodepart[text=hgink, font=\footnotesize\bfseries]{one}D2\enspace Stated preference
+   \nodepart{two}women \emph{say} status or earnings matter more than men say\\
+   {\scriptsize\textit{Data:} surveys}};
+\node[card=hggreen, anchor=north east] (d3) at (-0.3,-0.72)
+  {\nodepart[head]{one}D3\enspace Revealed choice
+   \nodepart{two}whom people contact, reply to, date and marry\\
+   {\scriptsize\textit{Data:} dating logs, speed dating}};
+\node[card=hgverm, anchor=north west] (d4) at (0.3,-0.72)
+  {\nodepart[head]{one}D4\enspace Strong online claim
+   \nodepart{two}``80/20'': most women chase a small top group of men\\
+   {\scriptsize\textit{Data:} app figures, mostly grey}};
 \foreach \d in {d1.south east,d2.south west,d3.north east,d4.north west} \draw[link] (h) -- (\d);
-\draw[gap] (d1.north) to[bend left=22] node[lab, above=1pt] {can occur without D2 (supply)} (d2.north);
-\draw[gap] (d3.south) to[bend right=22] node[lab, below=1pt] {attention is not partnering} (d4.south);
+\draw[gap] (d1.north) to[bend left=20] node[lab, above=1pt] {can occur without D2 (supply)} (d2.north);
+\draw[gap] (d3.south) to[bend right=20] node[lab, below=1pt] {attention is not partnering} (d4.south);
 \end{tikzpicture}

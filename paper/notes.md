@@ -6,7 +6,7 @@ Not an Obsidian note in the vault sense; build and provenance notes for `paper/`
 
 - `make pdf`: latexmk (pdflatex) into `build/`, copies `build/main.pdf` to `main.pdf`. BibTeX reads `../bibliography.bib` through `BIBINPUTS`, so there is one bibliography, not a copy.
 - `make clean` removes `build/`; `make distclean` also removes `main.pdf`.
-- Figures are TikZ/pgfplots sources in `figures/` (`concept_map.tex`, `reversal.tex`, `pipeline.tex`, `goal_weights.tex`), `\input` by `main.tex`. No external images.
+- Figures are TikZ/pgfplots sources in `figures/` (`concept_map.tex`, `stated_revealed.tex`, `reversal.tex`, `pipeline.tex`, `aim_up.tex`, `taller.tex`, `goal_weights.tex`), `\input` by `main.tex`. No external images. The colour palette (`hgblue`, `hgverm`, `hgorange`, `hggreen`, `hgsky`, `hgink`) and the `hgshadow` / `hgbadge` styles are defined once in the `main.tex` preamble.
 - `bstcontrol.bib` (paper-local, not a source) holds the IEEEtran control entry `IEEEexample:BSTcontrol`: author lists are cut to 3 names + "et al." to keep the reference list short. `main.tex` loads it with `\bstctlcite` and `\bibliography{bstcontrol,bibliography}`.
 - First build (2026-10-28): 6 pages. "Beyond status" update (2026-10-28): **9 pages** (about 7 pages of text, 2 of references, 83 entries), no undefined references or citations, no overfull or underfull boxes, BibTeX 0 warnings. The 8-page target was not reached: the new section added 32 references (about 0.8 page) and two floats; reaching 8 would need cutting about one page of review content or references.
 - Table I was 32pt too wide in the first build (missed then); fixed in the update with `\tabcolsep` 4pt and narrower columns. Table IV (weights) was 3.9pt too wide; columns narrowed.
@@ -39,7 +39,7 @@ Every number in the text is taken from `../notes.md` (annotated bibliography, ch
 
 Grey "Gini of likes" figures (Medium post, Hinge via Quartz) are mentioned without numbers and not cited: they are not in `bibliography.bib`.
 
-App numbers (base 60, all weights in Table IV, region factors 0.6 to 1.5, goal weights 0.5/1.2/1.5, tier thresholds 85/70/55/40/25, examples 80.24 and 22) are read from `../app/src/model.rs` as of 2026-10-28. The 80.24 example matches the unit test `default_profile_scores_as_expected` (60 + 12 + 4 x 1.3 x 1.2 + 2). The 22 example is the test's "worst" profile, computed by hand (60 - 22 - 8 x 1.5 - 2 - 2; looks, build, smarts average = 0, goal weight 1 for Undecided). Gendered bottom memes and their captions are from `../app/src/memes.rs` (`rock_bottom`). Demo names from `../app/src/demo.rs`; recomputed by hand (Python transcription of the weights, not by running the app): top 115.16 clamped to 100, niche 50.9, its-over 12, single-mother-arc 16, all in the tiers `demos_land_in_their_tiers` asserts. The paper does not print the demo scores. Size applies in full (no midpoint) to non-binary users who answer; the paper's Table IV note says so. Fig. 4 (goal weights) plots `goal_weight` exactly.
+App numbers (base 60, all weights in Table IV, region factors 0.6 to 1.5, goal weights 0.5/1.2/1.5, tier thresholds 85/70/55/40/25, examples 80.24 and 22) are read from `../app/src/model.rs` as of 2026-10-28. The 80.24 example matches the unit test `default_profile_scores_as_expected` (60 + 12 + 4 x 1.3 x 1.2 + 2). The 22 example is the test's "worst" profile, computed by hand (60 - 22 - 8 x 1.5 - 2 - 2; looks, build, smarts average = 0, goal weight 1 for Undecided). Gendered bottom memes and their captions are from `../app/src/memes.rs` (`rock_bottom`). Demo names from `../app/src/demo.rs`; recomputed by hand (Python transcription of the weights, not by running the app): top 115.16 clamped to 100, niche 50.9, its-over 12, single-mother-arc 16, all in the tiers `demos_land_in_their_tiers` asserts. The paper does not print the demo scores. Size applies in full (no midpoint) to non-binary users who answer; the paper's Table IV note says so. Fig. 7 (goal weights) plots `goal_weight` exactly.
 
 ### Beyond status numbers (Section IV, Tables II and III)
 
@@ -71,7 +71,7 @@ All from `../notes.md` "Extension" part and `../literature_review.md` section 11
 | intermarriage tripled 1980 to 2008 | qian2011 | abstract |
 | 2009 to 2014 no decline | rudder2014race | **secondary**, grade D |
 
-Not used (no notes.md entry with the number): the OkCupid "two-thirds of men's messages to the top third" and "11 times as many messages" figures in literature_review.md 11.6. Fig. 2 (reversal) is a hand-drawn schematic with no data.
+Not used (no notes.md entry with the number): the OkCupid "two-thirds of men's messages to the top third" and "11 times as many messages" figures in literature_review.md 11.6. Fig. 3 (reversal) is a hand-drawn schematic with no data.
 
 ## Humanizer log (2026-10-28)
 
@@ -101,3 +101,19 @@ This pass changes style, not authorship; disclose AI assistance per the venue's 
 - **Substance problems noticed, not fixed.** The paper is 9 pages, over the 8-page aim. Several Section IV numbers rest on secondary summaries (listed in the table above and in Limitations).
 
 This pass changes style, not authorship; disclose AI assistance per the venue's policy.
+
+## Figure log (2026-10-28)
+
+- **Palette.** One Okabe-Ito (colour-blind safe) palette in the preamble: `hgblue` (dark in grey), `hgverm` and `hggreen` (mid), `hgorange` and `hgsky` (light), `hgink` for text and lines. Wherever two series must be told apart there is a second cue: hatching (orange bars), dashed or dotted lines, circle vs square markers, or a direct label. Checked with a greyscale render of pages 3 and 5.
+- **Polished (no number, verdict or meaning changed).**
+  - Fig. 1 `concept_map`: each claim is a card with a coloured header (D1 blue, D2 orange, D3 green, D4 vermilion) and a tinted body; the hub is a dark ellipse; soft shadows.
+  - Fig. 3 `reversal`: blue solid line with circles (hypergamy), vermilion dashed line with squares (hypogamy), green dotted line (graduates); the gap between the two curves is shaded on each side of the crossover; light blue and hatched light vermilion backgrounds labelled "hypergamy more common" and "hypogamy more common"; the ILLUSTRATIVE badge moved above the plot so no curve runs under it.
+  - Fig. 4 `pipeline`: numbered stage badges 1 to 6, tinted boxes (input light blue, steps blue, tier orange), a brace over steps 2 to 6 labelled "pure functions" (as the caption already says), men's card blue and women's card vermilion; all texts unchanged.
+  - Fig. 7 `goal_weights`: blue solid bars (looks, build) vs hatched orange bars (education, income, smarts); values 0.5/1/1.2/1.5 unchanged.
+- **Added (data only, numbers already in the paper and `../notes.md`).**
+  - Fig. 2 `stated_revealed` (Section III-B): (a) stated sex gap, 0.30 points (financial prospects, women higher) and 0.27 points (attractiveness, men higher), walter2020; (b) after meeting, r = .40 (attractiveness) and r = .10 (earning prospects) for both sexes, sex difference about .03, eastwick2014 (secondary; the caption says it was read from an author copy).
+  - Fig. 5 `aim_up` (Section III-G): men +26%, women +23% (bruch2018); arrow length proportional to the value.
+  - Fig. 6 `taller` (Section IV-B): man not taller in 7.5% of 12,502 UK couples vs 10.2% under random pairing (stulp2013plos); stacked bars to 100%, only 7.5% and 10.2% printed.
+  - Not added: the IQ-ceiling curve (secondary, press-only evidence) and an evidence-grade ladder (would repeat Table III).
+- **Text changes in `main.tex`.** Three figure references only: "(Fig. 2)" after the eastwick2014 sentence, "(Fig. 5)" in the 80/20 paragraph, "(Fig. 6)" after the stulp2013plos sentence; three new figure floats with captions. Preamble: TikZ libraries `patterns`, `shapes.multipart`, `shapes.geometric`, `shadows`, `decorations.pathreplacing`; pgfplots libraries `groupplots`, `fillbetween`; palette and two styles.
+- **Build.** `make pdf`: **10 pages** (was 9), no undefined references or citations, no overfull or underfull boxes, BibTeX 0 warnings. Every figure page inspected at 150 dpi; fixed during the pass: an 11pt overfull box in Fig. 6, value labels overlapping bars in Fig. 2, the ILLUSTRATIVE badge touching the hypogamy curve in Fig. 3, an in-plot note crossing a bar in Fig. 6. `make clean` run afterwards; `main.pdf` kept.

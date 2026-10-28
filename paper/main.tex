@@ -7,9 +7,24 @@
 \usepackage[table]{xcolor}
 \usepackage{microtype,booktabs,amsmath,amssymb,array}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,calc}
+\usetikzlibrary{arrows.meta,positioning,calc,patterns,shapes.multipart,shapes.geometric,shadows,decorations.pathreplacing}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usepgfplotslibrary{groupplots,fillbetween}
+
+% Figure palette (Okabe--Ito, colour-blind safe), defined once and used by every figure.
+% In greyscale: hgblue reads dark, hgverm and hggreen mid, hgorange and hgsky light;
+% figures add a pattern, line style or marker wherever two colours must be told apart.
+\definecolor{hgblue}{HTML}{0072B2}
+\definecolor{hgverm}{HTML}{D55E00}
+\definecolor{hgorange}{HTML}{E69F00}
+\definecolor{hggreen}{HTML}{009E73}
+\definecolor{hgsky}{HTML}{56B4E9}
+\definecolor{hgink}{HTML}{2B2B2B}
+\tikzset{
+  hgshadow/.style={drop shadow={opacity=0.22, shadow xshift=0.7pt, shadow yshift=-0.7pt}},
+  hgbadge/.style={draw=hgink, fill=white, rounded corners=1.5pt, font=\scriptsize, align=center, inner sep=2pt},
+}
 \usepackage{cite}
 \usepackage[hidelinks]{hyperref}
 
@@ -128,7 +143,14 @@ Whether that is a big difference depends on how you count. Per trait, it is smal
 Does the gap shrink where women have more equality? Some studies say yes \cite{kasser1999,zentner2012}, as social role theory predicts \cite{eagly1999,wood2002}. The largest and most careful replications found little moderation except for age gaps \cite{zhang2019,walter2020}, and neighbouring countries are not independent data points \cite{gangestad2006}. The difference appears in every country studied. Whether equality shrinks it is still open.
 
 \subsection{Stated Versus Revealed Preferences (D2 to D3)}
-In speed dating, the stated sex difference in caring about earning prospects did not predict whom people liked after meeting \cite{eastwick2008}. A meta-analysis of 97 studies reports that attractiveness predicts romantic evaluations at about $r=.40$ and earning prospects at about $r=.10$ for \emph{both} sexes, with a sex difference near .03 \cite{eastwick2014}. Critics say this covers early attraction and existing couples rather than long-term choice from a wide pool, so the debate continues.
+In speed dating, the stated sex difference in caring about earning prospects did not predict whom people liked after meeting \cite{eastwick2008}. A meta-analysis of 97 studies reports that attractiveness predicts romantic evaluations at about $r=.40$ and earning prospects at about $r=.10$ for \emph{both} sexes, with a sex difference near .03 \cite{eastwick2014} (Fig.~\ref{fig:stated}). Critics say this covers early attraction and existing couples rather than long-term choice from a wide pool, so the debate continues.
+
+\begin{figure}[t]
+\centering
+\input{figures/stated_revealed.tex}
+\caption{Stated versus revealed preferences. (a) In 45 countries, women rated a partner's financial prospects about 0.30 points higher than men did, and men rated physical attractiveness about 0.27 points higher (1 to 7 scale) \cite{walter2020}. (b) Once people have met, attractiveness predicts romantic evaluations at about $r=.40$ and earning prospects at about $r=.10$, for both sexes, with a sex difference near .03 \cite{eastwick2014} (read from an author copy). Values as reported; nothing is estimated here.}
+\label{fig:stated}
+\end{figure}
 
 At first contact the difference comes back. Women on a US dating site weighted a man's income more than men weighted a woman's \cite{hitsch2010qme}. In a Tinder field experiment in Belgium (24 fake profiles, 3,600 evaluations), women strongly preferred highly educated men, while men showed neither a preference for nor an aversion to highly educated women \cite{neyt2019}. In speed dating, men did not value a woman's intelligence or ambition when it exceeded their own \cite{fisman2006}, a male-side asymmetry that also produces ``hypergamous'' couples. So status counts for more in screening and for much less once people actually meet.
 
@@ -169,9 +191,16 @@ On a large US site, desirability formed one shared hierarchy, and men and women 
 \end{figure*}
 
 \subsection{The 80/20 Claim (D4)}
+\begin{figure}[t]
+\centering
+\input{figures/aim_up.tex}
+\caption{Everyone aims up. On a large US dating site, men messaged partners about 26\% and women about 23\% more desirable than themselves \cite{bruch2018}. Arrow length is proportional to the reported value. Aiming up is not a female trait.}
+\label{fig:aimup}
+\end{figure}
+
 The claim is that most women compete for the top fifth of men. The best research figure on swipe asymmetry is small: in a conference study of Tinder activity by fake profiles, men matched about 0.6\% of the time and women about 10\% \cite{tyson2016}, as reported in secondary summaries. Popular ``Gini of likes'' figures come from an anonymous blog post and from company numbers quoted in the press; we could not audit them and do not cite them.
 
-The peer-reviewed data tell a different story. Attention is unequal for both sexes and men get fewer replies, but both sexes aim above themselves by about the same amount, women's messages are not limited to a top 20\%, and final couples are mostly matched like with like \cite{bruch2018,kreager2014}. Even OkCupid's 2009 post, a likely root of the ``women rate 80\% of men below average'' line, reported that women's messaging was only slightly skewed toward attractive men \cite{rudder2009}. Attention inequality on one app is not partnering inequality in a population. Verdict: not supported as stated.
+The peer-reviewed data tell a different story. Attention is unequal for both sexes and men get fewer replies, but both sexes aim above themselves by about the same amount (Fig.~\ref{fig:aimup}), women's messages are not limited to a top 20\%, and final couples are mostly matched like with like \cite{bruch2018,kreager2014}. Even OkCupid's 2009 post, a likely root of the ``women rate 80\% of men below average'' line, reported that women's messaging was only slightly skewed toward attractive men \cite{rudder2009}. Attention inequality on one app is not partnering inequality in a population. Verdict: not supported as stated.
 
 \section{Beyond Status}
 \label{sec:beyond}
@@ -230,7 +259,14 @@ Sexual strategies theory holds that both sexes pursue separate strategies for ca
 The ovulation story, that women prefer more masculine men around ovulation, has not held up. Two meta-analyses of the same literature disagree \cite{gildersleeve2014,wood2014}. The largest longitudinal study ($N=584$, hormone measures) found no link between hormones and a preference for masculine faces \cite{jones2018}, and a preregistered study with ovulation tests ($N=157$) found no shift \cite{stern2020}. Both still found that masculinity counts more in short-term ratings. So context matters and the cycle mostly does not. The stated status preference is mainly a long-term one, and one status weight for every kind of relationship overstates hypergamy for casual dating.
 
 \subsection{Height and Build}
-Women want a taller partner more than men want a shorter one: in a Dutch student sample ($N=650$), women were most satisfied with a partner about 21\,cm taller, men with one about 8\,cm shorter \cite{stulp2013paid}. On a US dating site the effect at first contact was relative to one's own height, and women showed no preference for absolute height \cite{hitsch2010qme}. The famous ``6'3'' gets 65\% more messages than 5'7''\,'' comes from a 2006 draft of that work, and the published papers say non-robust earlier results were dropped. Profile heights are also inflated, mostly by men \cite{hancock2007}. In 12,502 UK couples, partners' heights correlated at $r=.18$, and the man was not taller in 7.5\% of couples against 10.2\% expected under random pairing \cite{stulp2013plos}. Random pairing alone would give the ``man taller'' norm about 90\% of the time, because men are taller on average.
+Women want a taller partner more than men want a shorter one: in a Dutch student sample ($N=650$), women were most satisfied with a partner about 21\,cm taller, men with one about 8\,cm shorter \cite{stulp2013paid}. On a US dating site the effect at first contact was relative to one's own height, and women showed no preference for absolute height \cite{hitsch2010qme}. The famous ``6'3'' gets 65\% more messages than 5'7''\,'' comes from a 2006 draft of that work, and the published papers say non-robust earlier results were dropped. Profile heights are also inflated, mostly by men \cite{hancock2007}. In 12,502 UK couples, partners' heights correlated at $r=.18$, and the man was not taller in 7.5\% of couples against 10.2\% expected under random pairing \cite{stulp2013plos} (Fig.~\ref{fig:taller}). Random pairing alone would give the ``man taller'' norm about 90\% of the time, because men are taller on average.
+
+\begin{figure}[t]
+\centering
+\input{figures/taller.tex}
+\caption{The ``man taller'' norm in 12,502 UK couples: the man was not taller in 7.5\% of couples, against 10.2\% expected under random pairing \cite{stulp2013plos}. The norm holds only a little more often than chance, which alone gives it about 90\% of the time. Each bar adds up to 100\%.}
+\label{fig:taller}
+\end{figure}
 
 For men's bodies, perceived upper-body strength explained over 70\% of the variation in rated bodily attractiveness \cite{sell2017}. Women rated muscular men as sexier but less committed and rated moderate muscularity highest \cite{frederick2007}, and torso shape was the strongest predictor for life-size male figures \cite{mautz2013}. We found no study on arm span. The nearest proxy is leg length, where legs about 5\% longer than average were rated most attractive \cite{sorokowski2008}. All of this is ratings of photos and figures, not real partner choice.
 

@@ -1,19 +1,26 @@
 % Fig.: the Hypergamy Meter pipeline, drawn from app/src/model.rs and app/src/memes.rs.
-% The two cards are the gendered lowest-tier memes (men and women); grey stands in for the app's colours.
+% The two cards are the gendered lowest-tier memes (men and women); palette colours stand in
+% for the app's colours. Greyscale: stages differ by tint and by the numbered badges; the men's
+% card is dark (blue), the women's card mid (vermilion), and each card is labelled.
 \begin{tikzpicture}[
-  font=\footnotesize, node distance=2.8mm,
-  box/.style={draw, rounded corners=2pt, align=center, fill=black!4, inner sep=3pt, minimum height=1.25cm},
-  arr/.style={-{Stealth[length=4pt]}, thick, black!75},
-  card/.style={draw, very thick, minimum width=3.0cm, minimum height=1.3cm},
+  font=\footnotesize, node distance=2.6mm,
+  box/.style={draw=hgblue!80!black, thick, rounded corners=3pt, align=center, fill=hgblue!7,
+    inner sep=3pt, minimum height=1.35cm, hgshadow},
+  inbox/.style={box, draw=hgink!70, fill=hgsky!18},
+  outbox/.style={box, draw=hgorange!80!black, fill=hgorange!22},
+  arr/.style={-{Stealth[length=5pt]}, thick, hgink},
+  card/.style={draw=hgink, very thick, rounded corners=2pt, minimum width=3.0cm, minimum height=1.3cm, hgshadow},
+  stepbadge/.style={circle, fill=hgink, text=white, font=\tiny\bfseries, inner sep=0.9pt, minimum size=9pt},
+  note/.style={font=\scriptsize\itshape, text=hgink!85, align=center},
 ]
-\node[box, text width=2.25cm] (in) {\textbf{Form inputs}\\ age, gender, education, income, height, looks, build, smarts, size (men), region, goal};
+\node[inbox, text width=2.25cm] (in) {\textbf{Form inputs}\\ age, gender, education, income, height, looks, build, smarts, size (men), region, goal};
 \node[box, text width=1.5cm, right=of in] (val) {\textbf{validate}\\ age 18--120\\ height 100--250\,cm};
 \node[box, text width=2.0cm, right=of val] (con) {\textbf{one contribution per input}\\ hand-picked $\delta_k$;\\ education $\times$ region};
 \node[box, text width=1.5cm, right=of con] (gw) {\textbf{goal weight}\\ $w_{g,k}\,\delta_k$\\ (0.5, 1, 1.2, 1.5)};
 \node[box, text width=1.75cm, right=of gw] (sc) {\textbf{score}\\ $60+\sum_k w_{g,k}\delta_k$,\\ clamped to $[0,100]$};
-\node[box, text width=1.75cm, right=of sc] (tier) {\textbf{tier}\\ thresholds\\ 85/70/55/40/25};
+\node[outbox, text width=1.75cm, right=of sc] (tier) {\textbf{tier}\\ thresholds\\ 85/70/55/40/25};
 % men's lowest-tier card (seedling)
-\node[card, fill=black!70, anchor=south west] (cm) at ([xshift=4mm, yshift=0.6mm]tier.east) {};
+\node[card, fill=hgblue, anchor=south west] (cm) at ([xshift=4mm, yshift=0.6mm]tier.east) {};
 \node[font=\bfseries\scriptsize, text=white, anchor=north] at ([yshift=-1pt]cm.north) {IT'S OVER};
 \draw[white, thick] ([yshift=-4pt]cm.center) -- ([yshift=3pt]cm.center);
 \fill[white] ([yshift=2pt]cm.center) .. controls +(-0.2,0.04) and +(-0.04,0.14) .. ([xshift=-5.5pt,yshift=6pt]cm.center) .. controls +(0.12,-0.04) and +(-0.04,0.1) .. ([yshift=2pt]cm.center);
@@ -21,7 +28,7 @@
 \node[font=\bfseries\tiny, text=white, anchor=south, align=center, inner sep=1.5pt] at (cm.south) {...JUST KIDDING,\\ GO TOUCH GRASS :D};
 \node[font=\scriptsize\itshape, anchor=east] at (cm.north east) [yshift=5pt] {men};
 % women's lowest-tier card (baby bottle)
-\node[card, fill=black!50, anchor=north west] (cw) at ([xshift=4mm, yshift=-0.6mm]tier.east) {};
+\node[card, fill=hgverm, anchor=north west] (cw) at ([xshift=4mm, yshift=-0.6mm]tier.east) {};
 \node[font=\bfseries\scriptsize, text=white, anchor=north] at ([yshift=-1pt]cw.north) {SINGLE MOTHER ARC};
 \fill[white, rounded corners=1pt] ([xshift=-2.6pt,yshift=-5pt]cw.center) rectangle ([xshift=2.6pt,yshift=2pt]cw.center);
 \fill[white] ([xshift=-3.2pt,yshift=2.3pt]cw.center) rectangle ([xshift=3.2pt,yshift=3.6pt]cw.center);
@@ -37,8 +44,14 @@
 \draw[arr] (tier.east) -- (cm.west);
 \draw[arr] (tier.east) -- (cw.west);
 \node[font=\scriptsize\itshape, anchor=north west, align=left] at ([yshift=-1mm]cw.south west) {score $<25$};
-\node[font=\scriptsize\itshape, anchor=north, align=center] (err) at ([yshift=-3mm]val.south) {invalid: friendly\\error, no crash};
-\draw[arr, dashed, black!55] (val.south) -- (err.north);
-\node[font=\scriptsize\itshape, anchor=north, align=center] at ([yshift=-3mm]con.south) {also listed as\\``what moved the score''};
-\node[font=\scriptsize\itshape, anchor=north, align=center] at ([yshift=-3mm]sc.south) {also drives the\\gauge needle};
+\node[note, anchor=north] (err) at ([yshift=-3mm]val.south) {invalid: friendly\\error, no crash};
+\draw[arr, densely dashed, hgverm] (val.south) -- (err.north);
+\node[note, anchor=north] at ([yshift=-3mm]con.south) {also listed as\\``what moved the score''};
+\node[note, anchor=north] at ([yshift=-3mm]sc.south) {also drives the\\gauge needle};
+% numbered stage badges
+\foreach \n/\b in {1/in,2/val,3/con,4/gw,5/sc,6/tier} \node[stepbadge] at (\b.north west) {\n};
+% the five computing steps are pure functions
+\draw[decorate, decoration={brace, amplitude=4pt, raise=3pt}, hgink!80, thick]
+  (val.north west |- con.north) -- (tier.north east |- con.north)
+  node[midway, above=7pt, note] {pure functions};
 \end{tikzpicture}

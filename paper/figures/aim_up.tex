@@ -1,0 +1,33 @@
+% Fig.: "everyone aims up". DATA from bruch2018 (full text): on a large US dating site, men
+% messaged partners about 26% and women about 23% more desirable than themselves.
+% Arrow length is proportional to the percentage. Greyscale: men = solid dark blue,
+% women = vermilion with hatching; both arrows are also labelled.
+\begin{tikzpicture}[
+  x=1cm, y=0.075cm,
+  up/.style={line width=9pt, -{Triangle[width=17pt, length=7pt]}},
+  num/.style={font=\footnotesize\bfseries, text=hgink},
+  who/.style={font=\scriptsize\bfseries, text=hgink, anchor=north},
+]
+% scale
+\draw[hgink, -{Stealth[length=3pt]}] (0,0) -- (0,31);
+\foreach \v in {0,10,20,30} {
+  \draw[hgink] (-0.05,\v) -- (0.05,\v);
+  \node[font=\tiny, anchor=east, inner sep=1.5pt] at (-0.05,\v) {+\v\%};
+  \draw[hgink!12] (0.05,\v) -- (6.4,\v);
+}
+\node[font=\scriptsize, rotate=90, anchor=south, align=center] at (-0.55,15) {target's desirability\\relative to sender};
+% own level
+\draw[hgink, thick, densely dashed] (0.05,0) -- (6.4,0);
+\node[font=\scriptsize\itshape, anchor=north west, text=hgink!85] at (3.9,0) {sender's own level};
+% arrows: men 26%, women 23% (arrow tip ends at the value)
+\draw[up, hgblue] (1.3,0) -- (1.3,26);
+\draw[up, hgverm] (2.8,0) -- (2.8,23);
+\fill[pattern=north east lines, pattern color=white!75!hgverm] (2.8-0.158,0) rectangle (2.8+0.158,19.6);
+\node[num, anchor=south] at (1.3,26) {+26\%};
+\node[num, anchor=south] at (2.8,23) {+23\%};
+\node[who] at (1.3,-0.6) {men};
+\node[who] at (2.8,-0.6) {women};
+% verdict
+\node[hgbadge, anchor=west, text width=2.2cm, font=\scriptsize] at (3.9,17)
+  {both sexes aim up by about \textbf{25\%}};
+\end{tikzpicture}

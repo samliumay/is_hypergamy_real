@@ -1,0 +1,27 @@
+% Fig.: the "man taller" norm. DATA from stulp2013plos (abstract and full text): in 12,502
+% UK couples the man was not taller in 7.5% of couples, against 10.2% expected under random
+% pairing. Only those two values are printed; each bar is drawn to 100%.
+% Greyscale: "man taller" = solid dark blue, "man not taller" = light orange + hatching.
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.82\columnwidth, height=2.75cm,
+  xbar stacked, bar width=10pt,
+  xmin=0, xmax=100, xtick={0,25,50,75,90,100},
+  xticklabel={\pgfmathprintnumber{\tick}\%},
+  xticklabel style={font=\tiny},
+  ymin=0.35, ymax=2.65, ytick={1,2},
+  yticklabels={random pairing,{12,502 UK couples}},
+  yticklabel style={font=\scriptsize\bfseries, text=hgink, align=right},
+  axis lines*=left, axis line style={hgink}, xmajorgrids, grid style={hgink!12},
+  major tick length=2pt, clip=false,
+  legend style={font=\scriptsize, at={(0.5,1.04)}, anchor=south, draw=none, legend columns=2,
+    /tikz/every even column/.append style={column sep=8pt}}, area legend,
+]
+\addplot[draw=hgblue!70!black, fill=hgblue] coordinates {(89.8,1) (92.5,2)};
+\addplot[draw=hgorange!70!black, fill=hgorange!55, postaction={pattern=north east lines, pattern color=hgorange!60!black}]
+  coordinates {(10.2,1) (7.5,2)};
+\legend{man taller, man not taller}
+\node[font=\scriptsize\bfseries, text=hgink, anchor=west, inner sep=1.5pt] at (axis cs:100,1) {10.2\%};
+\node[font=\scriptsize\bfseries, text=hgink, anchor=west, inner sep=1.5pt] at (axis cs:100,2) {7.5\%};
+\end{axis}
+\end{tikzpicture}
