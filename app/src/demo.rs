@@ -1,7 +1,9 @@
 //! Demo profiles for `--demo NAME`: open the app already scored, e.g. to take
 //! the screenshots in the README and the blog post.
 
-use crate::model::{Education, Gender, Goal, IncomeBand, Profile, Region};
+use crate::model::{
+    Build, Education, Gender, Goal, IncomeBand, Looks, Profile, Region, Size, Smarts,
+};
 
 /// Every demo, by the name given after `--demo`.
 pub const DEMOS: [(&str, Profile); 4] = [
@@ -13,6 +15,10 @@ pub const DEMOS: [(&str, Profile); 4] = [
             education: Education::Master,
             income: IncomeBand::High,
             height_cm: Some(190),
+            looks: Looks::AboveAverage,
+            build: Build::GymRegular,
+            smarts: Smarts::Smart,
+            size: Size::PreferNotToSay,
             region: Region::TurkeyMiddleEast,
             goal: Goal::LongTerm,
         },
@@ -25,6 +31,10 @@ pub const DEMOS: [(&str, Profile); 4] = [
             education: Education::Master,
             income: IncomeBand::Middle,
             height_cm: None,
+            looks: Looks::Average,
+            build: Build::Average,
+            smarts: Smarts::VerySmart,
+            size: Size::PreferNotToSay,
             region: Region::SouthernEurope,
             goal: Goal::Casual,
         },
@@ -37,6 +47,10 @@ pub const DEMOS: [(&str, Profile); 4] = [
             education: Education::HighSchool,
             income: IncomeBand::Low,
             height_cm: Some(158),
+            looks: Looks::BelowAverage,
+            build: Build::CouchPotato,
+            smarts: Smarts::Average,
+            size: Size::BelowAverage,
             region: Region::EastAsia,
             goal: Goal::Undecided,
         },
@@ -49,6 +63,10 @@ pub const DEMOS: [(&str, Profile); 4] = [
             education: Education::Doctorate,
             income: IncomeBand::Low,
             height_cm: Some(185),
+            looks: Looks::BelowAverage,
+            build: Build::CouchPotato,
+            smarts: Smarts::GalaxyBrain,
+            size: Size::PreferNotToSay,
             region: Region::EastAsia,
             goal: Goal::Undecided,
         },

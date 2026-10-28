@@ -10,6 +10,7 @@ deliberately silly desktop app, the **Hypergamy Meter**.
 ## The Hypergamy Meter
 
 You enter a few facts (age, gender, education, income band, optional height,
+self-rated looks, build and smarts, an optional size joke for men,
 country/region, relationship goal), press **Consult the market**, and the app
 gives you a completely unscientific "market verdict":
 
@@ -23,7 +24,10 @@ gives you a completely unscientific "market verdict":
 
 The humour is aimed at the model and at the idea of a "dating market", never at
 any group of people. Non-binary users get the midpoint of the two sets of
-weights, because the joke model has no data and admits it.
+weights, because the joke model has no data and admits it. Ethnicity is
+deliberately **not** an input: the studies on it document discrimination, and
+scoring people by it would repeat that discrimination (see section 11.8 of the
+review).
 
 ### Run it
 
@@ -105,8 +109,12 @@ flowchart LR
    differences in valuing earning prospects; educational hypergamy weakening
    or reversing, so a "marry up" market for highly educated women is modelled
    as tighter, more so where that norm is stronger; age curves peaking at
-   different ages).
-4. The score is clamped to 0..100 and mapped to a `Tier` by the
+   different ages; looks as the largest weight for both sexes; build helping
+   men more; smarts with a ceiling; size as a near-zero joke).
+4. The relationship goal reweights the inputs (`model::goal_weight`): casual
+   doubles down on looks and build and halves status and smarts; long-term
+   and marriage lift status and smarts by 1.2.
+5. The score is clamped to 0..100 and mapped to a `Tier` by the
    `Tier::THRESHOLDS` table; the tier picks the headline and the meme card.
 
 ## Where the real stuff lives

@@ -77,7 +77,7 @@ const fn rock_bottom(gender: Gender) -> Meme {
             bottom: "...just kidding, go touch grass :D",
             emoji: "🌱",
             background: [60, 60, 60],
-            joke: "Haha, five inputs and an additive model cannot end anything. Go outside.",
+            joke: "Haha, a few dropdowns and an additive model cannot end anything. Go outside.",
         },
         Gender::Woman => Meme {
             top: "Single mother arc",

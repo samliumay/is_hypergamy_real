@@ -3,8 +3,8 @@
 use eframe::egui::{self, Color32, RichText};
 
 use crate::model::{
-    self, Contribution, Education, Gender, Goal, HEIGHT_RANGE_CM, IncomeBand, MAX_AGE, MIN_AGE,
-    Profile, ProfileError, Region, Verdict,
+    self, Build, Contribution, Education, Gender, Goal, HEIGHT_RANGE_CM, IncomeBand, Looks,
+    MAX_AGE, MIN_AGE, Profile, ProfileError, Region, Size, Smarts, Verdict,
 };
 use crate::{gauge, memes};
 
@@ -134,6 +134,43 @@ impl MeterApp {
                     );
                 });
                 ui.end_row();
+
+                ui.label("Looks (self-rated)");
+                enum_combo(
+                    ui,
+                    "looks",
+                    &mut self.profile.looks,
+                    &Looks::ALL,
+                    Looks::label,
+                );
+                ui.end_row();
+
+                ui.label("Build");
+                enum_combo(
+                    ui,
+                    "build",
+                    &mut self.profile.build,
+                    &Build::ALL,
+                    Build::label,
+                );
+                ui.end_row();
+
+                ui.label("Smarts");
+                enum_combo(
+                    ui,
+                    "smarts",
+                    &mut self.profile.smarts,
+                    &Smarts::ALL,
+                    Smarts::label,
+                );
+                ui.end_row();
+
+                // The size joke only applies to men and non-binary users.
+                if self.profile.gender != Gender::Woman {
+                    ui.label("Size (yes, that one)");
+                    enum_combo(ui, "size", &mut self.profile.size, &Size::ALL, Size::label);
+                    ui.end_row();
+                }
 
                 ui.label("Country / region");
                 enum_combo(

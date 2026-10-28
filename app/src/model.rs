@@ -27,6 +27,18 @@
 //!    lower for women than for men in online-dating data. The bands below
 //!    copy that shape, gently.
 //!
+//!  * Looks, build, smarts and size (literature_review.md, section 11):
+//!    self-rated looks get the largest weight for both sexes (Eastwick et
+//!    al. 2014; Hitsch et al. 2010), build helps men more (Sell et al.
+//!    2017), intelligence helps up to a ceiling near the 90th percentile
+//!    (Gignac & Starbuck 2019), and penis size is a near-zero joke weight
+//!    (Mautz et al. 2013; Lever et al. 2006: most partners are satisfied).
+//!  * The relationship goal reweights everything: short-term choices lean on
+//!    looks and build, long-term ones on status and smarts (Kenrick et al.
+//!    1990; Li & Kenrick 2006).
+//!  * Ethnicity is deliberately not an input: the studies on it document
+//!    discrimination, and a score would repeat it (review, section 11.8).
+//!
 //!  Real effect sizes are small, noisy, culture-specific and contested.
 //!  This model is for fun only. Not science, not advice.
 //! ------------------------------------------------------------------------
@@ -229,6 +241,142 @@ impl Goal {
     }
 }
 
+/// Self-rated looks. Self-rated, so mostly a confidence test.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Looks {
+    /// Below average (by your own harsh standards).
+    BelowAverage,
+    /// Average.
+    Average,
+    /// Above average.
+    AboveAverage,
+    /// Turns heads (or so your mother says).
+    HeadTurner,
+}
+
+impl Looks {
+    /// Every variant, in display order.
+    pub const ALL: [Looks; 4] = [
+        Looks::BelowAverage,
+        Looks::Average,
+        Looks::AboveAverage,
+        Looks::HeadTurner,
+    ];
+
+    /// Human-readable label.
+    pub const fn label(self) -> &'static str {
+        match self {
+            Looks::BelowAverage => "Below average (harsh mirror)",
+            Looks::Average => "Average",
+            Looks::AboveAverage => "Above average",
+            Looks::HeadTurner => "Head-turner (says my mum)",
+        }
+    }
+}
+
+/// Body build, self-rated.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Build {
+    /// Professional couch tester.
+    CouchPotato,
+    /// Average.
+    Average,
+    /// Goes to the gym on purpose.
+    GymRegular,
+    /// Carved from marble.
+    GreekStatue,
+}
+
+impl Build {
+    /// Every variant, in display order.
+    pub const ALL: [Build; 4] = [
+        Build::CouchPotato,
+        Build::Average,
+        Build::GymRegular,
+        Build::GreekStatue,
+    ];
+
+    /// Human-readable label.
+    pub const fn label(self) -> &'static str {
+        match self {
+            Build::CouchPotato => "Couch potato",
+            Build::Average => "Average",
+            Build::GymRegular => "Gym regular",
+            Build::GreekStatue => "Greek statue",
+        }
+    }
+}
+
+/// Self-rated intelligence.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Smarts {
+    /// Average.
+    Average,
+    /// Smart.
+    Smart,
+    /// Very smart.
+    VerySmart,
+    /// Past the ceiling: the bonus shrinks again.
+    GalaxyBrain,
+}
+
+impl Smarts {
+    /// Every variant, in display order.
+    pub const ALL: [Smarts; 4] = [
+        Smarts::Average,
+        Smarts::Smart,
+        Smarts::VerySmart,
+        Smarts::GalaxyBrain,
+    ];
+
+    /// Human-readable label.
+    pub const fn label(self) -> &'static str {
+        match self {
+            Smarts::Average => "Average",
+            Smarts::Smart => "Smart",
+            Smarts::VerySmart => "Very smart",
+            Smarts::GalaxyBrain => "Galaxy brain",
+        }
+    }
+}
+
+/// Penis size, self-reported, men only, and an obvious joke input.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Size {
+    /// The default: no answer, no effect.
+    PreferNotToSay,
+    /// Below average.
+    BelowAverage,
+    /// Average.
+    Average,
+    /// Above average.
+    AboveAverage,
+    /// Legendary (self-reported, naturally).
+    Legendary,
+}
+
+impl Size {
+    /// Every variant, in display order.
+    pub const ALL: [Size; 5] = [
+        Size::PreferNotToSay,
+        Size::BelowAverage,
+        Size::Average,
+        Size::AboveAverage,
+        Size::Legendary,
+    ];
+
+    /// Human-readable label.
+    pub const fn label(self) -> &'static str {
+        match self {
+            Size::PreferNotToSay => "Prefer not to say",
+            Size::BelowAverage => "Below average",
+            Size::Average => "Average",
+            Size::AboveAverage => "Above average",
+            Size::Legendary => "Legendary (self-reported)",
+        }
+    }
+}
+
 /// Everything the user enters.
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Profile {
@@ -242,6 +390,14 @@ pub struct Profile {
     pub income: IncomeBand,
     /// Height in centimetres, if the user wants the height joke.
     pub height_cm: Option<u16>,
+    /// Self-rated looks.
+    pub looks: Looks,
+    /// Self-rated build.
+    pub build: Build,
+    /// Self-rated intelligence.
+    pub smarts: Smarts,
+    /// Penis size (men only; ignored for women).
+    pub size: Size,
     /// Country or region.
     pub region: Region,
     /// Relationship goal.
@@ -256,6 +412,10 @@ impl Default for Profile {
             education: Education::Bachelor,
             income: IncomeBand::Middle,
             height_cm: None,
+            looks: Looks::Average,
+            build: Build::Average,
+            smarts: Smarts::Average,
+            size: Size::PreferNotToSay,
             region: Region::TurkeyMiddleEast,
             goal: Goal::LongTerm,
         }
@@ -300,6 +460,14 @@ pub enum Factor {
     Income,
     /// Height (only when given).
     Height,
+    /// Self-rated looks.
+    Looks,
+    /// Self-rated build.
+    Build,
+    /// Self-rated intelligence.
+    Smarts,
+    /// Penis size (men and non-binary users who answer).
+    Size,
     /// Relationship goal.
     Goal,
 }
@@ -312,6 +480,10 @@ impl Factor {
             Factor::Education => "Education",
             Factor::Income => "Income",
             Factor::Height => "Height",
+            Factor::Looks => "Looks",
+            Factor::Build => "Build",
+            Factor::Smarts => "Smarts",
+            Factor::Size => "Size",
             Factor::Goal => "Goal",
         }
     }
@@ -386,7 +558,7 @@ impl Tier {
             Tier::NicheButLoved => "Not for everyone, which is exactly the point.",
             Tier::ClearanceAisle => "Undervalued by a model that cannot see your personality.",
             Tier::LifeIsOver => {
-                "Good news: real people are not an additive model with five inputs."
+                "Good news: real people are not an additive model with a few dropdowns."
             }
         }
     }
@@ -503,6 +675,128 @@ fn height_contribution(height_cm: Option<u16>, gender: Gender) -> Option<Contrib
     })
 }
 
+/// Looks contribution: the largest weight for both sexes, a little larger
+/// for women (men's choices lean slightly more on looks).
+fn looks_contribution(looks: Looks, gender: Gender) -> Contribution {
+    let (woman, man, note) = match looks {
+        Looks::BelowAverage => (
+            -8.0,
+            -7.0,
+            "Below average: couples match on looks, so your match is out there squinting too.",
+        ),
+        Looks::Average => (
+            0.0,
+            0.0,
+            "Average: statistically, where most of the love is.",
+        ),
+        Looks::AboveAverage => (7.0, 6.0, "Above average: the inbox has noticed."),
+        Looks::HeadTurner => (
+            11.0,
+            10.0,
+            "Head-turner: the model is shallow, and so are the apps.",
+        ),
+    };
+    Contribution {
+        factor: Factor::Looks,
+        delta: by_gender(gender, woman, man),
+        note,
+    }
+}
+
+/// Build contribution: helps men more than women, and is capped.
+fn build_contribution(build: Build, gender: Gender) -> Contribution {
+    let (woman, man, note) = match build {
+        Build::CouchPotato => (
+            -1.0,
+            -3.0,
+            "Couch potato: the couch is very loyal, at least.",
+        ),
+        Build::Average => (0.0, 0.0, "Average: nobody has ever been dumped for this."),
+        Build::GymRegular => (
+            2.0,
+            4.0,
+            "Gym regular: shoulders noted. Please stop posting them.",
+        ),
+        Build::GreekStatue => (
+            2.0,
+            5.0,
+            "Greek statue: capped. Statues are bad at texting back.",
+        ),
+    };
+    Contribution {
+        factor: Factor::Build,
+        delta: by_gender(gender, woman, man),
+        note,
+    }
+}
+
+/// Smarts contribution: a modest plus that shrinks past the ceiling.
+fn smarts_contribution(smarts: Smarts) -> Contribution {
+    let (delta, note) = match smarts {
+        Smarts::Average => (0.0, "Average: perfectly fine, nobody asks for an IQ test."),
+        Smarts::Smart => (4.0, "Smart: one of the most wanted traits, for real."),
+        Smarts::VerySmart => (
+            6.0,
+            "Very smart: still climbing, near the top of the curve.",
+        ),
+        Smarts::GalaxyBrain => (
+            3.0,
+            "Galaxy brain: past the ceiling. Please stop explaining things.",
+        ),
+    };
+    Contribution {
+        factor: Factor::Smarts,
+        delta,
+        note,
+    }
+}
+
+/// Size contribution: a near-zero joke weight, men and non-binary users only.
+/// `None` for women and for "prefer not to say".
+fn size_contribution(size: Size, gender: Gender) -> Option<Contribution> {
+    if gender == Gender::Woman {
+        return None;
+    }
+    let (delta, note) = match size {
+        Size::PreferNotToSay => return None,
+        Size::BelowAverage => (
+            -1.0,
+            "Below average: most partners say they are satisfied. Relax.",
+        ),
+        Size::Average => (
+            0.0,
+            "Average: by definition, the usual. Nobody is counting.",
+        ),
+        Size::AboveAverage => (
+            1.0,
+            "Above average: one point. The model refuses to say more.",
+        ),
+        Size::Legendary => (
+            1.0,
+            "Legendary: also one point. Diminishing returns, and self-reported.",
+        ),
+    };
+    Some(Contribution {
+        factor: Factor::Size,
+        delta,
+        note,
+    })
+}
+
+/// How much the relationship goal stretches or shrinks each factor.
+/// Short-term choices lean on looks and build; long-term ones on status and
+/// smarts (Kenrick et al. 1990; Li & Kenrick 2006). Goal itself is 1.
+pub const fn goal_weight(goal: Goal, factor: Factor) -> f32 {
+    match (goal, factor) {
+        (Goal::Casual, Factor::Looks | Factor::Build) => 1.5,
+        (Goal::Casual, Factor::Education | Factor::Income | Factor::Smarts) => 0.5,
+        (Goal::LongTerm | Goal::Marriage, Factor::Education | Factor::Income | Factor::Smarts) => {
+            1.2
+        }
+        _ => 1.0,
+    }
+}
+
 /// Goal contribution: the market rewards having a plan.
 fn goal_contribution(goal: Goal) -> Contribution {
     let (delta, note) = match goal {
@@ -540,7 +834,14 @@ pub fn contributions(profile: &Profile) -> Vec<Contribution> {
         income_contribution(profile.income, profile.gender),
     ];
     out.extend(height_contribution(profile.height_cm, profile.gender));
+    out.push(looks_contribution(profile.looks, profile.gender));
+    out.push(build_contribution(profile.build, profile.gender));
+    out.push(smarts_contribution(profile.smarts));
+    out.extend(size_contribution(profile.size, profile.gender));
     out.push(goal_contribution(profile.goal));
+    for c in &mut out {
+        c.delta *= goal_weight(profile.goal, c.factor);
+    }
     out
 }
 
@@ -611,10 +912,11 @@ mod tests {
 
     #[test]
     fn default_profile_scores_as_expected() {
-        // Woman, 28, Bachelor's, middle income, Turkey/ME, long-term:
-        // 60 + 12 + 4*1.3 + 0 + 2 = 79.2
+        // Woman, 28, Bachelor's, middle income, Turkey/ME, average looks,
+        // build and smarts, long-term (education x1.2):
+        // 60 + 12 + 4*1.3*1.2 + 0 + 0 + 0 + 0 + 2 = 80.24
         let v = evaluate(&profile()).expect("default profile is valid");
-        assert!(approx(v.score, 79.2), "score was {}", v.score);
+        assert!(approx(v.score, 80.24), "score was {}", v.score);
         assert_eq!(v.tier, Tier::HighlyCompetitive);
     }
 
@@ -626,8 +928,10 @@ mod tests {
             education: Education::Doctorate,
             income: IncomeBand::High,
             height_cm: Some(192),
+            looks: Looks::HeadTurner,
             region: Region::EastAsia,
             goal: Goal::Casual,
+            ..Profile::default()
         };
         let worst = Profile {
             age: 60,
@@ -637,9 +941,47 @@ mod tests {
             height_cm: None,
             region: Region::EastAsia,
             goal: Goal::Undecided,
+            ..Profile::default()
         };
         assert_eq!(evaluate(&best).map(|v| v.tier), Ok(Tier::TopOfTheMarket));
         assert_eq!(evaluate(&worst).map(|v| v.tier), Ok(Tier::LifeIsOver));
+    }
+
+    #[test]
+    fn casual_goal_stretches_looks_and_shrinks_income() {
+        let man = Profile {
+            gender: Gender::Man,
+            looks: Looks::HeadTurner,
+            income: IncomeBand::High,
+            ..profile()
+        };
+        let delta = |goal, factor| {
+            contributions(&Profile { goal, ..man })
+                .into_iter()
+                .find(|c| c.factor == factor)
+                .map(|c| c.delta)
+        };
+        assert_eq!(delta(Goal::Casual, Factor::Looks), Some(15.0));
+        assert_eq!(delta(Goal::Undecided, Factor::Looks), Some(10.0));
+        assert_eq!(delta(Goal::Casual, Factor::Income), Some(5.0));
+        assert_eq!(delta(Goal::Marriage, Factor::Income), Some(12.0));
+    }
+
+    #[test]
+    fn smarts_bonus_shrinks_past_the_ceiling() {
+        let d = |smarts| smarts_contribution(smarts).delta;
+        assert!(d(Smarts::VerySmart) > d(Smarts::GalaxyBrain));
+        assert!(d(Smarts::GalaxyBrain) > d(Smarts::Average));
+    }
+
+    #[test]
+    fn size_is_a_tiny_joke_and_ignored_for_women() {
+        for size in Size::ALL {
+            assert!(size_contribution(size, Gender::Woman).is_none());
+            let delta = size_contribution(size, Gender::Man).map_or(0.0, |c| c.delta);
+            assert!(delta.abs() <= 1.0);
+        }
+        assert!(size_contribution(Size::PreferNotToSay, Gender::Man).is_none());
     }
 
     #[test]
