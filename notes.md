@@ -431,6 +431,8 @@ Relevance: no peer-reviewed estimate of swipe or like inequality was found; all 
 
 Added 2026-10-28. Same format and grades as above. Every DOI was checked against Crossref on 2026-10-28; abstracts were read through OpenAlex, Europe PMC or Semantic Scholar, and two papers (carter2014, jauk2016) and one abstract (rauthmann2013) were read in author copies. All studies below measure **subclinical** traits with questionnaires in ordinary samples (mostly students or online panels). None of them is about clinical psychopathy or personality disorder.
 
+Re-checked 2026-10-28 at the researcher's request: the supporting side ("women are attracted to bad boys") was searched as deeply as the critiques, and the entries marked *re-check* were added. Grades are unchanged in meaning.
+
 ## Definitions and sex differences
 
 **paulhus2002** (A). 245 Canadian students; Machiavellianism, subclinical narcissism and subclinical psychopathy measured side by side.
@@ -479,6 +481,18 @@ Shows the link is not men-only: in women the driver is psychopathy.
 Using Tinder for sex was linked to being male and to psychopathy; Machiavellianism went with many "utilitarian" motives *(abstract)*.
 The only sadism-and-dating source found; sadism had no headline effect.
 
+**borrazleon2021** (B, re-check). Mixed-sex sample of young adults; Dark Triad, self-rated attractiveness and mate value, number of sexual partners.
+Narcissism and psychopathy, but not Machiavellianism, correlated with number of sexual partners in men and in women separately; narcissism alone predicted higher self-rated attractiveness and mate value; narcissism, psychopathy and sex together predicted partner numbers *(abstract)*.
+The clearest direct evidence for the partner-count link in both sexes. Self-report.
+
+**lee2013sex** (B, re-check). Two undergraduate samples; Dark Triad, HEXACO and outcomes on sex, power and money.
+The common core of the Dark Triad was very highly correlated with low Honesty-Humility, and both strongly predicted short-term mating tendencies and sexual quid pro quos, which the Big Five did not *(abstract)*.
+Supports the short-term link; locates it in low honesty and humility.
+
+**marcinkowska2016** (B, re-check). Women's preferences for high vs low Dark Triad male faces related to their number of children.
+Women preferring highly narcissistic faces had more children, controlling for age, sociosexuality and self-rated health; women strongly preferring Machiavellian faces had fewer; psychopathic-face preference was unrelated *(secondary: repository abstract)*.
+The only link to actual reproduction found; single correlational study.
+
 ## Are Dark Triad people rated more attractive?
 
 **carter2014** (B). 128 British female undergraduates (mean age 19.4), between-subjects; each read one male self-description (high Dark Triad or a matched control), no photo.
@@ -505,6 +519,26 @@ Both sexes preferred low Dark Triad partners for long-term relationships; high D
 Preference for psychopathic traits was low on average, but higher than for other personality-disorder traits, and higher for the charming interpersonal-affective traits than for impulsive-antisocial ones; people with such traits themselves wanted them more *(abstract)*.
 Same homophily pattern as jonason2015birds; the "charm" part is what is liked.
 
+**haslam2015** (B, re-check). British heterosexual women aged 18 to 28 (N = 146, secondary: Pacific Standard summary); past mating experience, desire for marriage, and 20 statements on attraction to narcissistic traits.
+Women with more mating experience (21 or more partners vs 0 to 10) and women who wanted to marry were more attracted to the narcissistic male personality; the authors link this to status and resource cues and call it "a testament to the success of the narcissistic personality in facilitating short-term mating" *(abstract via repository; numbers secondary)*.
+Supporting side: narcissism attracts even marriage-minded women. Stated attraction, no partner choice measured.
+
+**aitken2013** (B, re-check). Two studies (N = 142 and 28): women rated dating adverts written by men high or low in Machiavellianism, for short- and long-term relationships.
+Low-Machiavellian men ("dads") preferred as long-term mates, high-Machiavellian men ("cads") as short-term mates; fertile women showed the same split and rated all adverts higher *(abstract via search summary)*.
+Supporting side for short-term "cads"; opposing side for long-term.
+
+**brewer2018faces** (B, re-check). 356 women aged 16 to 68; 15 pairs of composite male faces (high vs low on each trait), short-term (n = 171) or long-term (n = 185) context.
+Women were averse to high narcissism, Machiavellianism and psychopathy faces in both contexts; sensation seeking did not change this; the authors say this replicates earlier face studies *(abstract)*.
+Faces, not behaviour: women dislike the look of the traits.
+
+**lyons2016faces** (B, title and secondary only). Face study cited by brewer2018faces.
+Title states that women dislike Dark Triad male faces across mating contexts and socio-ecological conditions; abstract not read.
+Supports brewer2018faces; treat as unverified in detail.
+
+**marcinkowska2015** (B, re-check). 1,962 Finnish women, online forced choice between faces differing in Dark Triad intensity.
+Among women not using hormonal contraception, more unrestricted sociosexuality went with a stronger preference for highly narcissistic faces; among users, more unrestricted sociosexuality went with a weaker preference for Machiavellian faces *(secondary: repository abstract)*.
+Preference for "dark" faces is not uniform; it rises in women open to casual sex.
+
 **holtzman2010** (B). Meta-analysis of small studies (total N > 1000) with observer-rated attractiveness.
 Small but reliable positive correlation between narcissism and physical attractiveness, near the largest known personality and looks correlations *(secondary: abstract summaries; r not read)*.
 Part of narcissists' appeal is that they look better.
@@ -518,7 +552,7 @@ Narcissism predicted popularity at first sight, with the exploitative facets mos
 First impressions, not dating, but the same mechanism.
 
 **dufner2013** (B). Three studies: ratings by opposite-sex strangers, ratings by friends, and courtship outcomes in naturalistic approaches.
-Narcissism raised short-term mate appeal in all three, mediated by physical attractiveness and social boldness; the effect was larger for mate appeal than friend appeal *(abstract)*.
+Narcissism raised short-term mate appeal in all three, mediated by physical attractiveness and social boldness; the effect was larger for mate appeal than friend appeal *(abstract)*. Study 3: 61 single men (mean age 25) approached unknown women in the street to get contact details; more narcissistic men obtained more contacts, and were not more selective in whom they approached *(secondary: press summaries; counts not checked)*.
 The best "revealed" evidence for a narcissist advantage in early courtship.
 
 **jauk2016** (B). Speed dating in Graz, 90 adults (46 women) aged 18 to 32, 691 dates.
@@ -569,7 +603,33 @@ Nice guys: fewer partners, more wanted for commitment.
 
 **urbaniak2003** (B). Female students rated dating-show vignettes of "nice", "neutral" and "jerk" versions of a man, crossed with photos of varying attractiveness.
 Nice versions were preferred, but niceness mattered less than looks for casual sex *(secondary: summaries; abstract not read)*.
-Looks first for short-term; niceness wins for dating and commitment.
+Looks first for short-term; niceness wins for dating and commitment. Re-check: the authors' first experiment had 48 women aged 18 to 23, and they wrote that their "overall results did not favor the nice guy stereotype" *(secondary)*.
+
+**urbaniak2006** (B, content not read, re-check). Sex Roles 55, 209-224, "a further test of the nice guy stereotype".
+Abstract and full text not accessible; one secondary source says agreeableness worked against men in most scenarios *(secondary, unverified)*.
+Listed so the claim can be traced; not used for any number.
+
+**mcdaniel2005** (B, re-check). Women rated two positive dating scenarios, a "nice guy" and a "fun/sexy guy".
+Women tended to choose the nice guy when they wanted conversation and commitment and the fun/sexy guy when they wanted physical contact; looks and niceness both predicted interest *(secondary: summaries; abstract not read)*.
+Short-term vs long-term split again, in stated choices.
+
+## Dominance and attraction (re-check)
+
+**sadalla1987** (B). Four experiments manipulating dominance in male and female targets.
+Dominant behaviour increased men's sexual attractiveness but had no effect for women; it did not depend on the rater's sex; the effect was specific to dominance and did not occur for aggressive or domineering behaviour; it raised sexual attractiveness, not general likeability *(abstract)*.
+The classic "dominance is attractive in men" result.
+
+**jensencampbell1995** (B). Three multimethod studies, total N = 348.
+Prosocial men were rated more physically and sexually attractive and more desirable as dates; dominance alone did not increase any form of attraction, and mattered only in interaction with prosocial tendencies *(abstract)*.
+"Nice and assertive" beats "dominant".
+
+**burger1999** (B). Three studies adding a neutral control description to the dominant vs non-dominant design.
+Compared with the control, both dominant and non-dominant descriptions lowered women's ratings of desirability as a date or partner; few women listed "dominant" for an ideal partner, though assertive and confident did appear *(secondary: abstract copies)*.
+Earlier "dominance wins" results partly reflected an unattractive non-dominant condition.
+
+**snyder2008** (B). Three vignette experiments with college women at two US universities, separating dominance from prestige.
+High prestige preferred to high dominance; with both manipulated, women preferred high prestige and low dominance; high dominance was preferred only when shown in athletic competition and only for a short-term partner *(abstract)*.
+Status earned through respect attracts; dominance over others mostly does not.
 
 ---
 
@@ -615,7 +675,8 @@ Genetic support for higher variance in male than female reproduction over human 
 
 **karmin2015** (A). 456 high-coverage Y-chromosome sequences.
 A strong bottleneck in Y lineages (not in mtDNA) within the last 10,000 years, interpreted as cultural changes raising variance in male reproductive success *(abstract)*.
-Origin of the "17 women reproduced for every man" meme. The meme's ratio comes from a press summary (not read) and refers to effective population size, not to how many men had children.
+Re-check, *full text*: "the Y chromosome plot suggested a reduction at around 8–4 kya ... when the female N e is up to 17-fold higher than the male N e"; mtDNA-based Ne was "consistently more than twice as high" as Y-based Ne; the authors favour "a combination of culturally driven increased male variance in offspring number within demes and an increased male-specific variance among demes" and discuss male-driven conquest, sex-biased migration and structure.
+The 17:1 in the meme is a real result of this paper, as a peak ratio of effective population sizes (Bayesian skyline plots), not a count of mothers and fathers.
 
 **zeng2018** (B). Mathematical model.
 The post-Neolithic Y bottleneck (5,000 to 7,000 years ago) can be explained by competition between patrilineal clans, where whole male lineages die out together *(abstract)*.
@@ -623,8 +684,48 @@ Alternative to a "women chose few men" reading: lineage warfare and clan structu
 
 **rootsi2007** (B). Y-haplogroup N phylogeography across Eurasia.
 Haplogroup N reached eastern Europe on a northern route from inner Asia/southern Siberia about 12 to 14 thousand years ago, with serial bottlenecks and later expansions *(abstract)*.
-Why N is frequent in the Baltic and Finland: migration and founder effects.
+Re-check, *Supplementary Table 1* (compiled frequencies of N3, i.e. N1c/N-Tat): Finns 58.2% (n = 536) and 77.0% (n = 127, a separate sample), Saami 41.7% (n = 24), Estonians 30.6% (n = 209), Latvians 41.9% (n = 86), Lithuanians 36.7% (n = 196).
+Why N is frequent in the Baltic and Finland: migration, founder effects and later expansions.
 
 **pliss2015** (B). 159 ethnic Latvians, 28 SNPs and 12 STRs.
 N1c, R1a and I1 together cover more than 85% of Latvian paternal lineages; more than a third are R1a-M558; Latvian and Lithuanian N1c frequencies are comparable to Finno-Ugric neighbours *(abstract; per-haplogroup percentages not read; an earlier poster by the same group gives about 45% N1c, secondary)*.
-A high share of one haplogroup is a population-history signal, not a measure of how many men reproduced in any one generation.
+A high share of one haplogroup shows that its founding lines out-reproduced others over many generations; it is not a measure of how many men reproduced in any one recent generation.
+
+## Re-check additions (2026-10-28)
+
+**baumeister2010** (C). Book, Oxford University Press, grown out of his 2007 APA invited address "Is there anything good about men?".
+Popularised the claim that today's population descends from about twice as many women as men, based on the DNA work of the time; the address illustrated it as "maybe 80 percent of women but only 40 percent of men reproduced" *(secondary: press and blog quotations of the address)*.
+The 2:1 matches wilder2004 and karmin2015; the 80/40 split is an illustration, not a measurement.
+
+**poznik2016** (A). 1,244 Y chromosomes from 26 populations (1000 Genomes).
+The phylogeny shows bursts of extreme expansion in male numbers, independently on each continent, at times of known migrations and technological innovations *(abstract)*.
+Independent support for male-specific demographic events of the karmin2015 kind.
+
+**batini2015** (A). Resequencing of 3.7 Mb of the Y chromosome in 334 men from 17 European and Middle Eastern populations.
+Three lineages (I1, R1a, R1b) covering 64% of the sample have coalescence times of 3.5 to 7.3 thousand years; 13 of 17 populations show an expansion starting about 2.1 to 4.2 thousand years ago, a male-specific pattern not seen in mtDNA *(abstract)*.
+A few European male lines expanded massively in the Bronze Age; points to social structure, not just migration.
+
+**ilumae2016** (A). 94 high-coverage Y sequences plus 16 markers typed in 1,631 haplogroup N chromosomes out of 6,521 men from 56 populations.
+N3a3-VL29 alone "encompasses over a third of the present-day male Estonians, Latvians, and Lithuanians"; about half of Lithuanian men carry N3; the split of the northern N3a3'6 lineages is dated about 5.0 thousand years ago (95% CI 4.4 to 5.7), with regional expansions within the last 5,000 years *(full text)*.
+The best dating of the Baltic and Finnic N founder expansions.
+
+**preussner2025** (A). Y-chromosome sequences of 1,802 geographically mapped Finnish men (FINRISK), published online 2024.
+N1a1 (= N1c) 64%, I1a 25%, R1b 4.8%, R1a 4.3%; N1a1 splits into a north-eastern N-Z1934 (42%) and a south-western N-VL29 (22%) lineage, suggesting two arrival routes *(abstract)*.
+The most precise modern frequency for Finland.
+
+**lappalainen2008** (B). Over 1,200 samples from Finland, Sweden, Karelia, Estonia, Setoland, Latvia and Lithuania, Y-chromosome and mtDNA markers.
+Populations around the Baltic Sea are genetically similar, migrations from Central Europe, the Volga-Ural region and Slavic populations had different impacts, and genetic drift increased differences especially in the north *(abstract; per-population frequencies not read)*.
+Drift in small northern populations is part of why single lineages became so frequent.
+
+## France: misattributed paternity (re-check)
+
+No peer-reviewed French population estimate was found (searched in English and French: Y-chromosome genealogy, register, clinical and forensic series). Nearest data: larmuseau2013 (Flanders) and larmuseau2019 (Belgium and the Netherlands).
+
+**French law** (legal texts, not studies; not in `bibliography.bib`). Civil Code art. 16-11: genetic identification in civil matters only when ordered by a judge in a filiation case. Penal Code art. 226-28: carrying out a test outside the legal cases, up to one year in prison and €15,000 fine. Art. 226-28-1 (2011 bioethics law): requesting one, €3,750 fine; a 2026 bill (Assemblée nationale n° 2312) proposes to change it, outcome not checked.
+Explains why there are no French test-lab series to quote.
+
+**Commercial and press figures** (D). About 1,200 court-ordered paternity tests a year in France vs about 20,000 bought abroad (commercial legal-information blogs, unsourced). *La Revue du Praticien* news item, March 2025, summarising the Low Countries work: gives about 1% and no French figure.
+Cited only to show that no French measurement exists.
+
+**Rouger and Van Huffel 2003**, "Empreintes génétiques et affaires civiles", Journal de la Société de Biologie 197, 341-350, doi:10.1051/jbio/2003197040341 (C, abstract only). Describes STR methods for French court paternity cases; no exclusion rate in the abstract; full text not accessible. Not cited in the review.
+

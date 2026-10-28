@@ -6,7 +6,7 @@ Not an Obsidian note in the vault sense; build and provenance notes for `paper/`
 
 - `make pdf`: latexmk (pdflatex) into `build/`, copies `build/main.pdf` to `main.pdf`. BibTeX reads `../bibliography.bib` through `BIBINPUTS`, so there is one bibliography, not a copy.
 - `make clean` removes `build/`; `make distclean` also removes `main.pdf`.
-- Figures are TikZ/pgfplots sources in `figures/` (`concept_map.tex`, `stated_revealed.tex`, `reversal.tex`, `pipeline.tex`, `aim_up.tex`, `taller.tex`, `goal_weights.tex`), `\input` by `main.tex`. No external images. The colour palette (`hgblue`, `hgverm`, `hgorange`, `hggreen`, `hgsky`, `hgink`) and the `hgshadow` / `hgbadge` styles are defined once in the `main.tex` preamble.
+- Figures are TikZ/pgfplots sources in `figures/` (`concept_map.tex`, `stated_revealed.tex`, `reversal.tex`, `pipeline.tex`, `aim_up.tex`, `taller.tex`, `paternity.tex`, `goal_weights.tex`), `\input` by `main.tex`. No external images. The colour palette (`hgblue`, `hgverm`, `hgorange`, `hggreen`, `hgsky`, `hgink`) and the `hgshadow` / `hgbadge` styles are defined once in the `main.tex` preamble.
 - `bstcontrol.bib` (paper-local, not a source) holds the IEEEtran control entry `IEEEexample:BSTcontrol`: author lists are cut to 3 names + "et al." to keep the reference list short. `main.tex` loads it with `\bstctlcite` and `\bibliography{bstcontrol,bibliography}`.
 - First build (2026-10-28): 6 pages. "Beyond status" update (2026-10-28): **9 pages** (about 7 pages of text, 2 of references, 83 entries), no undefined references or citations, no overfull or underfull boxes, BibTeX 0 warnings. The 8-page target was not reached: the new section added 32 references (about 0.8 page) and two floats; reaching 8 would need cutting about one page of review content or references.
 - Table I was 32pt too wide in the first build (missed then); fixed in the update with `\tabcolsep` 4pt and narrower columns. Table IV (weights) was 3.9pt too wide; columns narrowed.
@@ -117,3 +117,73 @@ This pass changes style, not authorship; disclose AI assistance per the venue's 
   - Not added: the IQ-ceiling curve (secondary, press-only evidence) and an evidence-grade ladder (would repeat Table III).
 - **Text changes in `main.tex`.** Three figure references only: "(Fig. 2)" after the eastwick2014 sentence, "(Fig. 5)" in the 80/20 paragraph, "(Fig. 6)" after the stulp2013plos sentence; three new figure floats with captions. Preamble: TikZ libraries `patterns`, `shapes.multipart`, `shapes.geometric`, `shadows`, `decorations.pathreplacing`; pgfplots libraries `groupplots`, `fillbetween`; palette and two styles.
 - **Build.** `make pdf`: **10 pages** (was 9), no undefined references or citations, no overfull or underfull boxes, BibTeX 0 warnings. Every figure page inspected at 150 dpi; fixed during the pass: an 11pt overfull box in Fig. 6, value labels overlapping bars in Fig. 2, the ILLUSTRATIVE badge touching the hypogamy curve in Fig. 3, an in-plot note crossing a bar in Fig. 6. `make clean` run afterwards; `main.pdf` kept.
+
+## Dark Triad, paternity and red-flags update (2026-10-28)
+
+Sources: `../literature_review.md` sections 11.9 (red-flags row), 11.10 and 11.11 and the new verdict rows of section 2; grades from `../notes.md` ("Extension: Dark Triad" and "Extension: paternity"); app numbers from `../app/src/model.rs`. The paper title is unchanged on purpose: the researcher will handle it separately. Pre-update copy: `/tmp/claude-1000/-home-umaysamli-Desktop-research/4405169b-ba96-4543-a2d0-6336caa38f5a/scratchpad/hyper_v3_before/` (scratchpad, not kept).
+
+### What changed
+
+- **New Section IV-E "Personality: Do 'Bad Boys' Win?"** (`sec:darktriad`): definitions and the subclinical caveat, sex differences, short-term mating (two-sided: psychopathy carries the link in women, freyth2023), first impressions vs acquaintance (back2010, dufner2013, jauk2016, holtzman2010/2013; fading in paulhus1998, leckelt2015), the replication problem (carter2014 vs dragostinov2025, plus qureshi2016, rauthmann2013, watts2019, jonason2015birds, richards2024), infidelity (jonason2010poach, ataman2025, brewer2015, kardum2024), verdict "partly" (herold1999).
+- **New Section IV-H "Paternity and Y-Chromosome History"** (`sec:paternity`): the 10 to 30% claim does not hold (populations about 1 to 2%; 30% only among doubting men who tested); context effects; the Y bottleneck signal (wilder2004, karmin2015), with female choice vs clan competition (zeng2018) as the open question; "17 women per man" reported as a misreading of effective population size; haplogroup N in Latvia explained by migration and founder effects (pliss2015, rootsi2007).
+- **Table II**: 14 new rows in two labelled groups (Dark Triad, 10 rows; paternity and Y history, 4 rows), all from the review's section 2 verdict rows. A new Def. code "--" (outside D1 to D4) is explained in the caption. A dagger marks every row, old and new, with at least one source read only in a secondary summary or metadata. Table II is now a float page (`[p]`). At 37 rows it no longer fits as a top float, and as one it drifted behind the references, taking Tables III and IV with it.
+- **New Fig. 7 `figures/paternity.tex`**: the viral 10 to 30% band against measured rates, as a dot-and-range plot in the palette style (claim = hatched vermilion band, population estimates = blue, selected sample = orange square). Values: greeff2015 0.9% (0.4 to 1.5), larmuseau2013 1 to 2%, larmuseau2019 0.4 to 5.9%, dahlen2022 1.7%, anderson2006 1.7 to 1.9% (abstract) and about 30% (press release, stated in the caption).
+- **App section and Table IV**: red flags added to the input list; a weights paragraph; a Table IV row (+3 casual, cap +8; -5 long-term, cap -15; -8 marriage, cap -24; 0 undecided; same for every gender; not multiplied by a goal weight, note d); the Fig. 8 caption ("red flags ... weight 1"); the pipeline input box ("red flags"); "eleven inputs" -> "twelve"; "no personality" -> "personality reduced to a joke count of red flags". The marriage note "Red flags win the first date, not the marriage." is quoted from `red_flags_contribution`.
+- **Abstract, keywords, contributions, Limitations and Conclusion** updated. Limitations lists the new secondary-read sources.
+- **Layout**: Fig. 3 (`reversal.tex`) height changed from 4.9 cm to 4.7 cm to remove an underfull vbox on page 3 (a gap under the figure). Nothing else in that figure changed.
+
+### Number check
+
+- App: read from `model.rs` (`red_flags_contribution`, `goal_weight`, and the test `red_flags_help_casual_and_hurt_marriage`: Parade casual 8, AFew long-term -5, Parade marriage -24, None marriage 0, goal weight 1). The default profile has `RedFlags::None` (0 points), so 80.24 still holds. The "worst" example is Undecided (0 points), so 22 still holds. All four demos use `RedFlags::None`.
+- Mismatch: the review's section 11.9 gives the marriage cap as -0.25 on a 0 to 1 scale (-25 points), but the app uses 3 x -8 = -24. The paper follows the app.
+- Dark Triad and paternity numbers, all from `../notes.md`:
+
+| Number(s) | Key | How notes.md read it |
+|---|---|---|
+| d = .26, 470,846 people | grijalva2015 | abstract |
+| 11 world regions, 30,470 people (53 nations in Table II) | schmitt2017narc | abstract |
+| N = 495 | freyth2023 | abstract |
+| 90 adults, 691 dates | jauk2016 | full text |
+| seventh meeting | paulhus1998 | **secondary**; daggered, Limitations |
+| three weeks | leckelt2015 | abstract |
+| 128 students, mean age 19; 4.44 vs 3.34 on 6 points; d = 0.94 | carter2014 | full text |
+| older women prefer low DT | qureshi2016 | **secondary / metadata**; "reportedly", daggered, Limitations |
+| N = 475 and 794 | dragostinov2025 | abstract and full text |
+| 11 studies; r = .13, .23, .25 | ataman2025 | abstract |
+| 205 couples | kardum2024 | abstract |
+| 165 Canadian university women; "more than half" | herold1999 | abstract |
+| 1 to 2% per generation | larmuseau2013 | abstract |
+| 0.9% (95% CI 0.4 to 1.5%), 330 years, 23 families | greeff2015 | abstract |
+| 1.7%, about 1% today, nearly two million | dahlen2022 | abstract |
+| 67 studies; 1.7 to 1.9% | anderson2006 | abstract |
+| about 30% | anderson2006 | **secondary** (press release); stated in text, caption, Limitations |
+| 0.8 to 30%, median 3.7% | bellis2005 | abstract |
+| 0.4% to 5.9%, 500 years | larmuseau2019 | abstract |
+| about twice as deep | wilder2004 | abstract |
+| last 10,000 years | karmin2015 | abstract |
+| "17 women per man" | press coverage of karmin2015 | **not read**; reported only as a misreading, Limitations |
+| over 85%, N1c/R1a/I1 | pliss2015 | abstract (the 45% N1c poster figure is not used) |
+| 12,000 to 14,000 years ago | rootsi2007 | abstract |
+
+### Build
+
+`make pdf`: **12 pages** (was 10), no undefined references or citations, no overfull or underfull boxes, BibTeX 0 warnings, 122 references. Inspected: page 5 (the Table II float page), pages 7 and 8 (new subsections, Fig. 7), page 10, and the pipeline figure. Fig. 7 first had overlapping two-line row labels and was redrawn with one-line labels. `make clean` was run; `main.pdf` is kept.
+
+Known cosmetic issue, not fixed because it is outside `paper/`: IEEEtran lowercases some words in the new titles, e.g. "dark triad" and "machiavellianism" in paulhus2002 and "uk, fiji" and "dark triad" in richards2024. The fix is to brace those words in `../bibliography.bib`, as was done for kreager2014.
+
+## Humanizer log, Dark Triad and paternity update (2026-10-28)
+
+- **Ownership.** Agent-drafted text in every version, so all of it was editable. Scope: only the text changed in this update. Before copy: `.../scratchpad/hyper_v3_prehum/main.tex`.
+- **Glossary.** As before, plus: Dark Triad, high scorer, short-term / casual, misattributed paternity, effective population size, haplogroup, red flags.
+- **Scan before / after (whole paper).** 5960 / 5960 prose words; 371 / 376 sentences; semicolons 0.04 / 0.04, colons 0.11 / 0.10, parentheses 0.20 / 0.20 per sentence; nominalizations 0.69 / 0.68. The remaining scan flags are in older text and were kept on purpose (see the earlier logs).
+- **Changes (5).**
+  - Abstract: a long compound sentence split ("..., and predict more infidelity later, so" -> "... They also predict more infidelity later, so").
+  - First impressions: ", and narcissism raised" -> ". Narcissism also raised".
+  - Verdict: a three-clause comma splice with a parenthesis became two sentences ("It runs both ways, since narcissistic women are chosen more often too").
+  - Paternity: the mid-sentence press-release aside moved into its own sentence ("That 30% comes from a press release, unchecked against the paper.").
+  - Bottleneck: a semicolon antithesis split into two sentences.
+- **Fidelity.** Exit 2, facts identical. Three review items were kept. "Since" marks the same evidence the parenthesis gave before, so the claim is unchanged. In the other two items the 30% moved to the next sentence and still describes the same figure.
+- **Blind reader check.** Seed 1, N = 3 (only three paragraph pairs changed), one fresh reader subagent. The after version was preferred in 3/3 pairs (100%), with no meaning change and no after version flagged unclear. PASS.
+- **Substance problems noticed, not fixed.** Several Dark Triad and paternity numbers rest on secondary summaries (daggered in Table II, listed in Limitations). The "17 women" ratio and the 30% figure were not read in the original papers.
+
+This pass changes style, not authorship; disclose AI assistance per the venue's policy.

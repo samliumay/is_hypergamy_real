@@ -1,0 +1,44 @@
+% Fig.: viral misattributed-paternity claim vs measured rates. DATA from ../notes.md:
+% greeff2015 0.9% (95% CI 0.4-1.5%), larmuseau2013 about 1-2% per generation,
+% larmuseau2019 0.4-5.9% (married couples, 500 years), dahlen2022 1.7% (Sweden),
+% anderson2006 1.7-1.9% (high paternity confidence, abstract) and about 30% (men who doubted
+% and tested; secondary, press release). The 10-30% band is the online claim.
+% Greyscale: claim = hatched light band; population = dark (blue) dots and bars;
+% selected sample = light (orange) square with a direct label.
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.66\columnwidth, height=4.0cm, scale only axis,
+  xmin=0, xmax=34, xtick={0,5,10,20,30},
+  xticklabel={\pgfmathprintnumber{\tick}\%}, xticklabel style={font=\tiny},
+  xlabel={children not fathered by the presumed father}, xlabel style={font=\scriptsize, text=hgink},
+  ymin=0.4, ymax=6.6, ytick={1,...,6},
+  yticklabels={Afrikaners 330\,yr, Flanders per gen., Low Countries 500\,yr, {Sweden, 2M families}, confident fathers, doubters who tested},
+  yticklabel style={font=\scriptsize, text=hgink},
+  axis lines*=left, axis line style={hgink}, major tick length=2pt, clip=false,
+]
+% the online claim: 10 to 30 %
+\fill[hgverm!10] (axis cs:10,0.4) rectangle (axis cs:30,6.6);
+\fill[pattern=north east lines, pattern color=hgverm!40] (axis cs:10,0.4) rectangle (axis cs:30,6.6);
+\draw[hgverm!80!black, densely dashed] (axis cs:10,0.4) -- (axis cs:10,6.6);
+\draw[hgverm!80!black, densely dashed] (axis cs:30,0.4) -- (axis cs:30,6.6);
+\node[font=\scriptsize\bfseries, text=hgverm!75!black, fill=white, rounded corners=1pt, inner sep=1.5pt, align=center]
+  at (axis cs:20,2.5) {viral claim\\10--30\%};
+% population estimates (blue): ranges as bars with caps, point values as dots
+\tikzset{rng/.style={hgblue, very thick, {Bar[width=5pt]}-{Bar[width=5pt]}},
+         val/.style={font=\scriptsize\bfseries, text=hgink, anchor=west, inner sep=1.5pt, xshift=2pt}}
+\draw[rng] (axis cs:0.4,1) -- (axis cs:1.5,1);
+\fill[hgblue] (axis cs:0.9,1) circle (2.2pt);
+\node[val] at (axis cs:1.5,1) {0.9\%};
+\draw[rng] (axis cs:1,2) -- (axis cs:2,2);
+\node[val] at (axis cs:2,2) {1--2\%};
+\draw[rng] (axis cs:0.4,3) -- (axis cs:5.9,3);
+\node[val] at (axis cs:5.9,3) {0.4--5.9\%};
+\fill[hgblue] (axis cs:1.7,4) circle (2.2pt);
+\node[val] at (axis cs:1.7,4) {1.7\%};
+\draw[rng] (axis cs:1.7,5) -- (axis cs:1.9,5);
+\node[val] at (axis cs:1.9,5) {1.7--1.9\%};
+% selected sample (orange)
+\node[draw=hgorange!60!black, fill=hgorange, rectangle, minimum size=5.5pt, inner sep=0pt] (doubt) at (axis cs:30,6) {};
+\node[val, fill=white, inner sep=1pt] at ([xshift=2pt]doubt.east) {$\approx$30\%};
+\end{axis}
+\end{tikzpicture}

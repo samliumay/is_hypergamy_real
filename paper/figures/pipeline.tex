@@ -13,7 +13,7 @@
   stepbadge/.style={circle, fill=hgink, text=white, font=\tiny\bfseries, inner sep=0.9pt, minimum size=9pt},
   note/.style={font=\scriptsize\itshape, text=hgink!85, align=center},
 ]
-\node[inbox, text width=2.25cm] (in) {\textbf{Form inputs}\\ age, gender, education, income, height, looks, build, smarts, size (men), region, goal};
+\node[inbox, text width=2.25cm] (in) {\textbf{Form inputs}\\ age, gender, education, income, height, looks, build, smarts, size (men), red flags, region, goal};
 \node[box, text width=1.5cm, right=of in] (val) {\textbf{validate}\\ age 18--120\\ height 100--250\,cm};
 \node[box, text width=2.0cm, right=of val] (con) {\textbf{one contribution per input}\\ hand-picked $\delta_k$;\\ education $\times$ region};
 \node[box, text width=1.5cm, right=of con] (gw) {\textbf{goal weight}\\ $w_{g,k}\,\delta_k$\\ (0.5, 1, 1.2, 1.5)};
