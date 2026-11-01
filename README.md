@@ -26,8 +26,8 @@ The humour is aimed at the model and at the idea of a "dating market", never at
 any group of people. Non-binary users get the midpoint of the two sets of
 weights, because the joke model has no data and admits it. Ethnicity is
 deliberately **not** an input: the studies on it document discrimination, and
-scoring people by it would repeat that discrimination (see section 11.8 of the
-review).
+scoring people by it would repeat that discrimination (see [section 11.8 of the
+review](literature_review.md#118-ethnicity-and-race-documented-bias)).
 
 ### Run it
 
@@ -63,9 +63,17 @@ More demos: `--demo niche` (screenshot in `docs/screenshots/niche.png`).
 
 ## Where the real stuff lives
 
-- `literature_review.md`, `notes.md`, `bibliography.bib`: the literature
-  review and annotated bibliography on hypergamy.
-- `paper/`: the paper (`paper/main.pdf`).
+- [`literature_review.md`](literature_review.md): the literature review, with a verdict table per claim.
+- [`notes.md`](notes.md) and [`bibliography.bib`](bibliography.bib): the annotated bibliography.
+- [`paper/`](paper/): the paper ([`paper/main.pdf`](paper/main.pdf)).
+
+## Documentation
+
+| Doc | What it answers |
+|-----|-----------------|
+| [docs/README.md](docs/README.md) | Index of the docs |
+| [docs/methodology.md](docs/methodology.md) | The question, how the review sorts and grades evidence, where the verdicts live |
+| [docs/reproducing.md](docs/reproducing.md) | How to run and test the app, build the paper and redraw the blog figures |
 
 ## License
 
